@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indonesia Sintetis · Papua</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='9' cy='10' r='5' fill='%23e5484d'/%3E%3Ccircle cx='23' cy='9' r='4' fill='%231fb5a0'/%3E%3Ccircle cx='16' cy='23' r='6' fill='%23a855f7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="/static/style.css">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/deck.gl@9.0.38/dist.min.js"></script>
+<script src="https://unpkg.com/@deck.gl/extensions@9.0.38/dist.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+<body>
+<header>
+  <h1>Indonesia Sintetis <small>· Fase 1 Provinsi Papua</small></h1>
+  <div class="ctl">
+    <label class="inline">Skenario <select id="sel-sk"></select></label>
+    <label class="inline">Intervensi <select id="sel-iv"></select></label>
+    <label class="inline">Banding <select id="sel-cmp"><option value="">—</option></select></label>
+    <label class="inline">Agen <select id="sel-n">
+      <option value="10000">10 ribu</option><option value="50000">50 ribu</option>
+      <option value="100000" selected>100 ribu</option><option value="1000000">1 juta</option></select></label>
+    <label class="inline">Seed <input id="in-seed" type="number" value="1" style="width:60px"></label>
+    <label class="inline">Agen kunci <select id="sel-llm">
+      <option value="abm">Aturan ABM</option><option value="mock">LLM tiruan (mock)</option>
+      <option value="sumopod">DeepSeek via SumoPod</option><option value="deepseek">DeepSeek</option><option value="ollama">Ollama lokal</option></select></label>
+    <label class="inline"><input id="chk-save" type="checkbox"> Simpan log</label>
+    <button id="btn-run" class="primary">Jalankan</button>
+  </div>
+  <div class="grow"></div>
+  <div class="ctl">
+    <select id="sel-replay" title="Putar ulang log tersimpan"><option value="">Putar ulang log…</option></select>
+    <button id="btn-editor">Editor skenario</button>
+    <button id="btn-mc">Hasil Monte Carlo</button>
+    <button id="btn-ai">Laporan AI</button>
+    <button id="btn-theme" title="Ganti tema">◐</button>
+  </div>
+</header>
+
+<main>
+  <section id="stage" aria-label="Peta jaringan agen di Provinsi Papua">
+    <div id="layers">
+      <label class="inline">Peta dasar
+        <select id="sel-base">
+          <option value="satelit">Satelit + relief</option>
+          <option value="topo">Topografi</option>
+          <option value="kanvas">Kanvas polos</option>
+        </select></label>
+      <label class="inline"><input type="checkbox" id="ly-label" checked> Nama tempat</label>
+      <label class="inline"><input type="checkbox" id="ly-batas" checked> Batas kabupaten</label>
+      <label class="inline"><input type="checkbox" id="ly-agg" checked> Agregasi saat zoom</label>
+      <label class="inline"><input type="checkbox" id="ly-edge" checked> Denyut transmisi</label>
+      <label class="inline"><input type="checkbox" id="ly-sig"> Peta sinyal</label>
+      <label class="inline"><input type="checkbox" id="ly-risk" checked> Risiko distrik</label>
+      <label class="inline"><input type="checkbox" id="ly-radio" checked> Gelombang radio</label>
+    </div>
+    <div id="legend"></div>
+  </section>
+  <aside>
+    <div class="tabs">
+      <button data-tab="feed" class="on">Peristiwa</button>
+      <button data-tab="agen">Agen</button>
+      <button data-tab="info">Dunia</button>
+    </div>
+    <div class="pane on" id="pane-feed"><p class="muted">Jalankan simulasi untuk melihat peristiwa. Klik keputusan agen kunci untuk melihat jawaban LLM mentah.</p></div>
+    <div class="pane" id="pane-agen"><p class="muted">Klik agen di peta atau peristiwa agen kunci.</p></div>
+    <div class="pane" id="pane-info"></div>
+  </aside>
+</main>
+
+<footer>
+  <div id="timeline-ctl">
+    <button id="btn-play" title="Putar/jeda">▶</button>
+    <select id="sel-speed" title="Kecepatan putar"><option value="2">2 langkah/dtk</option><option value="4" selected>4 langkah/dtk</option><option value="8">8 langkah/dtk</option><option value="16">16 langkah/dtk</option></select>
+    <button id="btn-png" title="Ekspor PNG resolusi tinggi">PNG</button>
+    <button id="btn-video" title="Rekam video dari awal sampai akhir">Video</button>
+    <span id="status-line">Memuat dunia…</span>
+  </div>
+  <input id="scrub" type="range" min="0" max="0" value="0" aria-label="Linimasa">
+  <div id="chart"></div>
+</footer>
+
+<dialog id="dlg-editor">
+  <h2>Editor skenario</h2>
+  <div class="ai-box">
+    <label for="ed-desk">Tulis skenario dengan bahasa bebas: isu apa, di mana, lewat kanal apa, kapan, siapa yang paling terdampak</label>
+    <textarea id="ed-desk" placeholder="Contoh: Hoaks bahwa beras bantuan di Wamena dicampur plastik, beredar Senin pagi lewat grup WA keluarga dan jemaat, lalu diunggah akun FB lokal sore harinya. Ibu-ibu paling cemas. Simulasikan 3 hari."></textarea>
+    <div class="ctl"><button id="ed-ai" class="primary">Susun dengan AI</button><button id="ed-blank">Mulai dari kosong</button>
+      <span id="ed-ai-msg" class="muted"></span></div>
+  </div>
+  <div class="grid2">
+    <div class="form" id="ed-form"></div>
+    <div><div class="muted">Pratinjau YAML</div><pre id="ed-yaml" style="max-height:420px"></pre></div>
+  </div>
+  <div class="dlg-actions">
+    <span id="ed-msg" class="muted" style="margin-right:auto"></span>
+    <button id="ed-close">Tutup</button><button id="ed-save" class="primary">Simpan skenario</button>
+  </div>
+</dialog>
+
+<dialog id="dlg-mc">
+  <h2>Hasil Monte Carlo per tipe wilayah</h2>
+  <div class="ctl" style="margin-bottom:8px">
+    <select id="mc-sel"></select>
+    <a id="mc-report" target="_blank" rel="noopener">Laporan lengkap</a>
+    <button id="mc-ai">Laporan AI</button>
+    <span class="grow"></span>
+    <label class="inline">Putaran <input id="mc-n" type="number" value="50" style="width:64px"></label>
+    <label class="inline">Agen <select id="mc-agen"><option value="20000">20 ribu</option><option value="100000" selected>100 ribu</option></select></label>
+    <label class="inline">Tabel beku <input id="mc-beku" type="text" placeholder="(kosong = aturan ABM)" style="width:150px"></label>
+    <button id="mc-start">Mulai Monte Carlo</button>
+  </div>
+  <div id="mc-status" class="muted"></div>
+  <div id="mc-chart"></div>
+  <div id="mc-body"></div>
+  <div class="dlg-actions"><button id="mc-close">Tutup</button></div>
+</dialog>
+
+<dialog id="dlg-ai">
+  <h2>Laporan AI dari hasil simulasi</h2>
+  <div class="form">
+    <label for="ai-src">Sumber hasil</label><select id="ai-src"></select>
+    <label for="ai-llm">Model</label><select id="ai-llm">
+      <option value="sumopod">DeepSeek via SumoPod</option><option value="deepseek">DeepSeek</option>
+      <option value="ollama">Ollama lokal</option><option value="mock">Tanpa LLM (mock)</option></select>
+    <label for="ai-fokus">Fokus (opsional)</label><textarea id="ai-fokus" placeholder="Mis. tekankan wilayah pedalaman tanpa sinyal; tulis untuk Diskominfo kabupaten"></textarea>
+  </div>
+  <div class="ctl" style="margin-top:8px"><button id="ai-go" class="primary">Buat laporan</button>
+    <span id="ai-msg" class="muted"></span></div>
+  <article id="ai-out" class="report"></article>
+  <div class="dlg-actions"><button id="ai-pdf" class="primary" disabled title="Aktif setelah laporan selesai dibuat">Buka PDF</button><button id="ai-dl" disabled>Unduh .md</button><button id="ai-copy" disabled>Salin teks</button><button id="ai-close">Tutup</button></div>
+</dialog>
+
+<script src="/static/app.js?v=geo1"></script>
+</body>
+</html>

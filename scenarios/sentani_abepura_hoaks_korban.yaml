@@ -1,0 +1,177 @@
+# Dibuat dari editor skenario dashboard
+nama: Hoaks Penemuan Korban di Jalan Sentani-Abepura
+kode: sentani_abepura_hoaks_korban
+mulai:
+  hari: Sabtu
+  jam: 7
+langkah_menit: 30
+durasi_jam: 72
+isu:
+  teks: Bapa mama kaka ade, ada kabar pemuda kampung dikejar orang tak dikenal di
+    jalan Sentani-Abepura, baru ditemukan meninggal di pinggir kali penuh luka. Saksi
+    lihat pelaku naik mobil, tapi pelaku su dilepas, tra ada yang ditangkap. Masih
+    ada orang lain mau diincar. Ini VN keluarga korban. Kitorang diminta kumpul depan
+    kantor distrik sesudah ibadah Minggu. Pemuda jaga jalan masuk kampung malam itu
+    e.
+  emosi: marah dan duka
+  intensitas_emosi: 0.9
+  faktor_identitas:
+    pemuda: 2.4
+    laki_laki: 1.8
+    orang_tua_anak_sekolah: 1.3
+    lansia: 1.3
+    pengguna_hp: 1.5
+  ajakan_tindakan: true
+  alasan_percaya: karena takut ada korban lagi dan ingin melindungi keluarga serta
+    kampung
+tanam:
+- t_jam: 0
+  kanal: wa
+  kabupaten: kab_jayapura
+  distrik: Sentani
+  jenis_grup: marga
+  jumlah_grup: 1
+- t_jam: 0
+  kanal: wa
+  kabupaten: kota_jayapura
+  distrik: Kota Jayapura 01
+  jenis_grup: keluarga
+  jumlah_grup: 1
+- t_jam: 1
+  kanal: wa
+  kabupaten: kab_jayapura
+  distrik: Sentani
+  jenis_grup: info
+  jumlah_grup: 2
+- t_jam: 1
+  kanal: wa
+  kabupaten: kota_jayapura
+  distrik: Kota Jayapura 01
+  jenis_grup: info
+  jumlah_grup: 3
+- t_jam: 2.5
+  kanal: fb
+  kabupaten: kota_jayapura
+  distrik: Kota Jayapura 01
+  akun_medsos: 4
+- t_jam: 3
+  kanal: fb
+  kabupaten: kab_jayapura
+  distrik: Sentani
+  akun_medsos: 2
+- t_jam: 3.5
+  kanal: tatap_muka
+  kabupaten: kab_jayapura
+  distrik: Sentani
+  jumlah: 30
+- t_jam: 12
+  kanal: wa
+  kabupaten: keerom
+  distrik: Keerom 01
+  jenis_grup: jemaat
+  jumlah_grup: 2
+- t_jam: 16
+  kanal: tatap_muka
+  kabupaten: kota_jayapura
+  distrik: Kota Jayapura 01
+  jumlah: 30
+komentar_contoh:
+- Sa su dengar VN pu cerita, bapa. Jang sampe ada korban lai, kitorang minta aparat
+  jelaskan e.
+- Dong bilang pelaku naik mobil baru lepas, ini tra masuk akal. Kitorang jaga kampung
+  tapi jang main hakim sendiri.
+- Sesudah ibadah kitorang kumpul depan kantor distrik, bawa suara bukan bawa emosi.
+  Ana-ana jangan dibawa.
+catatan: Waktu T+0 diasumsikan Sabtu 19:00; simulasi 72 jam dengan langkah 30 menit.
+  Sentani dipetakan ke Kab. Jayapura distrik Sentani; lokasi Kota Jayapura tanpa distrik
+  spesifik dipetakan ke Kota Jayapura 01; Keerom dipetakan ke Keerom 01. Grup info
+  satu jam kemudian, unggahan FB sekitar 21-22, dan pertemuan tatap muka mengikuti
+  deskripsi. Frasa identitas 'pendatang/bukan orang timur' tidak dimasukkan ke pesan;
+  pelaku tetap 'orang tak dikenal' agar tidak menargetkan kelompok. Voice note dan
+  foto lama diasumsikan konten yang diteruskan tanpa verifikasi. Tidak ada provokator
+  karena tidak disebut eksplisit; akun FB dianggap penyebar biasa. 'Orang tua' dipetakan
+  ke lansia dan orang tua anak sekolah.
+deskripsi: 'Skenario hipotetis di Kota Jayapura dan Kabupaten Jayapura. Sabtu malam
+
+  beredar kabar bahwa seorang pemuda kampung dikejar orang tak dikenal di jalan
+
+  Sentani–Abepura, lalu ditemukan meninggal di pinggir kali dengan badan penuh
+
+  luka. Katanya ada saksi yang melihat pelaku naik mobil, tetapi pelaku sudah
+
+  dilepas dan tidak ada yang ditangkap, dan masih ada orang lain yang akan
+
+  diincar. Pesan disertai "voice note dari keluarga korban" dan mengajak semua
+
+  warga berkumpul di depan kantor distrik sesudah ibadah Minggu, serta meminta
+
+  pemuda berjaga di jalan masuk kampung malam itu.
+
+
+  Pesan pertama muncul Sabtu jam 19 di grup WhatsApp marga di Sentani dan grup
+
+  WhatsApp keluarga di Kota Jayapura, lalu satu jam kemudian di grup info.
+
+  Sekitar jam 21–22, 4 akun Facebook lokal di Kota Jayapura dan 2 di Kabupaten
+
+  Jayapura mengunggah ulang foto lama dengan keterangan "korban tadi sore".
+
+  Malam itu sekitar 30 pemuda membicarakannya di pangkalan ojek dan kios di
+
+  Sentani. Minggu pagi kabar sampai ke Keerom lewat grup WhatsApp jemaat, dan
+
+  sesudah ibadah Minggu dibicarakan langsung oleh sekitar 30 orang di Kota
+
+  Jayapura. Yang paling terpancing adalah pemuda dan laki-laki, juga orang tua
+
+  dan pengguna HP. Emosi sangat tinggi (marah dan duka). Simulasikan 3 hari
+
+  dengan langkah 30 menit.
+
+
+  Isunya pelaku bukan merupakan warga pendatang yang bukan orang timur'
+provokator:
+- jenis: buzzer
+  kanal: fb
+  kabupaten: kota_jayapura
+  akun: 100
+  grup_per_akun: 30
+  terkoordinasi: true
+  intensitas: 2
+  mulai_jam: 2
+  selesai_jam: 72
+  serang_klarifikasi: true
+- jenis: lokal
+  kabupaten: kota_jayapura
+  mulai_jam: 2
+  selesai_jam: 72
+  serang_klarifikasi: true
+  jumlah: 30
+- jenis: buzzer
+  kanal: wa
+  kabupaten: kab_jayapura
+  akun: 100
+  grup_per_akun: 50
+  terkoordinasi: true
+  intensitas: 2
+  mulai_jam: 2
+  selesai_jam: 72
+  serang_klarifikasi: true
+  jenis_grup: keluarga
+- jenis: buzzer
+  kanal: wa
+  kabupaten: kota_jayapura
+  akun: 100
+  grup_per_akun: 50
+  terkoordinasi: true
+  intensitas: 2
+  mulai_jam: 2
+  selesai_jam: 72
+  serang_klarifikasi: true
+  jenis_grup: marga
+- jenis: lokal
+  kabupaten: kota_jayapura
+  mulai_jam: 2
+  selesai_jam: 72
+  serang_klarifikasi: true
+  jumlah: 30

@@ -1,0 +1,87 @@
+# Dibuat dari editor skenario dashboard
+nama: Skenario Penculikan Anak di Serui
+kode: penculikan_anak_serui
+mulai:
+  hari: Senin
+  jam: 12
+langkah_menit: 30
+durasi_jam: 72
+isu:
+  teks: Warga Serui, hati-hati! Ada orang pendatang naik motor tanpa plat menawari
+    anak SD permen dan uang, hampir dibawa ke pelabuhan. Untung ditolong mama-mama
+    di pasar. Dong su incar anak-anak di kampung lain juga. Bapa-bapa dan pemuda,
+    jaga di sekolah, pelabuhan, dan jalan masuk kampung. Periksa orang baru yang tra
+    dikenal!
+  emosi: takut dan marah
+  intensitas_emosi: 0.9
+  faktor_identitas:
+    orang_tua_anak_sekolah: 2.5
+    perempuan: 2
+    pemuda: 1.8
+  ajakan_tindakan: true
+  alasan_percaya: karena takut anak sendiri jadi korban
+tanam:
+- t_jam: 0
+  kanal: wa
+  kabupaten: kota_jayapura
+  jenis_grup: sekolah
+  jumlah_grup: 3
+- t_jam: 5
+  kanal: tatap_muka
+  kabupaten: kota_jayapura
+  jumlah: 20
+- t_jam: 6
+  kanal: fb
+  kabupaten: kota_jayapura
+  akun_medsos: 2
+- t_jam: 72
+  kanal: tatap_muka
+  kabupaten: kota_jayapura
+  jumlah: 30
+komentar_contoh:
+- Aduh, sa takut sekali. Anak sa juga pulang sekolah lewat situ. Semoga cepat tertangkap!
+- Mama-mama di pasar su cerita, katanya anak itu hampir dibawa. Kita harus jaga anak-anak
+  kita!
+- Bapa-bapa, ayo kita jaga di sekolah dan pelabuhan. Jangan biarkan orang tak dikenal
+  masuk kampung!
+- Foto di Facebook itu benar? Kasihan anaknya. Semoga tidak terjadi lagi.
+catatan: 'Skenario fiktif untuk simulasi. Isu penculikan oleh ''orang pendatang''
+  tidak merujuk pada kelompok tertentu; pelaku digambarkan sebagai ''orang tak dikenal''
+  untuk menghindari stereotip. Lokasi Serui di Kabupaten Kepulauan Yapen sesuai daftar
+  wilayah. Asumsi: pesan pertama muncul Senin jam 12 siang di grup WhatsApp orang
+  tua murid (3 grup), sore hari menyebar di pasar Serui (20 orang), jam 18 dua akun
+  Facebook lokal mengunggah foto lama, dan Minggu pagi setelah ibadah dibicarakan
+  lagi (30 orang). Intensitas emosi tinggi karena melibatkan keselamatan anak. Faktor
+  identitas: orang tua anak sekolah (2.5), perempuan (2.0), pemuda (1.8). Ajakan tindakan
+  fisik (berjaga, memeriksa orang baru) sehingga ajakan_tindakan true.'
+deskripsi: 'Skenario hipotetis di Serui, Kabupaten Kepulauan Yapen. Senin pagi beredar
+
+  kabar bahwa ada orang pendatang yang mencoba menculik anak SD pulang sekolah
+
+  di Serui. Katanya pelaku naik motor tanpa plat, menawari anak permen dan uang,
+
+  dan satu anak hampir dibawa ke pelabuhan sebelum ditolong mama-mama di pasar.
+
+  Pesan menyebut "dong su incar anak-anak di kampung lain juga" dan mengajak
+
+  bapa-bapa dan pemuda berjaga di sekolah, pelabuhan, dan jalan masuk kampung,
+
+  serta memeriksa orang baru yang tidak dikenal.
+
+
+  Pesan pertama muncul Senin jam 12 siang di grup WhatsApp orang tua murid di
+
+  Serui. Sore harinya kabar menyebar dari mulut ke mulut di pasar Serui. Jam 18
+
+  ada 2 akun Facebook lokal mengunggah foto lama anak menangis dengan keterangan
+
+  "korban percobaan culik tadi siang". Minggu pagi kabar dibicarakan lagi
+
+  sesudah ibadah. Yang paling cemas adalah orang tua anak sekolah, perempuan
+
+  (mama-mama pasar), dan pemuda. Intensitas emosi tinggi (takut dan marah).
+
+  Simulasikan 3 hari.
+
+
+  isu penculik nya merupakan pendatang bukan orang papua.'

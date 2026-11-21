@@ -1,0 +1,32 @@
+# Skenario isu HIPOTETIS (PRD §6). Bukan kejadian nyata.
+nama: Isu penculikan anak di Sentani
+kode: sentani_2026
+mulai: {hari: Sabtu, jam: 7}       # T+0 = Sabtu 07:00, sehingga ibadah Minggu jatuh di T+25 jam
+langkah_menit: 30
+durasi_jam: 48
+
+isu:
+  teks: >-
+    Hati-hati e! Ada orang pake mobil putih culik anak sekolah di Sentani.
+    Dong ambil organ. Su ada 3 anak hilang. Sebar ke keluarga semua!
+  emosi: takut
+  intensitas_emosi: 0.9            # 0..1, menaikkan kredibilitas & penerusan
+  faktor_identitas:
+    orang_tua_anak_sekolah: 1.5
+  ajakan_tindakan: true            # isu mengandung ajakan jaga kampung -> mendorong status A
+
+tanam:
+  - t_jam: 0
+    kanal: wa
+    jenis_grup: sekolah
+    kabupaten: kab_jayapura
+    distrik: Sentani
+    jumlah_grup: 5
+  - t_jam: 10
+    kanal: fb
+    akun_medsos: 2                 # akun lokal mengunggah ulang video lama
+    kabupaten: kab_jayapura
+
+komentar_contoh:
+  - "Astaga, sa pu anak sekolah di Sentani"
+  - "Betul ka? Sapa yang lihat?"

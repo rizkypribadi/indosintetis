@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alat Lapangan · Indonesia Sintetis</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='9' cy='10' r='5' fill='%23e5484d'/%3E%3Ccircle cx='23' cy='9' r='4' fill='%231fb5a0'/%3E%3Ccircle cx='16' cy='23' r='6' fill='%23a855f7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/lapangan.css?v=1">
+<script>try{var t=localStorage.getItem('tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<header class="bar">
+  <a class="home" href="/" title="Kembali ke dashboard">← Dashboard</a>
+  <h1>Alat lapangan</h1>
+  <nav class="tabs" role="tablist">
+    <button data-tab="situasi" role="tab">Ruang Situasi</button>
+    <button data-tab="kartu" role="tab">Kartu respons</button>
+    <button data-tab="perencana" role="tab">Perencana</button>
+    <button data-tab="latihan" role="tab">Latihan meja</button>
+    <button data-tab="kajian" role="tab">Kajian pasca-kejadian</button>
+  </nav>
+</header>
+<div class="tanda" id="tanda">SIMULASI — BUKAN PRAKIRAAN · <span id="versi">memuat…</span></div>
+<div class="peringatan" id="usang" hidden></div>
+
+<main>
+  <!-- R2b Ruang Situasi -->
+  <section class="pane" id="pane-situasi">
+    <div class="dua">
+      <form id="f-situasi" class="kartu-form" autocomplete="off">
+        <h2>Apa yang diketahui?</h2>
+        <p class="muted">Tidak ada kolom nama orang, nama akun, atau tautan unggahan. Jawaban dibaca dari pustaka skenario yang sudah dihitung, tanpa internet.</p>
+        <label>Jenis isu <select name="jenis" id="s-jenis"></select></label>
+        <label id="s-desk-wrap" hidden>Deskripsi singkat (maks. 200 huruf, tanpa nama) <textarea name="deskripsi" maxlength="200"></textarea></label>
+        <div class="baris">
+          <label>Kabupaten <select name="kabupaten" id="s-kab"></select></label>
+          <label>Distrik tempat isu pertama terdengar <select name="distrik" id="s-dis"><option value="">(tidak tahu)</option></select></label>
+        </div>
+        <fieldset><legend>Kanal tempat isu pertama terdengar</legend><div class="pilih" id="s-kanal"></div></fieldset>
+        <div class="baris">
+          <label>Isu mulai beredar <input type="datetime-local" name="waktu_beredar"><small>kosongkan bila tidak tahu</small></label>
+          <label>Diketahui petugas <input type="datetime-local" name="waktu_diketahui" id="s-diket"></label>
+        </div>
+        <div class="baris">
+          <fieldset><legend>Sudah ada ajakan bertindak?</legend><div class="pilih"><label><input type="radio" name="ajakan" value="ya">Ya</label><label><input type="radio" name="ajakan" value="tidak" checked>Tidak</label></div></fieldset>
+          <fieldset><legend>Sudah ada tanda bahaya (kerumunan, blokade)?</legend><div class="pilih"><label><input type="radio" name="tanda_bahaya" value="ya">Ya</label><label><input type="radio" name="tanda_bahaya" value="tidak" checked>Tidak</label></div></fieldset>
+        </div>
+        <button class="utama" type="submit">Lihat perkiraan dan tindakan</button>
+      </form>
+      <div id="s-hasil" class="hasil"><div class="kosong">Isi formulir di kiri. Hasil muncul di sini dalam hitungan detik.</div></div>
+    </div>
+  </section>
+
+  <!-- R1 Kartu -->
+  <section class="pane" id="pane-kartu">
+    <h2>Kartu respons per kabupaten</h2>
+    <p class="muted">Satu lembar A4 bolak-balik, hitam-putih, huruf minimal 10 pt. Nama dan nomor ditulis tangan; sistem tidak menyimpan data pribadi.</p>
+    <p id="k-status" class="muted"></p>
+    <ul id="k-list" class="daftar"></ul>
+  </section>
+
+  <!-- R4 Perencana -->
+  <section class="pane" id="pane-perencana">
+    <div class="dua">
+      <form id="f-rencana" class="kartu-form">
+        <h2>Apa yang kita punya?</h2>
+        <p class="muted">Profil sumber daya ada di <code>config/sumber_daya/&lt;kabupaten&gt;.yaml</code>: jumlah tokoh, radio, akun resmi, tim keliling, distrik tanpa sinyal, kepercayaan warga per pembawa pesan, dan batas waktu.</p>
+        <label>Profil sumber daya <select name="profil" id="r-profil"></select></label>
+        <fieldset><legend>Skenario (kabupaten mengikuti profil)</legend>
+          <div class="baris">
+            <label>Jenis isu <select id="r-jenis"></select></label>
+            <label>Kanal awal <select id="r-kanal"></select></label>
+            <label>Ajakan bertindak <select id="r-ajak"><option value="ajak">ada</option><option value="tanpa">tidak ada</option></select></label>
+          </div>
+        </fieldset>
+        <div class="baris">
+          <label>Jumlah agen <select name="agen"><option value="20000">20 ribu (cepat)</option><option value="100000">100 ribu</option></select></label>
+          <label>Putaran awal per rencana <input type="number" name="putaran_awal" value="10" min="3" max="50"></label>
+          <label>Sampel uji ketahanan <input type="number" name="ketahanan" value="6" min="0" max="30"></label>
+        </div>
+        <button class="utama" type="submit">Cari 3 rencana terbaik</button>
+        <p id="r-status" class="muted"></p>
+      </form>
+      <div id="r-hasil" class="hasil"><div class="kosong">Perencana menyusun semua gabungan langkah yang layak dari sumber daya, menyaringnya, lalu menguji ketahanan 3 teratas. Rencana bawaan ±5–15 menit.</div></div>
+    </div>
+  </section>
+
+  <!-- R5 Latihan -->
+  <section class="pane" id="pane-latihan">
+    <h2>Latihan meja (tabletop)</h2>
+    <p>Fasilitator menjalankan sesi di laptop dan proyektor. Peserta membuka layar peserta di HP atau tablet lewat Wi-Fi ruang rapat yang sama (jalankan server dengan <code>python -m sintetis serve --host 0.0.0.0</code>).</p>
+    <p class="muted">Skenario fiktif: nyatakan di awal sesi. Cakupan latihan hanya hoaks pemicu kekerasan terhadap warga sipil. Minta persetujuan peserta sebelum penilaian dan catatan mereka dipakai sebagai data penelitian.</p>
+    <p><a class="tombol utama" href="/latihan?peran=fasilitator">Buka layar fasilitator</a></p>
+    <ul id="l-sesi" class="daftar"></ul>
+  </section>
+
+  <!-- R6 Kajian -->
+  <section class="pane" id="pane-kajian">
+    <div class="dua">
+      <div>
+        <h2>Kajian pasca-kejadian</h2>
+        <p class="muted">Catat juga isu yang <b>tidak</b> berkembang (near miss). Tulis PERAN, bukan nama; lokasi paling rinci tingkat distrik. Data sensitif: tersimpan lokal di folder <code>kajian/</code>.</p>
+        <div class="aksi"><button id="kj-baru">Kajian baru</button><select id="kj-situasi"><option value="">Draf dari log Ruang Situasi…</option></select></div>
+        <table class="tabel" id="kj-daftar"></table>
+      </div>
+      <form id="f-kajian" class="kartu-form" hidden>
+        <h2 id="kj-judul">Kajian</h2>
+        <div class="baris">
+          <label>ID <input name="id" required pattern="[\w\-]+"></label>
+          <label>Tanggal <input type="date" name="tanggal" required></label>
+        </div>
+        <div class="baris">
+          <label>Kabupaten <select name="kabupaten" id="kj-kab"></select></label>
+          <label>Distrik <select name="distrik" id="kj-dis"><option value="">–</option></select></label>
+        </div>
+        <div class="baris">
+          <label>Jenis isu <select name="jenis_isu" id="kj-jenis"></select></label>
+          <label>Kanal awal <select name="kanal_awal" id="kj-kanal"></select></label>
+        </div>
+        <div class="baris">
+          <label class="cek"><input type="checkbox" name="ajakan_tindakan"> Ada ajakan bertindak</label>
+          <label class="cek"><input type="checkbox" name="near_miss"> Near miss (isu tidak berkembang)</label>
+        </div>
+        <h3>Linimasa <small class="muted">jam sejak isu pertama muncul</small></h3>
+        <table class="tabel" id="kj-lini"></table>
+        <button type="button" id="kj-tambah">+ Tambah butir</button>
+        <h3>Hasil</h3>
+        <div class="baris">
+          <label class="cek"><input type="checkbox" name="eskalasi"> Terjadi eskalasi</label>
+          <label>Distrik yang memanas (pisahkan koma) <input name="hasil_distrik"></label>
+          <label>Durasi (jam) <input type="number" name="durasi_jam" min="0" step="0.5"></label>
+        </div>
+        <h3>Pelajaran <small class="muted">satu butir per baris</small></h3>
+        <div class="baris">
+          <label>Yang berhasil <textarea name="berhasil"></textarea></label>
+          <label>Yang menghambat <textarea name="menghambat"></textarea></label>
+          <label>Usulan perubahan kartu/profil <textarea name="usulan"></textarea></label>
+        </div>
+        <label>Diubah oleh (peran, bukan nama) <input name="pengguna" placeholder="mis. analis Diskominfo"></label>
+        <div class="aksi"><button class="utama" type="submit">Simpan</button><button type="button" id="kj-analisis">Simpan &amp; analisis</button><span id="kj-msg" class="muted"></span></div>
+        <div id="kj-hasil"></div>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="/static/lapangan.js?v=1"></script>
+</body>
+</html>

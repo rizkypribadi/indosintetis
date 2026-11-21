@@ -1,0 +1,73 @@
+# R1 Templat kalimat Kartu Respons. Kalimat TETAP (bukan tulisan bebas LLM); angka dan urutan prioritas
+# diisi dari pustaka (R2a) dan kurva keterlambatan (R3).
+#
+# WAJIB ditinjau minimal satu penutur asli dan satu praktisi lapangan sebelum kartu dibagikan.
+# Ubah `ditinjau.id` menjadi true setelah ditinjau, dan isi `peninjau` (peran saja, tanpa nama).
+# Versi Melayu Papua (`mp`) hanya aktif bila `ditinjau.mp: true` dan setiap kalimat punya terjemahan.
+
+ditinjau: {id: false, mp: false}
+peninjau: []                       # mis. ["penutur asli, Serui", "praktisi Diskominfo"]
+kontak_peneliti: "Tim peneliti Indonesia Sintetis (isi alamat surel/telepon kantor tim, bukan nomor pribadi)"
+
+# Jendela waktu di sisi depan, dihitung sejak isu diketahui. Langkah masuk ke jendela pertama yang
+# `batas_maks` >= batas waktu efektifnya (R3): langkah yang manfaatnya habis sebelum jam ke-4 harus dimulai 0–2 jam.
+jendela:
+  - {id: j0, label: "0–2 jam", batas_maks: 4}
+  - {id: j1, label: "2–6 jam", batas_maks: 10}
+  - {id: j2, label: "6–24 jam", batas_maks: 999}
+
+langkah_pertama:
+  id: "Hubungi ketua klasis/pendeta dan kepala kampung di distrik asal isu. Minta mereka menahan penyebaran dan memeriksa kebenaran kabar."
+  mp: null
+
+# Satu kalimat per jenis intervensi. jendela_bawaan dipakai bila belum ada kurva keterlambatan.
+langkah:
+  gereja_adat:
+    jendela_bawaan: j0
+    id: "Minta sinode/klasis dan lembaga adat mengumumkan bahwa kabar itu belum benar: lewat mimbar, grup WA jemaat, dan pertemuan adat."
+    mp: null
+  radio:
+    jendela_bawaan: j1
+    id: "Minta {radio} menyiarkan klarifikasi pada jam dengar pagi, siang, dan malam."
+    mp: null
+  tim_keliling:
+    jendela_bawaan: j1
+    id: "Kirim tim keliling ke kampung tanpa sinyal dan kampung yang paling ramai membicarakan isu."
+    mp: null
+  medsos_resmi:
+    jendela_bawaan: j2
+    id: "Unggah klarifikasi resmi Polres/Diskominfo di Facebook dan grup WA; ulangi bila isu muncul lagi."
+    mp: null
+  penindakan:
+    jendela_bawaan: j2
+    id: "Laporkan akun penyebar ke platform lewat jalur resmi. Jangan menyebut kelompok tertentu sebagai pelaku."
+    mp: null
+
+pantau:
+  id: "Pantau titik kumpul (pasar, balai kampung, pangkalan ojek, pelabuhan) dan laporkan tanda bahaya ke koordinator."
+  mp: null
+
+# Kanal paling ampuh per tipe wilayah: {porsi} = porsi warga yang pertama kali dengar lewat kanal ini.
+kanal:
+  WhatsApp: "Di wilayah {tipe}, isu paling banyak masuk lewat WhatsApp (±{porsi}). Klarifikasi di grup WA keluarga dan jemaat."
+  Facebook: "Di wilayah {tipe}, isu paling banyak masuk lewat Facebook (±{porsi}). Klarifikasi di grup info kota."
+  tatap muka: "Di wilayah {tipe}, isu paling banyak menyebar dari mulut ke mulut (±{porsi}). Utamakan tokoh dan tim tatap muka."
+  radio: "Di wilayah {tipe}, radio menjadi jalur utama (±{porsi})."
+
+# Disusun dari mekanisme model (siaga aktif, provokator, pemulihan akun), lalu ditinjau FGD.
+tanda_bahaya:
+  - "Isu pindah dari grup WA ke pasar, pangkalan ojek, atau tempat ibadah."
+  - "Muncul ajakan \"jaga kampung\", \"periksa orang baru\", atau berkumpul malam."
+  - "Orang mulai berkumpul di titik tertentu (balai kampung, jalan masuk kampung, pelabuhan)."
+  - "Akun baru menyebar ulang kabar yang sama setelah klarifikasi."
+  - "Tokoh setempat ikut meneruskan kabar atau menolak klarifikasi."
+
+jangan:
+  - "Jangan menyebar ulang hoaks dengan maksud membantah (cukup sampaikan yang benar)."
+  - "Jangan memakai pembawa pesan yang kurang dipercaya di wilayah itu."
+  - "Jangan menyebut kelompok, suku, agama, atau asal tertentu sebagai pelaku."
+  - "Jangan menunggu klarifikasi resmi sempurna: kabar sementara dari tokoh tepercaya lebih cepat."
+
+prebunking:
+  id: "Sebelum isu berikutnya: bekali jemaat dan orang tua murid tentang modus kabar bohong ({efek})."
+  mp: null

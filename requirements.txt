@@ -1,0 +1,19 @@
+numpy>=1.26
+scipy>=1.11
+pandas>=2.1
+pyarrow>=14
+pyyaml>=6
+pydantic>=2.5
+openai>=1.30
+tenacity>=8.2
+fastapi>=0.110
+uvicorn[standard]>=0.27
+duckdb>=0.10
+pytest>=8
+httpx>=0.26
+matplotlib>=3.8
+reportlab>=4.0
+
+# opsional, hanya untuk perintah geodata (membaca raster WorldPop)
+tifffile>=2024.1
+imagecodecs>=2024.1

@@ -1,0 +1,31 @@
+# Konfigurasi penyedia LLM untuk agen kunci (FR-07, FR-13, FR-14).
+# Kunci API dibaca dari variabel lingkungan DEEPSEEK_API_KEY, atau dari berkas "LLM API Key.txt"
+# di akar proyek. Jangan menaruh kunci di berkas ini.
+
+penyedia:
+  deepseek:
+    base_url: https://api.deepseek.com
+    model: deepseek-chat
+    env_kunci: DEEPSEEK_API_KEY
+    # Tarif USD per 1 juta token. PERKIRAAN — sesuaikan dengan tarif DeepSeek terbaru.
+    tarif: {input_cache_hit: 0.07, input_cache_miss: 0.27, output: 1.10}
+  sumopod:                       # proxy kompatibel OpenAI yang meneruskan ke model DeepSeek
+    base_url: https://ai.sumopod.com/v1
+    model: deepseek-v4-flash
+    env_kunci: SUMOPOD_API_KEY
+    max_token_keluaran: 2500     # model penalaran: token "berpikir" ikut dihitung sebagai keluaran
+    # Tarif USD per 1 juta token. PERKIRAAN — sesuaikan dengan tarif SumoPod.
+    tarif: {input_cache_hit: 0.07, input_cache_miss: 0.27, output: 1.10}
+  ollama:
+    base_url: http://localhost:11434/v1
+    model: qwen2.5:7b-instruct
+    tarif: {input_cache_hit: 0, input_cache_miss: 0, output: 0}
+  mock:
+    model: mock-aturan-v1
+    tarif: {input_cache_hit: 0, input_cache_miss: 0, output: 0}
+
+batas_biaya_usd_per_skenario: 2.0
+konkurensi: 8
+suhu: 0.7
+max_token_keluaran: 300
+coba_ulang_validasi: 2

@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indonesia Sintetis · Papua</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='9' cy='10' r='5' fill='%23e5484d'/%3E%3Ccircle cx='23' cy='9' r='4' fill='%231fb5a0'/%3E%3Ccircle cx='16' cy='23' r='6' fill='%23a855f7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/static/vendor/maplibre-gl-4.7.1.css">
+<link rel="stylesheet" href="/static/style.css?v=ui3">
+<script>try{var t=localStorage.getItem('tema');if(t)document.documentElement.dataset.theme=t;if(localStorage.getItem('panelCiut')==='1')document.documentElement.classList.add('panel-ciut');}catch(e){}</script>
+<!-- Pustaka JS disimpan lokal (web/vendor) agar dashboard tetap jalan tanpa internet -->
+<script src="/static/vendor/maplibre-gl-4.7.1.js"></script>
+<script src="/static/vendor/deckgl-9.0.38.min.js"></script>
+<script src="/static/vendor/deckgl-extensions-9.0.38.min.js"></script>
+<script src="/static/vendor/echarts-5.5.1.min.js"></script>
+<script src="/static/vendor/js-yaml-4.1.0.min.js"></script>
+</head>
+<body>
+<!-- Ikon garis (gaya Lucide), dipakai lewat <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16" rx="1.2" fill="currentColor" stroke="none"/><rect x="14" y="4" width="4" height="16" rx="1.2" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M8 16v-5"/><path d="M13 16V8"/><path d="M18 16v-9"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 3v4"/><path d="M21 5h-4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2.5"/><path d="m22 8-6 4 6 4z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></symbol>
+    <symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M9 3v18"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H17a3.5 3.5 0 0 0 0-7H7a3.5 3.5 0 0 1 0-7h8.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <button id="btn-panel" class="icon-btn" title="Tampilkan/sembunyikan panel simulasi" aria-label="Panel simulasi"><svg><use href="#i-panel"/></svg></button>
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+    <h1>Indonesia Sintetis</h1>
+    <span class="brand-chip">Papua · Fase 1</span>
+  </div>
+  <div class="grow"></div>
+  <nav class="topnav" aria-label="Alat">
+    <button id="btn-editor" class="ghost"><svg><use href="#i-edit"/></svg><span>Editor skenario</span></button>
+    <button id="btn-mc" class="ghost"><svg><use href="#i-chart"/></svg><span>Monte Carlo</span></button>
+    <button id="btn-ai" class="ghost"><svg><use href="#i-spark"/></svg><span>Laporan AI</span></button>
+    <button id="btn-alur" class="ghost alur-btn" title="Jalankan seluruh alur sampai laporan PDF untuk tim lapangan"><svg><use href="#i-route"/></svg><span>Alur otomatis</span></button>
+    <a class="btn ghost" href="/lapangan#situasi" title="Ruang Situasi: perkiraan dan tindakan dari pustaka skenario, tanpa internet"><svg><use href="#i-spark"/></svg><span>Ruang Situasi</span></a>
+    <button id="btn-kartu" class="ghost" title="Kartu respons cetak per kabupaten (PDF A4)"><svg><use href="#i-image"/></svg><span>Kartu respons</span></button>
+    <a class="btn ghost" href="/lapangan#perencana" title="Perencana, latihan meja, kajian pasca-kejadian"><svg><use href="#i-route"/></svg><span>Alat lapangan</span></a>
+  </nav>
+  <span class="sep" aria-hidden="true"></span>
+  <button id="btn-theme" class="icon-btn" title="Ganti tema terang/gelap" aria-label="Ganti tema"><svg class="moon"><use href="#i-moon"/></svg><svg class="sun"><use href="#i-sun"/></svg></button>
+</header>
+
+<main>
+  <section id="panel" aria-label="Pengaturan simulasi">
+    <div class="panel-scroll">
+      <div class="panel-head">
+        <span class="eyebrow">Simulasi</span>
+        <p class="muted">Pilih skenario dan intervensi, lalu jalankan.</p>
+      </div>
+
+      <div class="field">
+        <label for="sel-sk">Skenario</label>
+        <select id="sel-sk"></select>
+      </div>
+      <div class="field">
+        <label for="sel-iv">Intervensi</label>
+        <select id="sel-iv"></select>
+      </div>
+      <div class="field">
+        <label for="sel-cmp">Bandingkan dengan <span class="opt">opsional</span></label>
+        <select id="sel-cmp"><option value="">—</option></select>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="sel-n">Jumlah agen</label>
+          <select id="sel-n">
+            <option value="10000">10 ribu</option><option value="50000">50 ribu</option>
+            <option value="100000" selected>100 ribu</option><option value="1000000">1 juta</option></select>
+        </div>
+        <div class="field seed">
+          <label for="in-seed">Seed</label>
+          <input id="in-seed" type="number" value="1">
+        </div>
+      </div>
+      <div class="field">
+        <label for="sel-llm">Penalar agen kunci</label>
+        <select id="sel-llm">
+          <option value="abm">Aturan ABM</option><option value="mock">LLM tiruan (mock)</option>
+          <option value="sumopod">DeepSeek via SumoPod</option><option value="deepseek">DeepSeek</option><option value="ollama">Ollama lokal</option></select>
+      </div>
+      <label class="switch" for="chk-save">
+        <input id="chk-save" type="checkbox"><span class="track" aria-hidden="true"></span>
+        <span class="switch-text">Simpan log<small>untuk diputar ulang nanti</small></span>
+      </label>
+
+      <div class="divider"></div>
+
+      <div class="field">
+        <label for="sel-replay"><svg class="lbl-ic"><use href="#i-history"/></svg>Putar ulang log tersimpan</label>
+        <select id="sel-replay" title="Putar ulang log tersimpan"><option value="">Putar ulang log…</option></select>
+      </div>
+    </div>
+    <div class="run-dock">
+      <button id="btn-run" class="primary btn-run">
+        <svg class="i-run"><use href="#i-play"/></svg><svg class="i-stop"><use href="#i-stop"/></svg>
+        <span class="lbl">Jalankan simulasi</span></button>
+    </div>
+  </section>
+
+  <section id="stage" aria-label="Peta jaringan agen di Provinsi Papua">
+    <details id="layers" class="floating">
+      <summary><svg><use href="#i-layers"/></svg><span>Lapisan peta</span><svg class="chev"><use href="#i-chev"/></svg></summary>
+      <div class="floating-body">
+        <label for="sel-base" class="mini-label">Peta dasar</label>
+        <select id="sel-base">
+          <option value="satelit">Satelit + relief</option>
+          <option value="topo">Topografi</option>
+          <option value="kanvas">Kanvas polos</option>
+        </select>
+        <div class="check-list">
+          <label class="check"><input type="checkbox" id="ly-label" checked> Nama tempat</label>
+          <label class="check"><input type="checkbox" id="ly-batas" checked> Batas kabupaten</label>
+          <label class="check"><input type="checkbox" id="ly-agg" checked> Agregasi saat zoom</label>
+          <label class="check"><input type="checkbox" id="ly-edge" checked> Denyut transmisi</label>
+          <label class="check"><input type="checkbox" id="ly-sig"> Peta sinyal</label>
+          <label class="check"><input type="checkbox" id="ly-risk" checked> Risiko distrik</label>
+          <label class="check"><input type="checkbox" id="ly-radio" checked> Gelombang radio</label>
+        </div>
+      </div>
+    </details>
+    <details class="floating legend-box" open>
+      <summary><svg><use href="#i-key"/></svg><span>Legenda</span><svg class="chev"><use href="#i-chev"/></svg></summary>
+      <div id="legend" class="floating-body"></div>
+    </details>
+  </section>
+
+  <aside>
+    <div class="tabs" role="tablist">
+      <button data-tab="feed" class="on">Peristiwa</button>
+      <button data-tab="agen">Agen</button>
+      <button data-tab="info">Dunia</button>
+    </div>
+    <div class="pane on" id="pane-feed">
+      <div class="empty">
+        <div class="empty-ic"><svg><use href="#i-play"/></svg></div>
+        <p><b>Belum ada peristiwa</b></p>
+        <p class="muted">Jalankan simulasi untuk melihat peristiwa. Klik keputusan agen kunci untuk melihat jawaban LLM mentah.</p>
+      </div>
+    </div>
+    <div class="pane" id="pane-agen">
+      <div class="empty">
+        <div class="empty-ic"><svg><use href="#i-key"/></svg></div>
+        <p><b>Belum ada agen dipilih</b></p>
+        <p class="muted">Klik agen di peta atau peristiwa agen kunci.</p>
+      </div>
+    </div>
+    <div class="pane" id="pane-info"></div>
+  </aside>
+</main>
+
+<footer>
+  <div id="timeline-ctl">
+    <button id="btn-play" class="play-btn" title="Putar/jeda (Spasi)" aria-label="Putar atau jeda"><svg class="i-play"><use href="#i-play"/></svg><svg class="i-pause"><use href="#i-pause"/></svg></button>
+    <select id="sel-speed" title="Kecepatan putar"><option value="2">2 langkah/dtk</option><option value="4" selected>4 langkah/dtk</option><option value="8">8 langkah/dtk</option><option value="16">16 langkah/dtk</option></select>
+    <input id="scrub" type="range" min="0" max="0" value="0" aria-label="Linimasa">
+    <div class="tl-actions">
+      <button id="btn-png" class="ghost sm" title="Ekspor PNG resolusi tinggi"><svg><use href="#i-image"/></svg><span>PNG</span></button>
+      <button id="btn-video" class="ghost sm" title="Rekam video dari awal sampai akhir"><svg><use href="#i-video"/></svg><span class="lbl">Video</span></button>
+    </div>
+  </div>
+  <div class="status-wrap"><span class="dot" aria-hidden="true"></span><span id="status-line">Memuat dunia…</span></div>
+  <div id="chart"></div>
+</footer>
+
+<dialog id="dlg-editor" class="wide">
+  <div class="dlg-head">
+    <div><h2>Editor skenario</h2><p class="muted">Susun skenario dengan bahasa bebas, lalu periksa dan simpan.</p></div>
+  </div>
+  <div class="dlg-body">
+    <div class="ai-box">
+      <label for="ed-desk"><svg class="lbl-ic"><use href="#i-spark"/></svg>Tulis skenario dengan bahasa bebas: isu apa, di mana, lewat kanal apa, kapan, siapa yang paling terdampak</label>
+      <textarea id="ed-desk" placeholder="Contoh: Hoaks bahwa beras bantuan di Wamena dicampur plastik, beredar Senin pagi lewat grup WA keluarga dan jemaat, lalu diunggah akun FB lokal sore harinya. Ibu-ibu paling cemas. Simulasikan 3 hari."></textarea>
+      <div class="ctl"><button id="ed-ai" class="primary">Susun dengan AI</button><button id="ed-blank">Mulai dari kosong</button>
+        <span id="ed-ai-msg" class="muted"></span></div>
+    </div>
+    <div class="grid2">
+      <div class="form" id="ed-form"></div>
+      <div><div class="mini-label">Pratinjau YAML</div><pre id="ed-yaml" class="code"></pre></div>
+    </div>
+  </div>
+  <div class="dlg-actions">
+    <span id="ed-msg" class="muted" style="margin-right:auto"></span>
+    <button id="ed-close">Tutup</button><button id="ed-save" class="primary">Simpan skenario</button>
+  </div>
+</dialog>
+
+<dialog id="dlg-mc" class="wide">
+  <div class="dlg-head">
+    <div><h2>Hasil Monte Carlo per tipe wilayah</h2><p class="muted">Bandingkan efek tiap intervensi terhadap baseline, lengkap dengan interval kepercayaan.</p></div>
+  </div>
+  <div class="dlg-body">
+    <div class="toolbar">
+      <div class="ctl">
+        <select id="mc-sel"></select>
+        <a id="mc-report" class="btn" target="_blank" rel="noopener">Laporan lengkap</a>
+        <button id="mc-ai"><svg><use href="#i-spark"/></svg>Laporan AI</button>
+      </div>
+      <div class="ctl run-mc">
+        <label class="inline">Putaran <input id="mc-n" type="number" value="50" style="width:72px"></label>
+        <label class="inline">Agen <select id="mc-agen"><option value="20000">20 ribu</option><option value="100000" selected>100 ribu</option></select></label>
+        <label class="inline">Tabel beku <input id="mc-beku" type="text" placeholder="(kosong = aturan ABM)" style="width:170px"></label>
+        <button id="mc-start" class="primary">Mulai Monte Carlo</button>
+        <button id="mc-ket-start" title="Geser waktu C, D, F, K dari 0 sampai 24 jam sejak isu diketahui">Hitung harga keterlambatan</button>
+      </div>
+    </div>
+    <div id="mc-status" class="muted"></div>
+    <div id="mc-chart"></div>
+    <div id="mc-body"></div>
+    <section id="mc-ket" hidden>
+      <h4>Harga keterlambatan</h4>
+      <p class="muted">Beban siaga bila tindakan dimulai sekian jam <b>sejak isu diketahui petugas</b>. Pita = IK 95% (seed berpasangan), garis putus = batas waktu efektif (manfaat &lt; 25% manfaat jam ke-0). Bentuk kurva lebih bisa dipercaya daripada angka absolutnya.</p>
+      <div id="mc-ket-chart" style="height:300px"></div>
+      <ul id="mc-ket-kal" class="rec"></ul>
+    </section>
+  </div>
+  <div class="dlg-actions"><button id="mc-close">Tutup</button></div>
+</dialog>
+
+<dialog id="dlg-ai">
+  <div class="dlg-head">
+    <div><h2>Laporan AI dari hasil simulasi</h2><p class="muted">Ringkasan naratif dan rekomendasi, siap diekspor ke PDF.</p></div>
+  </div>
+  <div class="dlg-body">
+    <div class="form">
+      <label for="ai-src">Sumber hasil</label><select id="ai-src"></select>
+      <label for="ai-llm">Model</label><select id="ai-llm">
+        <option value="sumopod">DeepSeek via SumoPod</option><option value="deepseek">DeepSeek</option>
+        <option value="ollama">Ollama lokal</option><option value="mock">Tanpa LLM (mock)</option></select>
+      <label for="ai-fokus">Fokus <span class="opt">opsional</span></label><textarea id="ai-fokus" placeholder="Mis. tekankan wilayah pedalaman tanpa sinyal; tulis untuk Diskominfo kabupaten"></textarea>
+    </div>
+    <div class="ctl" style="margin-top:16px"><button id="ai-go" class="primary"><svg><use href="#i-spark"/></svg>Buat laporan</button>
+      <span id="ai-msg" class="muted"></span></div>
+    <article id="ai-out" class="report"></article>
+  </div>
+  <div class="dlg-actions"><button id="ai-copy" disabled>Salin teks</button><button id="ai-dl" disabled>Unduh .md</button><span style="margin-right:auto"></span><button id="ai-close">Tutup</button><button id="ai-pdf" class="primary" disabled title="Aktif setelah laporan selesai dibuat">Buka PDF</button></div>
+</dialog>
+
+<dialog id="dlg-alur">
+  <div class="dlg-head">
+    <div><h2>Alur otomatis untuk tim lapangan</h2><p class="muted">Satu tombol: eksplorasi, bekukan keputusan tokoh, Monte Carlo, putaran contoh di peta, lalu laporan PDF berbahasa sederhana.</p></div>
+  </div>
+  <div class="dlg-body">
+    <div class="form" id="alur-form">
+      <label for="al-sk">Skenario</label><select id="al-sk"></select>
+      <label for="al-llm">Penalar tokoh kunci</label><select id="al-llm">
+        <option value="abm">Aturan ABM (cepat, gratis)</option><option value="mock">LLM tiruan (mock, uji)</option>
+        <option value="sumopod">DeepSeek via SumoPod</option><option value="deepseek">DeepSeek</option><option value="ollama">Ollama lokal</option></select>
+      <label for="al-pilot">Putaran percontohan LLM</label><span><input id="al-pilot" type="number" value="2" min="1" max="10" style="width:72px"> per intervensi <small>(hanya bila memakai LLM)</small></span>
+      <label for="al-n">Putaran Monte Carlo</label><span><input id="al-n" type="number" value="50" min="3" max="1000" style="width:72px"> per intervensi</span>
+      <label for="al-agen">Jumlah agen</label><select id="al-agen"><option value="20000">20 ribu (cepat)</option><option value="100000" selected>100 ribu</option></select>
+      <label for="al-ai">Penulis laporan</label><select id="al-ai">
+        <option value="sumopod">DeepSeek via SumoPod</option><option value="deepseek">DeepSeek</option>
+        <option value="ollama">Ollama lokal</option><option value="mock">Tanpa AI (mock)</option></select>
+      <label for="al-kurva">Harga keterlambatan</label><label class="check"><input type="checkbox" id="al-kurva"> Hitung kurva "kapan harus bertindak" (menambah waktu ±50%)</label>
+      <label for="al-fokus">Fokus <span class="opt">opsional</span></label><textarea id="al-fokus" placeholder="Mis. untuk Diskominfo dan tokoh gereja di Jayawijaya; tekankan kampung tanpa sinyal"></textarea>
+    </div>
+    <ol id="al-steps" class="steps" hidden></ol>
+    <div id="al-log" class="muted mono-log"></div>
+    <div id="al-hasil" class="alur-hasil" hidden></div>
+  </div>
+  <div class="dlg-actions"><span id="al-msg" class="muted" style="margin-right:auto"></span><button id="al-close">Tutup</button><button id="al-go" class="primary"><svg><use href="#i-route"/></svg>Jalankan alur</button></div>
+</dialog>
+
+<dialog id="dlg-kartu">
+  <div class="dlg-head">
+    <div><h2>Kartu respons per kabupaten</h2><p class="muted">Satu lembar A4 bolak-balik, hitam-putih, untuk dibawa ke lapangan. Angka dari pustaka skenario; kalimat dari templat yang ditinjau.</p></div>
+  </div>
+  <div class="dlg-body">
+    <p id="kartu-status" class="muted"></p>
+    <ul id="kartu-list" class="kartu-list"></ul>
+  </div>
+  <div class="dlg-actions"><button id="kartu-close">Tutup</button></div>
+</dialog>
+
+<script src="/static/app.js?v=ui4"></script>
+</body>
+</html>

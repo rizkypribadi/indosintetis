@@ -1,0 +1,195 @@
+{
+  "dibangun": "2026-11-19",
+  "sumber": {
+    "wilayah": "Kepmendagri No 300.2.2-2430 Tahun 2025 via github.com/cahyadsn/wilayah (MIT)",
+    "batas": "github.com/cahyadsn/wilayah_boundaries (MIT), poligon kabupaten/distrik/kampung",
+    "penduduk_kabupaten": "Dukcapil, Kepmendagri No 300.2.2-2138 Tahun 2025 (wilayah_penduduk.sql)",
+    "sebaran_penduduk": "WorldPop 2020 constrained 100 m, UN-adjusted (CC BY 4.0)",
+    "sinyal": "Ookla Open Data, ubin seluler 4 kuartal terakhir (CC BY-NC-SA 4.0)",
+    "elevasi": "AWS Terrain Tiles / Terrarium z9 (SRTM dkk., domain publik)"
+  },
+  "aturan": {
+    "penduduk": "total distrik dari data/penduduk_distrik.csv (BPS) bila diisi; selain itu total kabupaten Dukcapil dibagi ke kampung sebanding penduduk WorldPop di dalam poligon kampung; kampung tanpa permukiman WorldPop diberi bobot 25% median kampung sekabupaten",
+    "titik_kampung": "piksel terpadat (jendela 500 m) di dalam poligon kampung; bila WorldPop kosong, titik place OSM di dalam poligon (nama cocok didahulukan); bila tidak ada, titik tengah poligon",
+    "sinyal": "4g bila ada ubin Ookla ≥ 5.0 Mbps dalam 2.0 km dari titik kampung; lemah bila ada uji tetapi lebih lambat; tidak bila tidak ada uji sama sekali",
+    "tipe_kampung": "kota = kelurahan, atau kampung Kota Jayapura dengan kepadatan ≥ 250/km²; kepulauan = kab ['biak_numfor', 'kep_yapen', 'supiori']; pesisir = titik kampung ≤ 3.0 km dari laut, atau (titik bukan dari WorldPop dan tepi poligon ≤ 0,5 km dari laut); sisanya pedalaman",
+    "tipe_distrik": "tipe kampung dengan penduduk terbanyak di distrik itu",
+    "pusat_distrik": "kampung berpenduduk terbanyak di distrik (bukan ibu kota resmi)"
+  },
+  "pemeriksaan": {
+    "kampung_resmi": 999,
+    "kampung_berpoligon": 999,
+    "kampung_resmi_tanpa_poligon": [],
+    "penduduk_worldpop_tertangkap_poligon": 1119426.0
+  },
+  "kabupaten": [
+    {
+      "kabupaten_id": "kota_jayapura",
+      "distrik": 5,
+      "kampung": 39,
+      "penduduk": 404801,
+      "sinyal_4g": 0.95,
+      "sinyal_lemah": 0.03,
+      "sinyal_perkiraan_lama": 0.95,
+      "tipe_distrik": {
+        "kota": 5
+      },
+      "kampung_tanpa_permukiman_worldpop": 2,
+      "titik": {
+        "worldpop": 37,
+        "osm": 2
+      }
+    },
+    {
+      "kabupaten_id": "kab_jayapura",
+      "distrik": 19,
+      "kampung": 144,
+      "penduduk": 203784,
+      "sinyal_4g": 0.61,
+      "sinyal_lemah": 0.12,
+      "sinyal_perkiraan_lama": 0.75,
+      "tipe_distrik": {
+        "pedalaman": 15,
+        "pesisir": 3,
+        "kota": 1
+      },
+      "kampung_tanpa_permukiman_worldpop": 66,
+      "titik": {
+        "worldpop": 84,
+        "osm": 48,
+        "tengah_poligon": 12
+      }
+    },
+    {
+      "kabupaten_id": "keerom",
+      "distrik": 11,
+      "kampung": 91,
+      "penduduk": 74346,
+      "sinyal_4g": 0.38,
+      "sinyal_lemah": 0.15,
+      "sinyal_perkiraan_lama": 0.5,
+      "tipe_distrik": {
+        "pedalaman": 11
+      },
+      "kampung_tanpa_permukiman_worldpop": 60,
+      "titik": {
+        "worldpop": 38,
+        "tengah_poligon": 37,
+        "osm": 16
+      }
+    },
+    {
+      "kabupaten_id": "sarmi",
+      "distrik": 10,
+      "kampung": 94,
+      "penduduk": 45100,
+      "sinyal_4g": 0.32,
+      "sinyal_lemah": 0.12,
+      "sinyal_perkiraan_lama": 0.3,
+      "tipe_distrik": {
+        "pesisir": 5,
+        "pedalaman": 4,
+        "kota": 1
+      },
+      "kampung_tanpa_permukiman_worldpop": 45,
+      "titik": {
+        "worldpop": 53,
+        "tengah_poligon": 35,
+        "osm": 6
+      }
+    },
+    {
+      "kabupaten_id": "mamberamo_raya",
+      "distrik": 8,
+      "kampung": 60,
+      "penduduk": 41029,
+      "sinyal_4g": 0.05,
+      "sinyal_lemah": 0.08,
+      "sinyal_perkiraan_lama": 0.15,
+      "tipe_distrik": {
+        "pedalaman": 8
+      },
+      "kampung_tanpa_permukiman_worldpop": 26,
+      "titik": {
+        "worldpop": 37,
+        "osm": 12,
+        "tengah_poligon": 11
+      }
+    },
+    {
+      "kabupaten_id": "waropen",
+      "distrik": 11,
+      "kampung": 100,
+      "penduduk": 38812,
+      "sinyal_4g": 0.34,
+      "sinyal_lemah": 0.02,
+      "sinyal_perkiraan_lama": 0.25,
+      "tipe_distrik": {
+        "pedalaman": 9,
+        "pesisir": 2
+      },
+      "kampung_tanpa_permukiman_worldpop": 69,
+      "titik": {
+        "tengah_poligon": 54,
+        "worldpop": 42,
+        "osm": 4
+      }
+    },
+    {
+      "kabupaten_id": "kep_yapen",
+      "distrik": 17,
+      "kampung": 165,
+      "penduduk": 116180,
+      "sinyal_4g": 0.45,
+      "sinyal_lemah": 0.22,
+      "sinyal_perkiraan_lama": 0.5,
+      "tipe_distrik": {
+        "kepulauan": 16,
+        "kota": 1
+      },
+      "kampung_tanpa_permukiman_worldpop": 82,
+      "titik": {
+        "worldpop": 96,
+        "tengah_poligon": 35,
+        "osm": 34
+      }
+    },
+    {
+      "kabupaten_id": "biak_numfor",
+      "distrik": 19,
+      "kampung": 268,
+      "penduduk": 150371,
+      "sinyal_4g": 0.72,
+      "sinyal_lemah": 0.1,
+      "sinyal_perkiraan_lama": 0.8,
+      "tipe_distrik": {
+        "kepulauan": 17,
+        "kota": 2
+      },
+      "kampung_tanpa_permukiman_worldpop": 112,
+      "titik": {
+        "worldpop": 180,
+        "osm": 46,
+        "tengah_poligon": 42
+      }
+    },
+    {
+      "kabupaten_id": "supiori",
+      "distrik": 5,
+      "kampung": 38,
+      "penduduk": 27967,
+      "sinyal_4g": 0.47,
+      "sinyal_lemah": 0.42,
+      "sinyal_perkiraan_lama": 0.25,
+      "tipe_distrik": {
+        "kepulauan": 5
+      },
+      "kampung_tanpa_permukiman_worldpop": 6,
+      "titik": {
+        "worldpop": 34,
+        "osm": 3,
+        "tengah_poligon": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# R1 Pohon kontak per PERAN untuk Kartu Respons. TIDAK ADA nama orang atau nomor telepon di sini:
+# nama dan nomor ditulis tangan di kartu cetak, sehingga data pribadi tidak pernah tersimpan di sistem.
+#
+# {radio} diganti stasiun radio yang menjangkau kabupaten (config/papua.yaml).
+# Kabupaten boleh menimpa daftar bawaan dengan kunci id kabupaten.
+
+bawaan:
+  - peran: Kepala Diskominfo kabupaten (koordinator)
+    menghubungi: ["Ketua klasis gereja", "Ketua lembaga adat", "Kapolres / Kasat Binmas", "Penyiar {radio}"]
+  - peran: Ketua klasis gereja
+    menghubungi: ["Pendeta jemaat di distrik asal isu", "Pendeta jemaat di distrik tetangga"]
+  - peran: Ketua lembaga adat
+    menghubungi: ["Kepala suku / ondoafi di distrik asal isu"]
+  - peran: Kapolres / Kasat Binmas
+    menghubungi: ["Bhabinkamtibmas distrik asal isu", "Bhabinkamtibmas distrik tetangga"]
+  - peran: Kepala distrik
+    menghubungi: ["Kepala kampung di distrik asal isu"]
+  - peran: "Penyiar {radio}"
+    menghubungi: ["Radio komunitas / pengeras suara gereja"]
+  - peran: Koordinator relawan / tim keliling
+    menghubungi: ["Relawan di kampung tanpa sinyal"]
+
+# Contoh penimpaan per kabupaten (aktifkan bila sudah disepakati mitra):
+# mamberamo_raya:
+#   - peran: Kepala Diskominfo kabupaten (koordinator)
+#     menghubungi: ["Ketua klasis gereja", "Penyiar Radio komunitas Mamberamo", "Koordinator tim keliling"]

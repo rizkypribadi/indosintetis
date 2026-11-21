@@ -1,0 +1,90 @@
+# Dibuat dari editor skenario dashboard
+nama: Kabar Susulan Penembakan di Keerom
+kode: kabar_susulan_keerom
+mulai:
+  hari: Kamis
+  jam: 16
+langkah_menit: 30
+durasi_jam: 72
+isu:
+  teks: So ada tiga pegawai pertanian yang dong tembak. Dengar-dengar pelaku su masuk
+    distrik kota. Dong punya daftar nama pegawai kantor dan guru yang jadi sasaran
+    berikutnya. Katanya besok pagi dong mau serang kantor distrik dan sekolah. Bapa
+    mama jangan antar anak ke sekolah dulu, pegawai jangan pi kantor. Pemuda tolong
+    jaga di pintu masuk kampung malam ini, tahan orang tak dikenal atau kendaraan
+    asing yang lewat. Jang sampai lengah e!
+  emosi: takut dan marah
+  intensitas_emosi: 0.9
+  faktor_identitas:
+    orang_tua_anak_sekolah: 2.5
+    pengguna_hp: 1.8
+    pemuda: 1.5
+  ajakan_tindakan: true
+  alasan_percaya: karena takut keluarga dan anak jadi korban berikutnya
+tanam:
+- t_jam: 0
+  kanal: wa
+  kabupaten: kota_jayapura
+  jenis_grup: keluarga
+  jumlah_grup: 5
+- t_jam: 0
+  kanal: wa
+  kabupaten: kota_jayapura
+  jenis_grup: info
+  jumlah_grup: 3
+- t_jam: 3
+  kanal: fb
+  kabupaten: kota_jayapura
+  jenis_grup: info
+  jumlah_grup: 2
+- t_jam: 5
+  kanal: tatap_muka
+  kabupaten: kota_jayapura
+  jumlah: 20
+komentar_contoh:
+- Tadi pagi sa dengar dari ojek, katanya pelaku sudah di kota. Sa takut anak sa pi
+  sekolah.
+- Kitorang pemuda sudah jaga di pintu masuk kampung. Ada kendaraan asing lewat, kitorang
+  tahan.
+- Kantor distrik tutup? Sa pegawai, sa tra brani pi kantor besok.
+- Itu foto korban hari ini? Sa lihat di FB, tapi kayaknya foto lama.
+catatan: 'Skenario fiktif untuk simulasi. Latar belakang penembakan tiga pegawai Dinas
+  Pertanian dianggap fakta yang dikonfirmasi aparat, tetapi isu yang disimulasikan
+  adalah kabar susulan yang tidak terverifikasi. Semua tokoh dan detail fiktif. Tidak
+  menyebut suku, agama, atau kelompok tertentu sebagai pelaku atau sasaran; ajakan
+  menahan orang memakai ''orang tak dikenal''. Wilayah yang dipilih adalah Kabupaten
+  Keerom karena disebut pengguna dan ada dalam daftar. Distrik tidak dispesifikasikan,
+  jadi dipilih ''Keerom 01'' sebagai distrik ibu kota kabupaten. Hari mulai Kamis
+  jam 16 sesuai deskripsi. Asumsi: grup WhatsApp keluarga dan grup pegawai kantor
+  masing-masing 5 dan 3 grup; 2 akun Facebook lokal mengunggah ulang pada T+3 jam;
+  penyebaran tatap muka di pangkalan ojek dan kios pada T+5 jam dengan 20 orang. Intensitas
+  emosi tinggi (0.9) karena pesan menakut-nakuti dan mengajak bertindak. Faktor identitas
+  diberikan untuk orang tua anak sekolah (2.5), pengguna HP (1.8), dan pemuda (1.5)
+  sebagai kelompok paling rentan terpengaruh.'
+deskripsi: 'Skenario berdasarkan kejadian nyata, dengan tokoh dan detail fiktif. Penembakan
+  tiga pegawai Dinas Pertanian oleh KKB adalah FAKTA yang sudah dikonfirmasi aparat;
+  itu latar belakang, bukan isu yang disimulasikan. Yang disimulasikan adalah kabar
+  susulan yang TIDAK terverifikasi dan beredar sesudahnya di Kabupaten Keerom: katanya
+  pelaku sudah masuk ke distrik kota, punya daftar nama pegawai kantor dan guru yang
+  jadi sasaran berikutnya, dan akan menyerang kantor distrik serta sekolah besok pagi.
+  Pesan meminta warga tidak ke kantor atau mengantar anak ke sekolah, dan mengajak
+  pemuda berjaga di pintu masuk kampung malam ini serta menahan orang tak dikenal
+  atau kendaraan asing yang lewat.
+
+
+  Teks isu harus berbentuk pesan berantai yang memakai kejadian nyata sebagai pembuka
+  ("so ada tiga pegawai pertanian yang dong tembak") lalu menambahkan klaim susulan
+  yang belum jelas sumbernya.
+
+
+  Kabar susulan mulai beredar Kamis jam 16 di beberapa grup WhatsApp keluarga dan
+  grup pegawai kantor di distrik ibu kota Keerom. Sekitar 3 jam kemudian ada 2 akun
+  Facebook lokal yang mengunggah ulang foto lama dengan keterangan "korban hari ini".
+  Malamnya kabar juga menyebar dari mulut ke mulut di pangkalan ojek dan kios. Yang
+  paling cemas adalah pegawai kantor, orang tua murid, dan pemuda kampung. Intensitas
+  emosinya tinggi (takut dan marah). Simulasikan 3 hari.
+
+
+  Jangan menyebut suku, agama, atau kelompok warga tertentu sebagai pelaku atau sasaran;
+  untuk ajakan menahan orang, sebut saja "orang tak dikenal". Tanpa nama korban atau
+  orang sungguhan.'

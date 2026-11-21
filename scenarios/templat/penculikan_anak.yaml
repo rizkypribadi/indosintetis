@@ -1,0 +1,12 @@
+# Templat jenis isu untuk pustaka skenario (R2a). Teks GENERIK: tanpa nama orang, akun, atau kelompok etnis.
+# {lokasi} diganti nama kabupaten asal isu. Teks hanya dipakai prompt agen kunci LLM; angka simulasi
+# ditentukan intensitas_emosi, faktor_identitas, dan ajakan_tindakan.
+jenis: penculikan_anak
+nama: Isu penculikan anak
+isu:
+  teks: "Hati-hati e! Ada orang tak dikenal culik anak sekolah di {lokasi}. Su ada anak hilang. Sebar ke keluarga semua!"
+  emosi: takut
+  intensitas_emosi: 0.9
+  faktor_identitas: {orang_tua_anak_sekolah: 1.5}
+  alasan_percaya: karena takut anak-anak celaka
+ajakan_teks: " Bapa-bapa, ayo jaga sekolah dan jalan masuk kampung!"

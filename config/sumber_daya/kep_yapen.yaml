@@ -1,0 +1,24 @@
+# R4 Profil sumber daya "apa yang kita punya" untuk Perencana intervensi. CONTOH: ganti dengan isian tim.
+# Semua jam dihitung SEJAK ISU DIKETAHUI petugas. Tidak ada nama orang: hanya jumlah dan peran.
+kabupaten: kep_yapen
+batas_waktu_jam: 12            # jam paling lambat semua langkah harus dimulai
+
+tokoh:                         # pendeta / tokoh adat yang bisa dihubungi
+  - {jumlah: 12, jam_paling_cepat: 1}                              # seluruh kabupaten
+  # - {distrik: [Yapen Selatan], jumlah: 4, jam_paling_cepat: 0.5} # atau per distrik
+
+radio:                         # stasiun dari config/papua.yaml
+  - {stasiun: rri_serui, jam_paling_cepat: 2, durasi_jam: 24}
+
+medsos: {ada: true, jangkauan: 0.4, jam_paling_cepat: 1}
+
+tim_keliling: {orang: 6, kampung_per_jam: 0.5, jam_paling_cepat: 2, durasi_jam: 24}
+                               # tambahkan distrik: [..] untuk membatasi distrik yang bisa dijangkau
+
+tanpa_sinyal: []               # distrik yang SAAT INI tanpa sinyal (mengganti peta sinyal), mis. [Yapen Barat]
+
+kepercayaan:                   # kepercayaan warga terhadap pembawa pesan: rendah | sedang | tinggi (dari FGD)
+  pemerintah: sedang           # akun resmi & radio pemerintah
+  gereja: tinggi
+  adat: tinggi
+  tim_lapangan: sedang

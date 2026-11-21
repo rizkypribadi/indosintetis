@@ -1,0 +1,141 @@
+# Konfigurasi wilayah Fase 1: Provinsi Papua (pascapemekaran 2022).
+#
+# PERHATIAN: angka di bawah adalah PERKIRAAN AWAL untuk prototipe.
+#   - penduduk   : Sensus Penduduk 2020 (BPS), dibulatkan. Ganti dengan proyeksi terbaru.
+#   - sinyal     : proporsi kampung bersinyal 4G/internet. Perkiraan; WAJIB diganti data Podes.
+#                  sinyal_lemah (opsional, default 0.4) = porsi kampung sisanya yang bersinyal lemah.
+#   - distrik    : jumlah distrik & kampung perkiraan; koordinat kampung dibangkitkan sintetis
+#                  di sekitar titik pusat bila berkas data/kampung.csv belum tersedia.
+#   - pemicu     : intensitas kehadiran pemicu (orang tak dikenal, kendaraan asing) per tipe wilayah.
+#
+# Tipe wilayah dipakai untuk analisis (FR-10): kota | pesisir | pedalaman | kepulauan.
+
+provinsi: Papua
+ibu_kota: Jayapura
+
+tipe_wilayah:
+  kota:      {pemicu: 0.60, literasi: 0.55, hp: 0.85, pasar_per_minggu: 6}
+  pesisir:   {pemicu: 0.30, literasi: 0.30, hp: 0.55, pasar_per_minggu: 2}
+  pedalaman: {pemicu: 0.25, literasi: 0.22, hp: 0.45, pasar_per_minggu: 2}
+  kepulauan: {pemicu: 0.30, literasi: 0.33, hp: 0.60, pasar_per_minggu: 3}
+
+kabupaten:
+  - id: kota_jayapura
+    kode: '91.71'                # kode wilayah Kepmendagri
+    nama: Kota Jayapura
+    penduduk: 398478
+    pusat: [140.70, -2.56]      # [lon, lat]
+    sebaran: 0.07               # simpangan sebaran kampung (derajat)
+    sinyal: 0.95
+    distrik: 5
+    kampung: 39
+    tipe: {kota: 1.0}
+  - id: kab_jayapura
+    kode: '91.03'                # kode wilayah Kepmendagri
+    nama: Kab. Jayapura
+    penduduk: 166171
+    pusat: [140.25, -2.70]
+    sebaran: 0.30
+    sinyal: 0.75
+    distrik: 19
+    kampung: 144
+    tipe: {kota: 0.35, pedalaman: 0.65}
+    distrik_kota: [Sentani]     # distrik pertama diberi nama ini (titik tanam skenario)
+  - id: keerom
+    kode: '91.11'                # kode wilayah Kepmendagri
+    nama: Keerom
+    penduduk: 61623
+    pusat: [140.75, -3.15]
+    sebaran: 0.22
+    sinyal: 0.50
+    distrik: 11
+    kampung: 91
+    tipe: {pedalaman: 1.0}
+  - id: sarmi
+    kode: '91.10'                # kode wilayah Kepmendagri
+    nama: Sarmi
+    penduduk: 41515
+    pusat: [138.95, -2.25]
+    sebaran: 0.35
+    sinyal: 0.30
+    distrik: 10
+    kampung: 94
+    tipe: {pesisir: 1.0}
+  - id: mamberamo_raya
+    kode: '91.20'                # kode wilayah Kepmendagri
+    nama: Mamberamo Raya
+    penduduk: 36483
+    pusat: [137.95, -2.55]
+    sebaran: 0.40
+    sinyal: 0.15
+    distrik: 8
+    kampung: 59
+    tipe: {pedalaman: 1.0}
+  - id: waropen
+    kode: '91.15'                # kode wilayah Kepmendagri
+    nama: Waropen
+    penduduk: 33943
+    pusat: [136.65, -2.35]
+    sebaran: 0.22
+    sinyal: 0.25
+    distrik: 11
+    kampung: 100
+    tipe: {pesisir: 1.0}
+  - id: kep_yapen
+    kode: '91.05'                # kode wilayah Kepmendagri
+    nama: Kepulauan Yapen
+    penduduk: 112676
+    pusat: [136.20, -1.80]
+    sebaran: 0.15
+    sinyal: 0.50
+    distrik: 16
+    kampung: 165
+    tipe: {kepulauan: 1.0}
+    distrik_kota: [Serui]
+  - id: biak_numfor
+    kode: '91.06'                # kode wilayah Kepmendagri
+    nama: Biak Numfor
+    penduduk: 134650
+    pusat: [136.05, -1.05]
+    sebaran: 0.13
+    sinyal: 0.80
+    distrik: 19
+    kampung: 257
+    tipe: {kepulauan: 1.0}
+    distrik_kota: [Biak Kota]
+  - id: supiori
+    kode: '91.19'                # kode wilayah Kepmendagri
+    nama: Supiori
+    penduduk: 22547
+    pusat: [135.65, -0.75]
+    sebaran: 0.09
+    sinyal: 0.25
+    distrik: 5
+    kampung: 38
+    tipe: {kepulauan: 1.0}
+
+# Nama distrik lama di skenario → nama distrik resmi (dipakai bila data/kampung.csv berisi geografi nyata).
+# Nama sintetis "<Kabupaten> NN" otomatis dipetakan ke distrik ke-NN menurut penduduk.
+alias_distrik:
+  kep_yapen: {Serui: Yapen Selatan}
+  biak_numfor: {Biak: Biak Kota}
+
+# Ikatan antarwilayah (mobilitas kampung-kota & antarpulau) untuk tatap muka dan grup WA keluarga.
+# Nilai = bobot relatif tujuan perantau/kerabat dari kabupaten asal.
+ikatan:
+  kota_jayapura: {kab_jayapura: 3, keerom: 1, kep_yapen: 1, biak_numfor: 1, sarmi: 0.5}
+  kab_jayapura:  {kota_jayapura: 4, keerom: 1, sarmi: 0.5}
+  keerom:        {kota_jayapura: 3, kab_jayapura: 2}
+  sarmi:         {kota_jayapura: 2, kab_jayapura: 2, mamberamo_raya: 1}
+  mamberamo_raya: {sarmi: 2, kota_jayapura: 1, waropen: 1}
+  waropen:       {kep_yapen: 3, kota_jayapura: 1, biak_numfor: 1}
+  kep_yapen:     {waropen: 2, biak_numfor: 2, kota_jayapura: 2}
+  biak_numfor:   {supiori: 2, kep_yapen: 2, kota_jayapura: 2}
+  supiori:       {biak_numfor: 4, kota_jayapura: 0.5}
+
+# Stasiun radio (RRI & radio komunitas). Jangkauan = kabupaten yang dicakup.
+radio:
+  - {id: rri_jayapura, nama: RRI Jayapura, jangkauan: [kota_jayapura, kab_jayapura, keerom, sarmi], kepercayaan: 0.75}
+  - {id: rri_biak, nama: RRI Biak, jangkauan: [biak_numfor, supiori, kep_yapen], kepercayaan: 0.75}
+  - {id: rri_serui, nama: RRI Serui, jangkauan: [kep_yapen, waropen], kepercayaan: 0.75}
+  - {id: komunitas_mamberamo, nama: Radio komunitas Mamberamo, jangkauan: [mamberamo_raya, sarmi], kepercayaan: 0.8}

@@ -1,0 +1,26 @@
+# R5 Skrip suntikan latihan meja (CONTOH). Skenario FIKTIF; nyatakan begitu di awal sesi.
+# Cakupan: hoaks pemicu kekerasan terhadap warga sipil. Jangan dipakai untuk merancang operasi terhadap
+# kelompok tertentu atau menekan ekspresi politik. Tanpa nama orang atau akun nyata.
+#
+# jam  : jam simulasi (sejak isu pertama beredar) saat suntikan muncul otomatis; fasilitator juga bisa
+#        menyuntikkan kapan saja dari layar fasilitator.
+# efek : opsional
+#   tanam: {kanal, kabupaten, ...}        isu muncul lagi (mis. video lama diunggah ulang)
+#   radio_mati: {stasiun, jam}           stasiun tidak bisa siaran selama N jam
+#   tokoh_tidak_bisa: N                  N tokoh tidak bisa dihubungi
+nama: Contoh latihan Serui
+suntikan:
+  - jam: 3
+    teks: "Laporan warga: grup WA orang tua murid di Serui ramai membicarakan anak hilang."
+  - jam: 8
+    teks: "Video lama diunggah ulang di grup Facebook info kota dengan keterangan baru."
+    efek: {tanam: {kanal: fb, kabupaten: kep_yapen, akun_medsos: 2}}
+  - jam: 10
+    teks: "Ketua klasis di salah satu distrik tidak bisa dihubungi (sedang di perjalanan)."
+    efek: {tokoh_tidak_bisa: 4}
+  - jam: 14
+    teks: "RRI Serui gangguan listrik, siaran terhenti sementara."
+    efek: {radio_mati: {stasiun: rri_serui, jam: 8}}
+  - jam: 30
+    teks: "Akun baru menyebar ulang kabar yang sama setelah klarifikasi."
+    efek: {tanam: {kanal: wa, kabupaten: kep_yapen, jenis_grup: keluarga, jumlah_grup: 2}}

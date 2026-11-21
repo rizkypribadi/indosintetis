@@ -1,0 +1,21 @@
+# FR-11 Linimasa kasus rujukan untuk kalibrasi POLA (bukan angka absolut).
+#
+# PERHATIAN: nilai di bawah adalah CONTOH PENEMPAT. Isi dari linimasa kasus Wamena 2023 hasil
+# penelusuran pemberitaan, arsip cek fakta, dan wawancara. Kasus rujukan berada di Papua Pegunungan,
+# jadi yang dicocokkan adalah jeda waktu dan bentuk kurva, bukan jumlah orang.
+
+kasus: Wamena 2023 (isu penculikan anak)
+sumber: "isi: daftar artikel/arsip cek fakta/wawancara yang dipakai"
+target:
+  jam_ke_eskalasi: 8.0          # jeda dari isu pertama beredar hingga eskalasi pertama (jam)
+  jangkauan_24_jam: 0.35        # proporsi warga wilayah inti yang sudah mendengar isu pada T+24 jam
+bobot:
+  jam_ke_eskalasi: 1.0
+  jangkauan_24_jam: 1.0
+wilayah_inti: kota              # tipe wilayah yang dicocokkan
+
+# Ruang pencarian parameter (grid). Kunci bertitik merujuk ke config/parameter.yaml.
+grid:
+  beta.wa: [0.35, 0.55, 0.75]
+  peluang_siaga: [0.05, 0.10, 0.20]
+  kredibilitas_dasar: [0.45, 0.55, 0.65]

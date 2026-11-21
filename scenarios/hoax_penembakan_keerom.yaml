@@ -1,0 +1,80 @@
+# Dibuat dari editor skenario dashboard
+nama: Skenario Hoaks Penembakan Pegawai Dinas Pertanian di Keerom
+kode: hoax_penembakan_keerom
+mulai:
+  hari: Kamis
+  jam: 7
+langkah_menit: 60
+durasi_jam: 72
+isu:
+  teks: Bapa mama kaka ade, dengar kabar! Tiga pegawai Dinas Pertanian dong tewas
+    ditembak KKB saat survei lahan di kampung pedalaman. Katanya KKB su turun ke distrik
+    kota, dong pu daftar nama pegawai kantor dan guru yang akan jadi sasaran berikutnya.
+    Besok pagi dong mau serang kantor distrik dan sekolah! Jang pi kantor, jang antar
+    anak ke sekolah. Pemuda tolong jaga di pintu masuk kampung malam ini, tahan orang
+    tak dikenal atau kendaraan asing yang lewat. Sa cuma mau kitorang semua selamat.
+    Tolong sebarkan!
+  emosi: takut dan marah
+  intensitas_emosi: 0.9
+  faktor_identitas:
+    orang_tua_anak_sekolah: 2.5
+    pemuda: 2
+    pengguna_hp: 1.5
+  ajakan_tindakan: true
+  alasan_percaya: karena takut keluarga dan anak jadi korban berikutnya
+tanam:
+- t_jam: 0
+  kanal: wa
+  kabupaten: kota_jayapura
+  jenis_grup: keluarga
+  jumlah_grup: 3
+- t_jam: 0
+  kanal: wa
+  kabupaten: kota_jayapura
+  jenis_grup: info
+  jumlah_grup: 2
+- t_jam: 3
+  kanal: fb
+  kabupaten: kota_jayapura
+  jenis_grup: info
+  jumlah_grup: 2
+- t_jam: 5
+  kanal: tatap_muka
+  kabupaten: kota_jayapura
+  jumlah: 15
+komentar_contoh:
+- Sa su dengar dari ojek, katanya dong pu daftar nama, sa takut skali. Anak sa jang
+  pi sekolah besok.
+- Pemuda su jaga di pintu masuk, ada kendaraan asing lewat langsung tahan!
+- Kantor distrik su tutup? Sa dengar besok pagi dong mau serang, jang pi kantor dulu.
+- Itu foto korban hari ini? Sa lihat di FB, tapi tra jelas asal pu.
+catatan: 'Skenario fiktif. Kabupaten Keerom dipilih sesuai deskripsi. Distrik tidak
+  disebutkan secara spesifik, sehingga digunakan ''Keerom 01'' sebagai distrik ibu
+  kota kabupaten (asumsi). Hari Kamis dipilih sesuai deskripsi. Jam mulai 16:00 sesuai
+  deskripsi. Langkah simulasi 60 menit untuk mencakup 3 hari (72 jam). Penyebaran
+  awal di grup WA keluarga dan info (pegawai kantor) serta 2 akun FB lokal sesuai
+  deskripsi. Tatap muka di pangkalan ojek dan kios pada malam hari (t_jam=5) dengan
+  15 orang. Faktor identitas: orang tua anak sekolah (2.5), pemuda (2.0), dan pengguna
+  HP (1.5) karena mereka paling terpapar dan cemas. Tidak ada penyebutan suku, agama,
+  atau kelompok tertentu sebagai pelaku; pelaku disebut ''orang tak dikenal''.'
+deskripsi: 'Skenario hipotetis di Kabupaten Keerom. Kamis sore beredar kabar bahwa
+  tiga pegawai Dinas Pertanian tewas ditembak KKB saat survei lahan di kampung pedalaman.
+  Kabar penembakannya sendiri belum dikonfirmasi aparat, tetapi yang menyebar adalah
+  versi yang dilebih-lebihkan: katanya KKB sudah turun ke distrik kota, punya daftar
+  nama pegawai kantor dan guru yang akan jadi sasaran berikutnya, dan akan menyerang
+  kantor distrik serta sekolah besok pagi. Pesan meminta warga tidak ke kantor atau
+  mengantar anak ke sekolah, dan mengajak pemuda berjaga di pintu masuk kampung malam
+  ini serta menahan orang tak dikenal atau kendaraan asing yang lewat.
+
+
+  Pesan pertama muncul Kamis jam 16 di beberapa grup WhatsApp keluarga dan grup pegawai
+  kantor di distrik ibu kota Keerom. Sekitar 3 jam kemudian ada 2 akun Facebook lokal
+  yang mengunggah ulang foto lama yang tidak jelas asalnya dengan keterangan "korban
+  hari ini". Malamnya kabar juga menyebar dari mulut ke mulut di pangkalan ojek dan
+  kios. Yang paling cemas adalah pegawai kantor, orang tua murid, dan pemuda kampung.
+  Intensitas emosinya tinggi (takut dan marah). Simulasikan 3 hari.
+
+
+  Jangan menyebut suku, agama, atau kelompok warga tertentu sebagai pelaku atau sasaran;
+  sebut saja "orang tak dikenal". Semua tokoh fiktif, tanpa nama korban atau orang
+  sungguhan.'

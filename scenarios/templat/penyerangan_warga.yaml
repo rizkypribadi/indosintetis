@@ -1,0 +1,9 @@
+jenis: penyerangan_warga
+nama: Isu penyerangan atau pembunuhan warga
+isu:
+  teks: "Ada warga diserang orang tak dikenal di {lokasi} tadi malam, katanya sampai meninggal. Hati-hati kalau keluar rumah!"
+  emosi: marah dan takut
+  intensitas_emosi: 0.85
+  faktor_identitas: {pemuda: 1.5, laki_laki: 1.2}
+  alasan_percaya: karena takut keluarga jadi korban berikutnya
+ajakan_teks: " Pemuda-pemuda, kumpul dan jaga kampung malam ini!"

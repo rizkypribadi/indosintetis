@@ -1,0 +1,41 @@
+# Skenario intervensi awal (PRD §6). Waktu relatif terhadap T+0 isu.
+#   jenis: medsos_resmi | gereja_adat | prebunking | radio | penindakan | tim_keliling
+#   G dan H baru berpengaruh pada skenario yang punya blok provokator:
+A:
+  nama: Tanpa intervensi (baseline)
+  langkah: []
+B:
+  nama: Klarifikasi resmi di media sosial, T+24 jam
+  langkah:
+    - {jenis: medsos_resmi, t_jam: 24, durasi_jam: 24, jangkauan: 0.6}
+C:
+  nama: Klarifikasi resmi di media sosial, T+6 jam
+  langkah:
+    - {jenis: medsos_resmi, t_jam: 6, durasi_jam: 24, jangkauan: 0.6}
+D:
+  nama: Klarifikasi lewat gereja dan tokoh adat, T+12 jam
+  langkah:
+    - {jenis: gereja_adat, t_jam: 12, porsi_tokoh: 0.8}
+E:
+  nama: Prebunking lewat gereja dan sekolah sebelum isu muncul
+  langkah:
+    - {jenis: prebunking, t_jam: -72, kanal: [ibadah, sekolah], cakupan: 0.6}
+F:
+  nama: Siaran radio RRI dan radio komunitas, T+12 jam
+  langkah:
+    - {jenis: radio, t_jam: 12, durasi_jam: 36}
+G:
+  nama: Patroli siber menurunkan akun provokator, T+6 jam
+  langkah:
+    - {jenis: penindakan, t_jam: 6, porsi_akun: 0.7, porsi_lokal: 0.5}
+H:
+  nama: Klarifikasi resmi T+6 jam disertai penurunan akun provokator
+  langkah:
+    - {jenis: medsos_resmi, t_jam: 6, durasi_jam: 24, jangkauan: 0.6}
+    - {jenis: penindakan, t_jam: 6, porsi_akun: 0.7, porsi_lokal: 0.5}
+K:
+  nama: Tim keliling klarifikasi tatap muka, 2 jam sejak isu diketahui
+  langkah:
+    # tanpa kabupaten: tim mendatangi kampung dengan penyebar terbanyak di mana pun; pustaka & perencana
+    # mengisi kabupaten asal isu sebagai sasaran
+    - {jenis: tim_keliling, t_sejak_deteksi: 2, durasi_jam: 24, orang: 6, kampung_per_jam: 0.5}

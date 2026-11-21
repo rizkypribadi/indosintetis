@@ -1,0 +1,80 @@
+# Skenario isu HIPOTETIS (PRD §6). Bukan kejadian nyata.
+# Sama dengan isu_sentani.yaml, ditambah aktor yang SENGAJA menyebar (buzzer & provokator lapangan).
+nama: Isu penculikan anak di Sentani, dengan provokator
+kode: sentani_provokator_2026
+mulai: {hari: Sabtu, jam: 7}       # T+0 = Sabtu 07:00, sehingga ibadah Minggu jatuh di T+25 jam
+langkah_menit: 30
+durasi_jam: 48
+
+isu:
+  teks: >-
+    Hati-hati e! Ada orang pake mobil putih culik anak sekolah di Sentani.
+    Dong ambil organ. Su ada 3 anak hilang. Sebar ke keluarga semua!
+  emosi: takut
+  intensitas_emosi: 0.9            # 0..1, menaikkan kredibilitas & penerusan
+  faktor_identitas:
+    orang_tua_anak_sekolah: 1.5
+  ajakan_tindakan: true            # isu mengandung ajakan jaga kampung -> mendorong status A
+
+# Aktor yang sengaja menyebar (lihat sintetis/provocateur.py). Angka PERKIRAAN, bukan dari kasus nyata.
+provokator:
+  - jenis: buzzer
+    nama: Jaringan akun anonim
+    kanal: fb                      # unggah ke grup Facebook info/jual-beli
+    kabupaten: kab_jayapura
+    akun: 15
+    grup_per_akun: 3
+    terkoordinasi: true            # unggah serentak ke grup yang sama
+    intensitas: 2.0                # 1 = setara satu warga yang baru percaya
+    mulai_jam: 3
+    selesai_jam: 36
+    serang_klarifikasi: true       # "klarifikasi itu pemerintah tutup-tutupi"
+    pulih_jam: 12                  # akun yang diturunkan diganti akun baru 12 jam kemudian
+    # Contoh unggahan ILUSTRATIF untuk catatan peristiwa (tidak memengaruhi perhitungan).
+    contoh_pesan:
+      - "Su banyak yang lihat sendiri, mobil putih itu putar-putar dekat sekolah di Sentani. Jaga anak-anak!"
+      - "Tadi pagi ada lagi satu anak hilang di Sentani. Kenapa polisi diam saja? Sebar biar semua tahu."
+      - "Sa pu keluarga di Waena bilang mobil yang sama juga muncul di sana. Ini su terorganisir."
+    contoh_serangan: "Jang percaya klarifikasi itu. Dong cuma tutup-tutupi supaya kitong tra panik. Lihat sendiri baru percaya."
+  - jenis: buzzer
+    nama: Penerus di grup WA keluarga
+    kanal: wa
+    jenis_grup: keluarga
+    kabupaten: kota_jayapura
+    akun: 10
+    grup_per_akun: 2
+    terkoordinasi: false
+    intensitas: 1.5
+    mulai_jam: 4
+    selesai_jam: 30
+    contoh_pesan:
+      - "Diteruskan dari grup sebelah: hati-hati e, ada orang culik anak di Sentani. Tolong sebar ke keluarga."
+      - "Bapa-mama, jang kasih anak jalan sendiri ke sekolah dulu. Info dari keluarga di Sentani."
+  - jenis: lokal
+    nama: Provokator lapangan
+    kabupaten: kab_jayapura
+    distrik: Sentani
+    jumlah: 4
+    ajak_jaga_kampung: true
+    mulai_jam: 8
+    selesai_jam: 40
+    contoh_pesan:
+      - "Ko dengar ka? Anak-anak di Sentani hilang. Malam ini kitong laki-laki jaga di ujung kampung."
+      - "Kalau ada mobil putih masuk kampung, tahan dulu, tanya baik-baik dong mau ke mana."
+    contoh_serangan: "Pemerintah bilang hoaks, tapi dong tra datang lihat kitong pu kampung. Tetap jaga!"
+
+tanam:
+  - t_jam: 0
+    kanal: wa
+    jenis_grup: sekolah
+    kabupaten: kab_jayapura
+    distrik: Sentani
+    jumlah_grup: 5
+  - t_jam: 10
+    kanal: fb
+    akun_medsos: 2                 # akun lokal mengunggah ulang video lama
+    kabupaten: kab_jayapura
+
+komentar_contoh:
+  - "Astaga, sa pu anak sekolah di Sentani"
+  - "Betul ka? Sapa yang lihat?"

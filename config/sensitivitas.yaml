@@ -1,0 +1,20 @@
+# Rentang parameter untuk analisis sensitivitas (python -m sintetis sensitivitas).
+# Kunci bertitik merujuk ke config/parameter.yaml; nilai = [rendah, tinggi].
+# Rentang ini PERKIRAAN ketidakpastian sebelum kalibrasi: persempit setelah ada data FGD/linimasa.
+rentang:
+  beta.wa: [0.35, 0.75]
+  beta.fb: [0.15, 0.40]
+  beta.tatap_muka: [0.30, 0.60]
+  beta.radio: [0.50, 0.90]
+  tau_jam: [5.0, 12.0]
+  laju_bersikap: [0.20, 0.50]
+  kredibilitas_dasar: [0.45, 0.65]
+  peluang_siaga: [0.05, 0.20]
+  peluang_korektor: [0.08, 0.25]
+  efek_literasi: [0.30, 0.60]
+  efek_klarifikasi_bersikap: [0.40, 0.80]
+  prebunking.percaya: [0.30, 0.70]
+  skala_sinyal: [0.60, 1.30]      # pengali sinyal semua kampung (1.0 = peta sinyal sekarang)
+  # Untuk skenario dengan provokator, tambahkan juga (tanpa provokator parameter ini tidak berpengaruh):
+  # provokator.kredibilitas_akun: [0.4, 0.8]
+  # provokator.efek_serang_klarifikasi: [0.2, 0.6]

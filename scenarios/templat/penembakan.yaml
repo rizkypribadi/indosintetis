@@ -1,0 +1,9 @@
+jenis: penembakan
+nama: Isu penembakan
+isu:
+  teks: "Ada bunyi tembakan di {lokasi}, katanya ada warga kena. Jangan keluar rumah, kabari keluarga semua!"
+  emosi: takut
+  intensitas_emosi: 0.9
+  faktor_identitas: {pemuda: 1.4, laki_laki: 1.2}
+  alasan_percaya: karena takut keluarga kena peluru
+ajakan_teks: " Laki-laki tolong jaga jalan masuk kampung!"

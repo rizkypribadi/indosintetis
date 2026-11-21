@@ -1,0 +1,17 @@
+.venv/
+.cache/
+.pytest_cache/
+__pycache__/
+out/
+graphify-out/
+# kunci API dan data mentah tidak boleh ikut dibagikan
+LLM API Key.txt
+*.env
+data/kampung.csv
+
+# data unduhan mentah perintah geodata (±70 MB, bisa diunduh ulang)
+data/mentah/
+data/*.bak
+
+# data kejadian nyata (R6) sensitif: simpan lokal, jangan ikut dibagikan
+kajian/

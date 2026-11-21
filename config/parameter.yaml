@@ -1,0 +1,89 @@
+# Parameter model SEIZA. Semua nilai adalah titik awal untuk dikalibrasi (FR-11),
+# bukan hasil estimasi. Satuan laju: per langkah waktu kecuali disebut lain.
+
+beta:            # β[kanal]: peluang dasar penerusan per kontak efektif
+  wa: 0.55
+  fb: 0.25
+  tatap_muka: 0.45
+  radio: 0.70
+
+tau_jam: 8.0                 # τ: peluruhan aktivitas penyebar, exp(-umur/τ)
+efek_literasi: 0.45          # (1 − 0,45 × literasi_digital)
+laju_bersikap: 0.35          # peluang agen E bersikap per langkah
+kredibilitas_dasar: 0.55     # peluang dasar percaya saat bersikap (dikali emosi pesan)
+peluang_siaga: 0.10          # peluang dasar penyebar menjadi Siaga aktif (A) per langkah, dikali identitas & pemicu
+peluang_korektor: 0.15       # peluang agen Z biasa ikut meluruskan (bukan pasif)
+bobot_koreksi_aktif: 1.0     # aktivitas koreksi agen Z aktif biasa
+bobot_koreksi_tinggi: 2.5    # aktivitas koreksi agen kunci yang "luruskan"
+persuasi_koreksi:            # peluang koreksi mengubah keyakinan, per status
+  S: 0.60                    # S yang menerima klarifikasi lebih dulu -> Z
+  E: 0.70
+  I: 0.35
+  A: 0.15
+efek_klarifikasi_bersikap: 0.6  # klarifikasi yang sudah terlihat menurunkan peluang percaya
+prebunking:
+  paparan: 0.85              # faktor_prebunking pada p(S→E) (sesuai PRD)
+  percaya: 0.45              # pengali peluang percaya bagi agen yang sudah di-prebunk
+  paruh_hari: null           # waktu paruh efek prebunking (hari). null = tidak meluruh, jadi kapan prebunking
+                             # dilakukan tidak berpengaruh; isi (mis. 21) agar kurva keterlambatan E bermakna
+# F5: jeda dari isu pertama beredar sampai diketahui petugas (jam). Dipakai bila skenario tidak mengisi
+# jeda_deteksi_jam. PERKIRAAN: tanyakan di FGD.
+jeda_deteksi_jam: {bawaan: 2, kota: 1, pesisir: 3, pedalaman: 6, kepulauan: 3}
+# R4: pengali kepercayaan warga terhadap pembawa pesan per tipe wilayah (1 = nilai dasar di `kepercayaan`).
+# Nilai awal netral; isi dari FGD dan catat sumbernya. TIDAK boleh berdasar asal etnis.
+kepercayaan_pembawa:
+  pemerintah: {kota: 1.0, pesisir: 1.0, pedalaman: 1.0, kepulauan: 1.0}
+  gereja:     {kota: 1.0, pesisir: 1.0, pedalaman: 1.0, kepulauan: 1.0}
+  adat:       {kota: 1.0, pesisir: 1.0, pedalaman: 1.0, kepulauan: 1.0}
+  radio:      {kota: 1.0, pesisir: 1.0, pedalaman: 1.0, kepulauan: 1.0}
+  tim_lapangan: {kota: 1.0, pesisir: 1.0, pedalaman: 1.0, kepulauan: 1.0}
+# F2/F3: kapasitas intervensi bersasaran (skala dunia nyata, diterjemahkan ke dunia agen secara proporsional)
+kapasitas:
+  warga_per_tokoh: 400       # warga yang terjangkau satu pendeta/tokoh adat lewat ibadah, grup jemaat, pertemuan adat
+  tim_jam_kerja: [7, 18]     # tim keliling hanya bergerak pada jam ini
+  tim_daya: 1.2              # λ klarifikasi tatap muka bagi warga kampung yang dikunjungi (±70% mendengar)
+ambang_eskalasi: 0.002       # indeks risiko distrik yang dianggap "eskalasi"
+provokator:                  # berlaku bila skenario punya blok provokator: (PERKIRAAN, validasi lewat FGD/kajian kasus)
+  kredibilitas_akun: 0.6     # pengali kepercayaan paparan dari akun anonim/tak dikenal
+  bonus_konsensus: 0.3       # akun terkoordinasi di grup yang sama terkesan "banyak orang bilang begitu"
+  efek_serang_klarifikasi: 0.4   # narasi tandingan menurunkan kepercayaan pada klarifikasi sebesar ini
+  jeda_serang_jam: 1.0       # waktu reaksi provokator sesudah klarifikasi pertama muncul
+
+# Kepercayaan relasi per jenis kelompok
+kepercayaan:
+  keluarga: 0.95
+  jemaat: 0.90
+  sekolah: 0.80
+  marga: 0.85
+  info_kota: 0.45
+  rumah_tangga: 1.0
+  tetangga: 0.80
+  ibadah: 0.95
+  pasar: 0.60
+  adat: 0.95
+  pangkalan: 0.50
+  pemerintah: 0.45           # akun resmi pemerintah di medsos
+  radio: 0.75
+  tim_lapangan: 0.80         # klarifikasi tatap muka oleh tim keliling (F3)
+
+# Pola aktivitas harian (jam 0..23) untuk kanal daring dan tatap muka umum
+aktivitas_jam: [0.05,0.03,0.02,0.02,0.05,0.25,0.6,0.8,0.8,0.7,0.7,0.75,0.8,0.7,0.6,0.6,0.7,0.85,0.95,1.0,0.95,0.7,0.4,0.15]
+
+# Jadwal tempat tatap muka
+jadwal:
+  ibadah:   {hari: [Minggu], jam: [8, 9, 10]}
+  ibadah_rabu: {hari: [Rabu], jam: [18, 19]}
+  pasar:    {jam: [6, 7, 8, 9, 10, 11, 15, 16, 17]}
+  adat:     {jam: [16, 17, 18, 19]}           # pertemuan adat hanya bila dipanggil tokoh adat
+  pangkalan: {jam: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]}
+  radio_dengar: {jam: [6, 7, 12, 13, 18, 19, 20]}
+
+agen_kunci:
+  jumlah: 200                # 100–300 menurut PRD
+  porsi:                     # komposisi peran
+    pendeta: 0.30
+    tokoh_adat: 0.15
+    kepala_kampung: 0.20
+    tokoh_pemuda: 0.12
+    mama_pasar: 0.13
+    akun_medsos: 0.10

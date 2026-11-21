@@ -1,0 +1,902 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>PRD Indonesia Sintetis</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: dokumen PRD dengan "ruang situasi" simulasi langsung di atas, lalu isi dokumen dengan daftar isi lengket di kiri (desktop). */
+:root{
+  --bg:#eef1f6; --surface:#ffffff; --ink:#131a2b; --muted:#566079; --line:#d7dce7; --accent:#2340c4; --accent-soft:#e3e8fb;
+  --stage:#0d1222; --stage-ink:#dfe5f3; --stage-muted:#8590ab; --stage-line:#2a3350;
+  --s:#5b6884; --e:#e6a700; --i:#e5484d; --z:#1fb5a0; --a:#a855f7;
+  --code-bg:#f4f6fa;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0b0f1a; --surface:#131a2a; --ink:#e6eaf3; --muted:#9aa3b9; --line:#263049; --accent:#8098ff; --accent-soft:#1c2648;
+  --stage:#070a14; --stage-ink:#dfe5f3; --stage-muted:#8590ab; --stage-line:#232b45;
+  --s:#4a5675; --e:#f2b632; --i:#ff5c61; --z:#2fd0b8; --a:#b979ff; --code-bg:#0f1524; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#0b0f1a; --surface:#131a2a; --ink:#e6eaf3; --muted:#9aa3b9; --line:#263049; --accent:#8098ff; --accent-soft:#1c2648;
+  --stage:#070a14; --stage-ink:#dfe5f3; --stage-muted:#8590ab; --stage-line:#232b45;
+  --s:#4a5675; --e:#f2b632; --i:#ff5c61; --z:#2fd0b8; --a:#b979ff; --code-bg:#0f1524; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--ink); font-family:var(--f-body); font-size:16px; line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); padding-block:0 64px}
+.wrap{max-width:1180px; margin:0 auto}
+h1,h2,h3{font-family:var(--f-display); text-wrap:balance; line-height:1.15; margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+/* Header */
+.masthead{padding-block:40px 24px; display:grid; gap:20px}
+.eyebrow{font-family:var(--f-mono); font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
+.masthead h1{font-size:clamp(36px, 6vw, 64px); font-weight:800; letter-spacing:-.02em}
+.masthead h1 span{color:var(--accent)}
+.lede{font-size:18px; max-width:68ch; color:var(--muted); margin:0}
+.meta{display:flex; flex-wrap:wrap; gap:8px 24px; font-size:13px; color:var(--muted); font-family:var(--f-mono)}
+.meta b{color:var(--ink); font-weight:500}
+.pill{display:inline-block; padding:2px 10px; border-radius:999px; background:var(--accent-soft); color:var(--accent); font-family:var(--f-mono); font-size:12px}
+
+/* Lab */
+.lab{background:var(--stage); color:var(--stage-ink); border-radius:14px; padding:16px; display:grid; gap:16px; grid-template-columns:minmax(0,1fr) 300px}
+.lab-head{grid-column:1/-1; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:8px 16px}
+.lab-head h2{font-size:20px; font-weight:700}
+.lab-head p{margin:0; font-size:13px; color:var(--stage-muted)}
+.stage-box{position:relative; min-width:0; aspect-ratio:4/3; max-width:100%; border:1px solid var(--stage-line); border-radius:10px; overflow:hidden}
+#stage{display:block; width:100%; height:100%}
+.clock{position:absolute; left:12px; bottom:10px; font-family:var(--f-mono); font-size:13px; color:var(--stage-ink); background:color-mix(in srgb, var(--stage) 75%, transparent); padding:4px 8px; border-radius:6px; pointer-events:none}
+.tip{position:absolute; pointer-events:none; background:var(--surface); color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:12px; line-height:1.45; max-width:220px; box-shadow:0 6px 20px rgb(0 0 0 / .25)}
+.tip b{font-family:var(--f-display)}
+.side{display:flex; flex-direction:column; gap:14px; min-width:0}
+.ctl-label{font-family:var(--f-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--stage-muted); margin-bottom:6px}
+.scen{display:grid; gap:6px}
+.scen button{all:unset; cursor:pointer; display:flex; gap:10px; align-items:center; padding:7px 10px; border-radius:8px; border:1px solid var(--stage-line); font-size:13px; color:var(--stage-ink)}
+.scen button .k{font-family:var(--f-mono); font-size:12px; width:20px; height:20px; display:grid; place-items:center; border-radius:5px; background:var(--stage-line)}
+.scen button[aria-pressed="true"]{border-color:var(--z); background:color-mix(in srgb, var(--z) 14%, transparent)}
+.scen button[aria-pressed="true"] .k{background:var(--z); color:var(--stage)}
+.scen button:focus-visible{outline:2px solid var(--z)}
+.row{display:flex; gap:6px; flex-wrap:wrap}
+.btn{all:unset; cursor:pointer; padding:7px 12px; border-radius:8px; background:var(--stage-line); color:var(--stage-ink); font-size:13px; font-weight:500}
+.btn.primary{background:var(--stage-ink); color:var(--stage)}
+.btn:focus-visible{outline:2px solid var(--z)}
+.btn[aria-pressed="true"]{background:var(--z); color:var(--stage)}
+.counts{display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:4px}
+.cnt{min-width:0; display:flex; flex-direction:column; gap:2px; padding:6px; border-radius:6px; background:color-mix(in srgb, var(--stage-line) 55%, transparent)}
+.cnt .v{font-family:var(--f-mono); font-size:15px; font-variant-numeric:tabular-nums}
+.cnt .l{font-size:10.5px; line-height:1.25; color:var(--stage-muted)}
+.cnt .v{display:flex; align-items:center; gap:5px}
+.cnt .l .dot{margin-top:2px}
+.dot{width:8px; height:8px; border-radius:50%; display:inline-block; flex:none}
+.feed{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px; font-size:12.5px; line-height:1.45; max-height:230px; overflow:auto}
+.feed li{border-left:2px solid var(--stage-line); padding-left:8px}
+.feed li.h{border-color:var(--i)} .feed li.z{border-color:var(--z)} .feed li.w{border-color:var(--e)}
+.feed time{font-family:var(--f-mono); font-size:11px; color:var(--stage-muted); display:block}
+.feed .empty{color:var(--stage-muted); border:none; padding:0}
+.lower{grid-column:1/-1; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:16px}
+.chart-box{border:1px solid var(--stage-line); border-radius:10px; padding:10px; min-width:0}
+#chart{display:block; width:100%; height:180px}
+.legend{display:flex; flex-wrap:wrap; gap:4px 14px; font-size:12px; color:var(--stage-muted); margin-top:6px}
+.legend span{display:inline-flex; align-items:center; gap:5px}
+.cmp{border:1px solid var(--stage-line); border-radius:10px; padding:10px; min-width:0; overflow-x:auto}
+.cmp table{width:100%; border-collapse:collapse; font-size:12.5px}
+.cmp th,.cmp td{text-align:left; padding:6px 6px; border-bottom:1px solid var(--stage-line)}
+.cmp th{font-weight:500; color:var(--stage-muted); font-size:11px; text-transform:uppercase; letter-spacing:.06em}
+.cmp td.n{font-family:var(--f-mono); font-variant-numeric:tabular-nums; text-align:right}
+.cmp th.n{text-align:right}
+.cmp tr.cur td{color:var(--z)}
+.bar{height:6px; border-radius:3px; background:var(--a); display:block; margin-top:3px}
+.note-stage{font-size:12px; color:var(--stage-muted); margin:8px 0 0}
+.legend-key{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:12px; color:var(--stage-muted)}
+.legend-key span{display:inline-flex; gap:5px; align-items:center}
+
+/* Document */
+.doc{display:grid; grid-template-columns:220px minmax(0,1fr); gap:48px; margin-top:48px}
+.toc{position:sticky; top:calc(env(safe-area-inset-top, 0px) + 20px); align-self:start; font-size:13.5px}
+.toc ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px; counter-reset:t}
+.toc a{display:flex; gap:8px; color:var(--muted); text-decoration:none; padding:4px 8px; border-radius:6px}
+.toc a:hover{color:var(--ink); background:var(--surface)}
+.toc a span{font-family:var(--f-mono); font-size:11.5px; color:var(--accent); padding-top:2px; width:18px}
+.content{min-width:0; display:flex; flex-direction:column; gap:56px}
+section h2{font-size:clamp(24px,3vw,30px); font-weight:700; display:flex; gap:12px; align-items:baseline; margin-bottom:16px}
+section h2 .no{font-family:var(--f-mono); font-size:14px; color:var(--accent); font-weight:500}
+section h3{font-size:18px; font-weight:700; margin:24px 0 8px}
+section p, section li{max-width:72ch}
+section p{margin:0 0 12px}
+ul.clean{padding-left:20px; margin:0 0 12px}
+ul.clean li{margin-bottom:6px}
+.tbl{overflow-x:auto; border:1px solid var(--line); border-radius:10px; background:var(--surface)}
+.tbl table{width:100%; border-collapse:collapse; font-size:14px}
+.tbl th,.tbl td{padding:10px 12px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl th{font-size:12px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; background:var(--code-bg)}
+.tbl td.id{font-family:var(--f-mono); font-size:12.5px; color:var(--accent); white-space:nowrap}
+.pri{font-family:var(--f-mono); font-size:11.5px; padding:2px 7px; border-radius:5px; white-space:nowrap}
+.p0{background:color-mix(in srgb, var(--i) 18%, transparent); color:var(--i)}
+.p1{background:color-mix(in srgb, var(--e) 22%, transparent); color:color-mix(in srgb, var(--e) 70%, var(--ink))}
+.p2{background:var(--accent-soft); color:var(--accent)}
+.grid2{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px}
+.card{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:16px; min-width:0}
+.card h3{margin:0 0 6px; font-size:16px}
+.card p{margin:0; font-size:14.5px; color:var(--muted)}
+.card .who{font-family:var(--f-mono); font-size:11.5px; color:var(--accent); text-transform:uppercase; letter-spacing:.08em; margin-bottom:6px}
+pre.code{background:var(--code-bg); border:1px solid var(--line); border-radius:10px; padding:14px 16px; overflow-x:auto; font-family:var(--f-mono); font-size:13px; line-height:1.55; margin:0 0 12px; color:var(--ink)}
+.mermaid-box{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:16px; overflow-x:auto}
+.states{display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:8px; margin-bottom:12px}
+.st{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:10px; font-size:13px; min-width:0}
+.st b{display:flex; gap:6px; align-items:center; font-family:var(--f-display); font-size:15px}
+.st span{color:var(--muted)}
+.phases{display:grid; gap:0; border-left:2px solid var(--line); margin-left:6px}
+.phase{position:relative; padding:0 0 22px 22px}
+.phase::before{content:""; position:absolute; left:-7px; top:6px; width:12px; height:12px; border-radius:50%; background:var(--surface); border:2px solid var(--accent)}
+.phase .w{font-family:var(--f-mono); font-size:12px; color:var(--accent)}
+.phase h3{margin:2px 0 4px; font-size:17px}
+.phase p{margin:0; color:var(--muted); font-size:14.5px}
+.callout{border:1px solid var(--line); background:var(--surface); border-radius:10px; padding:14px 16px; font-size:14.5px}
+.callout b{font-family:var(--f-display)}
+.check{list-style:none; padding:0; margin:0; display:grid; gap:8px}
+.check li{display:flex; gap:10px; align-items:flex-start}
+.check li::before{content:""; flex:none; width:14px; height:14px; border:1.5px solid var(--accent); border-radius:3px; margin-top:5px}
+
+@media (max-width: 960px){
+  .lab{grid-template-columns:minmax(0,1fr)}
+  .lower{grid-template-columns:minmax(0,1fr)}
+  .doc{grid-template-columns:minmax(0,1fr); gap:24px}
+  .toc{position:static}
+  .toc ol{flex-direction:row; flex-wrap:wrap}
+}
+@media (max-width: 560px){
+  .stage-box{aspect-ratio:1/1}
+  .grid2{grid-template-columns:minmax(0,1fr)}
+  .states{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .counts{grid-template-columns:repeat(3,1fr)}
+  .toc{display:none}
+}
+</style>
+
+<style>
+.stage-box{aspect-ratio:16/10}
+@media (max-width:560px){ .stage-box{aspect-ratio:4/3} }
+.scope{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px}
+.scope div{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:10px 12px; font-size:13.5px; min-width:0}
+.scope b{display:block; font-family:var(--f-display); font-size:15px}
+.scope span{color:var(--muted); font-family:var(--f-mono); font-size:12px}
+.sig{display:inline-flex; gap:2px; align-items:flex-end; height:12px; margin-left:4px}
+.sig i{width:3px; background:var(--line); border-radius:1px}
+.sig i.on{background:var(--accent)}
+@media (max-width:760px){ .scope{grid-template-columns:repeat(2,minmax(0,1fr))} }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="eyebrow">Product Requirements Document · Fase 1: Provinsi Papua</div>
+    <h1>Indonesia <span>Sintetis</span></h1>
+    <p class="lede">Laboratorium simulasi sosial untuk menguji bagaimana hoaks menyebar di Provinsi Papua, dari grup WhatsApp di Sentani sampai cerita dari mulut ke mulut di kampung tanpa sinyal, dan intervensi mana yang paling cepat meredamnya sebelum berujung kekerasan.</p>
+    <div class="meta">
+      <span>Versi <b>0.2 · fokus Papua</b></span>
+      <span>Tanggal <b>4 Nov 2026</b></span>
+      <span>Pemilik <b>Baginda Rizky</b></span>
+      <span>Status <span class="pill">Draf untuk ditinjau</span></span>
+    </div>
+  </header>
+
+  <section class="lab" aria-label="Demo konsep simulasi Provinsi Papua">
+    <div class="lab-head">
+      <h2>Demo konsep: isu penculikan anak di Provinsi Papua</h2>
+      <p>400 agen fiktif di 9 kabupaten/kota · posisi mengikuti koordinat · 1 langkah = 30 menit · 48 jam simulasi · arahkan kursor ke node</p>
+    </div>
+    <div class="stage-box" id="stageBox">
+      <canvas id="stage" aria-label="Peta jaringan agen di Provinsi Papua yang menunjukkan penyebaran hoaks secara animasi"></canvas>
+      <div class="clock" id="clock">T+0,0 jam</div>
+      <div class="tip" id="tip" hidden></div>
+    </div>
+    <div class="side">
+      <div>
+        <div class="ctl-label">Skenario intervensi</div>
+        <div class="scen" id="scen"></div>
+      </div>
+      <div class="row">
+        <button class="btn primary" id="play" type="button">Jeda</button>
+        <button class="btn" id="reset" type="button">Ulang</button>
+        <button class="btn" id="sp1" type="button" aria-pressed="true">1×</button>
+        <button class="btn" id="sp2" type="button" aria-pressed="false">2×</button>
+        <button class="btn" id="sp4" type="button" aria-pressed="false">4×</button>
+      </div>
+      <div class="counts" id="counts"></div>
+      <div>
+        <div class="ctl-label">Keputusan agen kunci (lapisan LLM)</div>
+        <ul class="feed" id="feed"><li class="empty">Menunggu kabar sampai ke tokoh berpengaruh…</li></ul>
+      </div>
+    </div>
+    <div class="lower">
+      <div class="chart-box">
+        <div class="ctl-label">Kurva status agen</div>
+        <canvas id="chart" aria-label="Grafik jumlah agen per status terhadap waktu"></canvas>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div class="cmp">
+        <div class="row" style="justify-content:space-between;align-items:center;margin-bottom:6px">
+          <div class="ctl-label" style="margin:0">Bandingkan skenario (Monte Carlo)</div>
+          <button class="btn" id="cmpBtn" type="button">Jalankan perbandingan</button>
+        </div>
+        <div id="cmpOut"><p class="note-stage">Menjalankan keenam skenario masing-masing 40 kali pada populasi yang sama, lalu membandingkan rata-ratanya. Perhatikan kolom kabupaten bersinyal lemah: di sana klarifikasi lewat media sosial hampir tidak sampai.</p></div>
+      </div>
+      <div class="legend-key" style="grid-column:1/-1">
+        <span>Garis padat = WhatsApp</span><span>Garis titik = tatap muka (gereja, pasar, kampung)</span><span>Garis tipis = Facebook</span><span>Garis putus dari laut = unggahan viral (aktif mulai T+10 jam)</span><span>Node bercincin = agen kunci</span><span>Halo merah = wilayah melewati ambang risiko</span>
+      </div>
+      <p class="note-stage" style="grid-column:1/-1;margin:0">Demo ini memakai aturan sederhana, ukuran klaster dan tingkat sinyal perkiraan kasar, serta teks keputusan yang sudah ditulis sebelumnya untuk meniru keluaran LLM. Semua nama tokoh fiktif. Angkanya ilustratif, bukan hasil penelitian.</p>
+    </div>
+  </section>
+
+  <div class="doc">
+    <nav class="toc" aria-label="Daftar isi">
+      <ol>
+        <li><a href="#ringkasan"><span>01</span>Ringkasan</a></li>
+        <li><a href="#konteks"><span>02</span>Mengapa Papua</a></li>
+        <li><a href="#masalah"><span>03</span>Masalah</a></li>
+        <li><a href="#tujuan"><span>04</span>Tujuan & metrik</a></li>
+        <li><a href="#pengguna"><span>05</span>Pengguna & mitra</a></li>
+        <li><a href="#model"><span>06</span>Model simulasi</a></li>
+        <li><a href="#data"><span>07</span>Sumber data</a></li>
+        <li><a href="#fungsional"><span>08</span>Kebutuhan fungsional</a></li>
+        <li><a href="#visual"><span>09</span>Visual & animasi</a></li>
+        <li><a href="#llm"><span>10</span>Kontrak LLM</a></li>
+        <li><a href="#arsitektur"><span>11</span>Arsitektur</a></li>
+        <li><a href="#nonfungsional"><span>12</span>Non-fungsional</a></li>
+        <li><a href="#roadmap"><span>13</span>Roadmap</a></li>
+        <li><a href="#risiko"><span>14</span>Risiko & etika</a></li>
+        <li><a href="#terima"><span>15</span>Kriteria penerimaan</a></li>
+        <li><a href="#terbuka"><span>16</span>Pertanyaan terbuka</a></li>
+      </ol>
+    </nav>
+
+    <div class="content">
+      <section id="ringkasan">
+        <h2><span class="no">01</span>Ringkasan</h2>
+        <p><b>Indonesia Sintetis</b> adalah perangkat lunak riset yang membangun masyarakat virtual dengan profil demografis nyata, menghubungkannya lewat jaringan komunikasi, lalu mensimulasikan penyebaran sebuah hoaks jam demi jam untuk menguji intervensi tandingan.</p>
+        <p><b>Fase 1 berfokus pada Provinsi Papua</b> (pascapemekaran 2022, beribu kota di Jayapura) yang terdiri dari 9 kabupaten/kota. Dengan penduduk sekitar satu juta jiwa, simulasi 1 juta agen di sini mendekati <b>representasi 1:1</b>: hampir setiap warga punya satu "kembaran sintetis".</p>
+        <p>Pendekatannya hibrida. Mayoritas agen digerakkan model matematis yang berjalan di laptop. Sekitar 100–300 agen kunci, seperti pendeta, ondoafi dan kepala suku, kepala kampung, mama-mama pasar, serta akun media sosial lokal, diperankan LLM melalui API DeepSeek dengan persona berbahasa Melayu Papua.</p>
+        <h3>Wilayah Fase 1</h3>
+        <div class="scope" id="scopeGrid"></div>
+      </section>
+
+      <section id="konteks">
+        <h2><span class="no">02</span>Mengapa Papua</h2>
+        <ul class="clean">
+          <li><b>Taruhannya nyawa.</b> Pada Februari 2023, isu penculikan anak di Wamena memicu kerusuhan yang menewaskan sekitar 10 orang. Wamena kini masuk Provinsi Papua Pegunungan, tetapi pola yang sama (isu yang beredar cepat, orang asing dicurigai, eskalasi dalam hitungan jam) relevan untuk seluruh Tanah Papua.</li>
+          <li><b>Komunikasi berlapis.</b> Di kota seperti Jayapura, Sentani, dan Biak, WhatsApp dan Facebook dominan. Di kampung pedalaman dan pesisir terpencil, kabar bergerak lewat tatap muka: ibadah di gereja, pasar, pertemuan adat, dan orang yang turun ke kota lalu pulang membawa cerita.</li>
+          <li><b>Kesenjangan sinyal.</b> Akses internet di Papua masih tertinggal dibanding provinsi lain. Akibatnya, hoaks tetap menyebar dari mulut ke mulut, sementara klarifikasi resmi yang hanya diunggah di media sosial tidak pernah sampai.</li>
+          <li><b>Otoritas sosial yang khas.</b> Gereja, tokoh adat (ondoafi di wilayah Tabi, mananwir di Biak), dan kepala kampung sering lebih dipercaya daripada akun resmi pemerintah.</li>
+          <li><b>Riset yang langka.</b> Hampir tidak ada model penyebaran informasi yang memperhitungkan struktur sosial dan keterbatasan infrastruktur Papua. Kontribusi kebaruannya tinggi.</li>
+        </ul>
+        <div class="callout"><b>Hipotesis kerja.</b> Di Papua, intervensi yang menumpang pada kanal tepercaya dan tidak bergantung pada internet (gereja, tokoh adat, radio) akan jauh lebih efektif daripada klarifikasi resmi di media sosial, terutama di kabupaten bersinyal lemah.</div>
+      </section>
+
+      <section id="masalah">
+        <h2><span class="no">03</span>Masalah</h2>
+        <ul class="clean">
+          <li>Respons terhadap hoaks pemicu kekerasan umumnya reaktif dan berpusat pada media sosial, kanal yang justru lemah di sebagian besar wilayah Papua.</li>
+          <li>Belum ada cara aman dan dapat diulang untuk membandingkan strategi tandingan sebelum krisis terjadi. Uji coba langsung di masyarakat tidak etis.</li>
+          <li>Model penyebaran informasi yang ada dibangun untuk masyarakat yang selalu daring dan tidak mengenal peran gereja, adat, serta radio.</li>
+        </ul>
+        <div class="callout"><b>Pernyataan masalah.</b> Pemerintah daerah, aparat, dan tokoh masyarakat di Provinsi Papua belum punya alat berbasis bukti untuk menentukan siapa yang harus meluruskan isu, lewat kanal apa, dan seberapa cepat, agar hoaks tidak berujung kekerasan.</div>
+      </section>
+
+      <section id="tujuan">
+        <h2><span class="no">04</span>Tujuan, non-tujuan & metrik</h2>
+        <h3>Tujuan</h3>
+        <ul class="clean">
+          <li>Membangun simulasi penyebaran hoaks yang memperhitungkan kanal daring dan luring serta kesenjangan sinyal antarkabupaten di Provinsi Papua.</li>
+          <li>Membandingkan efektivitas intervensi: waktu, pembawa pesan (aparat, gereja, adat, radio), dan kanal.</li>
+          <li>Menghasilkan rekomendasi SOP respons hoaks per tipe wilayah (kota, pesisir, pedalaman, kepulauan).</li>
+        </ul>
+        <h3>Non-tujuan</h3>
+        <ul class="clean">
+          <li>Tidak memantau, memprofilkan, atau mengidentifikasi orang sungguhan. Semua agen fiktif.</li>
+          <li>Tidak memodelkan, menilai, atau mengklasifikasi ekspresi dan aspirasi politik sebagai hoaks.</li>
+          <li>Tidak ditujukan untuk operasi keamanan terhadap kelompok tertentu, dan tidak memakai asal etnis sebagai faktor kecurigaan.</li>
+          <li>Tidak menyediakan fitur untuk merancang atau mengoptimalkan pesan hoaks.</li>
+        </ul>
+        <h3>Metrik keberhasilan</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>Metrik</th><th>Target awal</th><th>Cara ukur</th></tr></thead>
+          <tbody>
+            <tr><td>Kesesuaian pola</td><td>Simulasi mereproduksi jeda waktu dari munculnya isu hingga eskalasi pada kasus rujukan</td><td>Linimasa kasus Wamena 2023 dari pemberitaan dan wawancara, dibandingkan dengan keluaran model</td></tr>
+            <tr><td>Validitas tatap muka</td><td>Mayoritas panel tokoh lokal menilai perilaku agen kunci "masuk akal"</td><td>FGD dengan tokoh gereja, adat, dan jurnalis lokal di Jayapura</td></tr>
+            <tr><td>Stabilitas hasil</td><td>Peringkat intervensi konsisten pada interval kepercayaan 95%</td><td>≥ 200 putaran Monte Carlo per skenario</td></tr>
+            <tr><td>Kinerja</td><td>1 juta agen × 96 langkah &lt; 5 menit</td><td>Laptop RAM 16 GB tanpa GPU</td></tr>
+            <tr><td>Biaya LLM</td><td>Di bawah batas anggaran per skenario</td><td>Penghitung token bawaan, disesuaikan tarif DeepSeek terbaru</td></tr>
+          </tbody>
+        </table></div>
+      </section>
+
+      <section id="pengguna">
+        <h2><span class="no">05</span>Pengguna & calon mitra</h2>
+        <div class="grid2">
+          <div class="card"><div class="who">Utama</div><h3>Peneliti</h3><p>Membangun skenario, mengkalibrasi model, menjalankan eksperimen, dan menulis hasil.</p></div>
+          <div class="card"><div class="who">Sekunder</div><h3>Pemda & aparat</h3><p>Diskominfo Provinsi Papua, Polda Papua, dan pemkab. Membutuhkan rekomendasi yang jelas per tipe wilayah.</p></div>
+          <div class="card"><div class="who">Validator</div><h3>Tokoh & lembaga lokal</h3><p>Sinode gereja, lembaga masyarakat adat, dan jurnalis lokal. Memeriksa apakah perilaku agen dan rekomendasi sesuai kenyataan.</p></div>
+          <div class="card"><div class="who">Mitra akademik</div><h3>Peneliti Papua</h3><p>Misalnya dari Universitas Cenderawasih. Penting untuk pengetahuan kontekstual, bahasa, dan legitimasi penelitian.</p></div>
+        </div>
+      </section>
+
+      <section id="model">
+        <h2><span class="no">06</span>Model simulasi untuk Papua</h2>
+        <h3>Status agen (SEIZA)</h3>
+        <div class="states">
+          <div class="st"><b><i class="dot" style="background:var(--s)"></i>S</b><span>Rentan, belum mendengar kabar</span></div>
+          <div class="st"><b><i class="dot" style="background:var(--e)"></i>E</b><span>Terpapar, belum bersikap</span></div>
+          <div class="st"><b><i class="dot" style="background:var(--i)"></i>I</b><span>Percaya dan menyebarkan</span></div>
+          <div class="st"><b><i class="dot" style="background:var(--z)"></i>Z</b><span>Skeptis atau meluruskan</span></div>
+          <div class="st"><b><i class="dot" style="background:var(--a)"></i>A</b><span>Siaga aktif, siap bertindak di lapangan</span></div>
+        </div>
+        <h3>Empat lapisan kanal</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>Kanal</th><th>Karakter di Papua</th><th>Bergantung sinyal?</th></tr></thead>
+          <tbody>
+            <tr><td>WhatsApp</td><td>Grup keluarga, jemaat, marga, sekolah. Sangat tepercaya.</td><td>Ya</td></tr>
+            <tr><td>Facebook</td><td>Grup info kota dan jual-beli. Menghubungkan kampung dengan kerabat di Jayapura.</td><td>Ya</td></tr>
+            <tr><td>Tatap muka</td><td>Ibadah, pasar, pertemuan adat, pangkalan ojek, perahu antarpulau.</td><td>Tidak</td></tr>
+            <tr><td>Radio</td><td>RRI dan radio komunitas. Jangkauannya luas, termasuk kampung tanpa internet.</td><td>Tidak</td></tr>
+          </tbody>
+        </table></div>
+        <h3>Peluang transmisi</h3>
+        <pre class="code">p(S→E) = β[kanal] × aktivitas_penyebar × kepercayaan_relasi
+         × sinyal[kabupaten]        // = 1 untuk tatap muka dan radio
+         × faktor_identitas × (1 − 0,45 × literasi_digital) × faktor_prebunking
+
+sinyal[kabupaten] diambil dari Podes: proporsi kampung dengan sinyal 4G/internet
+Indeks risiko wilayah = (jumlah agen A / populasi) × kehadiran pemicu (orang tak dikenal, kendaraan asing)</pre>
+        <h3>Agen kunci khas Papua</h3>
+        <ul class="clean">
+          <li><b>Pendeta dan pastor:</b> menjangkau jemaat lewat ibadah dan grup WhatsApp jemaat. Kepercayaan sangat tinggi.</li>
+          <li><b>Tokoh adat:</b> ondoafi (Jayapura, Sentani), mananwir (Biak, Supiori), dan kepala suku. Keputusannya bisa menggerakkan satu kampung.</li>
+          <li><b>Kepala kampung</b> dan <b>tokoh pemuda</b>, yang sering menjadi penggerak ronda atau jaga kampung.</li>
+          <li><b>Mama-mama pasar</b> sebagai simpul kabar dari mulut ke mulut antara kota dan kampung.</li>
+          <li><b>Akun media sosial lokal</b> yang bisa membuat isu meloncat lintas kabupaten dan pulau.</li>
+        </ul>
+      </section>
+
+      <section id="data">
+        <h2><span class="no">07</span>Sumber data</h2>
+        <div class="tbl"><table>
+          <thead><tr><th>Data</th><th>Dipakai untuk</th></tr></thead>
+          <tbody>
+            <tr><td>BPS Provinsi Papua: Sensus Penduduk 2020 (long form) dan proyeksi terbaru</td><td>Populasi per kabupaten/kota, usia, pendidikan, agama, rumah tangga dengan anak usia sekolah</td></tr>
+            <tr><td>BPS: Potensi Desa (Podes)</td><td>Ketersediaan sinyal seluler dan internet per kampung, keberadaan gereja, pasar, dan sekolah</td></tr>
+            <tr><td>Survei APJII</td><td>Penetrasi internet dan platform yang paling banyak dipakai di wilayah Papua</td></tr>
+            <tr><td>Data BTS dan akses internet (BAKTI Komdigi, bila tersedia)</td><td>Memperhalus peta sinyal</td></tr>
+            <tr><td>Pemberitaan, arsip cek fakta, wawancara</td><td>Linimasa kasus rujukan (Wamena 2023) untuk kalibrasi pola</td></tr>
+            <tr><td>FGD dan wawancara tokoh lokal</td><td>Struktur jaringan sosial, bobot kepercayaan, dan validasi perilaku agen kunci</td></tr>
+          </tbody>
+        </table></div>
+      </section>
+
+      <section id="fungsional">
+        <h2><span class="no">08</span>Kebutuhan fungsional</h2>
+        <div class="tbl"><table>
+          <thead><tr><th>ID</th><th>Kebutuhan</th><th>Prioritas</th></tr></thead>
+          <tbody>
+            <tr><td class="id">FR-01</td><td><b>Generator populasi Papua</b> untuk 9 kabupaten/kota dari tabel BPS, hingga tingkat distrik dan kampung, dengan seed acak tetap.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-02</td><td><b>Peta sinyal</b> per kampung dari Podes yang memengaruhi kanal daring.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-03</td><td><b>Generator jaringan empat kanal</b>: WhatsApp, Facebook, tatap muka (gereja, pasar, adat), dan radio, termasuk ikatan kampung–kota dan antarpulau.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-04</td><td><b>Mesin difusi SEIZA</b> tervektorisasi dengan langkah waktu dapat diatur, termasuk siklus harian (ibadah Minggu, hari pasar).</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-05</td><td><b>Editor skenario</b>: isu, titik tanam (misalnya grup orang tua murid di Sentani), waktu, dan emosi pesan.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-06</td><td><b>Modul intervensi Papua</b>: klarifikasi resmi di media sosial, klarifikasi lewat gereja dan tokoh adat, siaran radio, dan prebunking lewat gereja dan sekolah.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-07</td><td><b>Orkestrator agen kunci LLM</b> (DeepSeek) dengan persona berbahasa Melayu Papua dan keluaran JSON tervalidasi.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-08</td><td><b>Cache keputusan</b> (SQLite) dan pembekuan tabel keputusan sebelum Monte Carlo.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-09</td><td><b>Runner Monte Carlo</b> paralel per skenario.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-10</td><td><b>Analisis per tipe wilayah</b>: hasil dipecah menjadi kota, pesisir, pedalaman, dan kepulauan.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-11</td><td><b>Modul kalibrasi</b> terhadap linimasa kasus rujukan dan masukan FGD.</td><td><span class="pri p1">P1</span></td></tr>
+            <tr><td class="id">FR-12</td><td><b>Log peristiwa</b> (Parquet) untuk replay dan analisis.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">FR-13</td><td><b>Mode model lokal</b> (Ollama) sebagai pembanding dan opsi kedaulatan data.</td><td><span class="pri p1">P1</span></td></tr>
+            <tr><td class="id">FR-14</td><td><b>Ekspor laporan</b> dan <b>pelacak biaya</b> token per skenario.</td><td><span class="pri p1">P1</span></td></tr>
+          </tbody>
+        </table></div>
+      </section>
+
+      <section id="visual">
+        <h2><span class="no">09</span>Kebutuhan visual & animasi</h2>
+        <p>Demo di atas menunjukkan arahnya. Versi produksi harus memenuhi kebutuhan berikut.</p>
+        <div class="tbl"><table>
+          <thead><tr><th>ID</th><th>Kebutuhan</th><th>Prioritas</th></tr></thead>
+          <tbody>
+            <tr><td class="id">V-01</td><td><b>Graf jaringan geografis beranimasi</b> (WebGL): node ditempatkan sesuai koordinat kampung di atas peta Provinsi Papua, 60 fps hingga ±50 ribu node tampil, dengan agregasi kabupaten → distrik → kampung saat di-zoom.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">V-02</td><td><b>Warna status konsisten</b> plus bentuk atau pola untuk pengguna buta warna.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">V-03</td><td><b>Denyut transmisi</b> sepanjang edge (merah untuk hoaks, teal untuk koreksi) dan pendar node saat berubah status.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">V-04</td><td><b>Gaya edge per kanal</b>: WhatsApp padat, tatap muka bertitik, Facebook tipis, unggahan viral putus-putus, dan gelombang melingkar untuk siaran radio.</td><td><span class="pri p1">P1</span></td></tr>
+            <tr><td class="id">V-05</td><td><b>Lapisan peta sinyal</b> yang bisa dinyalakan atau dimatikan, agar terlihat mengapa klarifikasi daring gagal di wilayah tertentu.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">V-06</td><td><b>Peta risiko per distrik</b> (choropleth, MapLibre + deck.gl) yang tersinkron dengan graf.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">V-07</td><td><b>Timeline scrubber & replay</b> dengan kurva SEIZA yang bergerak bersama graf.</td><td><span class="pri p0">P0</span></td></tr>
+            <tr><td class="id">V-08</td><td><b>Mode bandingkan berdampingan</b> dua skenario dengan seed sama.</td><td><span class="pri p1">P1</span></td></tr>
+            <tr><td class="id">V-09</td><td><b>Panel agen dan feed peristiwa</b>, termasuk jawaban LLM mentah untuk agen kunci.</td><td><span class="pri p1">P1</span></td></tr>
+            <tr><td class="id">V-10</td><td><b>Ekspor video dan PNG</b> resolusi tinggi untuk presentasi kepada mitra di Jayapura.</td><td><span class="pri p1">P1</span></td></tr>
+          </tbody>
+        </table></div>
+      </section>
+
+      <section id="llm">
+        <h2><span class="no">10</span>Kontrak LLM agen kunci</h2>
+        <p>API DeepSeek kompatibel dengan format OpenAI. Prompt sistem dan glosarium Melayu Papua diletakkan di awal agar mendapat diskon cache. Setiap jawaban harus lolos validasi skema. Jika gagal, coba ulang maksimal dua kali, lalu kembali ke aturan bawaan ABM.</p>
+        <pre class="code">// Prompt sistem (tetap)
+Kamu memerankan warga FIKTIF di Provinsi Papua dalam simulasi riset akademik.
+Gunakan cara berpikir dan bahasa sesuai persona. Jawab hanya JSON sesuai skema.
+Jangan menambahkan fakta baru, nama orang sungguhan, atau tuduhan terhadap kelompok.
+
+// Glosarium singkat (tetap)
+"sa" = saya, "ko" = kamu, "dong" = mereka, "su" = sudah, "tra" = tidak, ...
+
+// Persona (per agen)
+{ "nama": "Pdt. Markus", "peran": "Pendeta jemaat", "wilayah": "Serui, Kep. Yapen",
+  "usia": 49, "jangkauan": "±300 jemaat, 4 grup WA", "sinyal": "sedang",
+  "nilai": ["melindungi jemaat", "hati-hati terhadap kabar dari luar"] }
+
+// Konteks (per keputusan)
+{ "kabar_masuk": "Hati-hati e! Ada orang pake mobil putih culik anak sekolah di Sentani...",
+  "dari": "grup WA keluarga", "komentar": ["...", "..."],
+  "klarifikasi_terlihat": [], "hari": "Sabtu, besok ibadah" }
+
+// Keluaran wajib
+{ "aksi": "teruskan | abaikan | luruskan | tanya_dulu",
+  "kanal": "wa | mimbar_ibadah | tatap_muka | tidak_ada",
+  "keyakinan": 0.0-1.0, "ajakan_jaga_kampung": true | false,
+  "pesan_tambahan": "maks. 280 karakter", "alasan_singkat": "..." }</pre>
+        <div class="callout"><b>Risiko bahasa.</b> LLM umumnya lemah dalam Melayu Papua dan konteks budaya lokal. Setiap persona dan contoh jawaban wajib ditinjau penutur asli sebelum dipakai, dan hasil DeepSeek dibandingkan dengan model lain.</div>
+      </section>
+
+      <section id="arsitektur">
+        <h2><span class="no">11</span>Arsitektur & teknologi</h2>
+        <div class="mermaid-box">
+<pre class="mermaid">
+flowchart LR
+  subgraph L[Laptop peneliti]
+    B[BPS + Podes<br/>Provinsi Papua] --> P[Generator populasi<br/>9 kab/kota]
+    B --> Q[Peta sinyal<br/>per kampung]
+    P --> N[Jaringan 4 kanal<br/>WA, FB, tatap muka, radio]
+    Q --> E
+    N --> E[Mesin difusi SEIZA<br/>NumPy + SciPy]
+    S[Skenario dan<br/>intervensi] --> E
+    E <--> K[Orkestrator<br/>agen kunci]
+    K <--> C[(Cache SQLite)]
+    E --> G[(Log Parquet)]
+    G --> V[Dashboard peta + graf<br/>Sigma.js + deck.gl]
+    G --> M[Monte Carlo<br/>per tipe wilayah]
+  end
+  K <-->|HTTPS JSON| D[DeepSeek API]
+  K -.->|alternatif| O[Ollama lokal]
+</pre>
+        </div>
+        <h3>Tumpukan teknologi</h3>
+        <div class="tbl"><table>
+          <thead><tr><th>Lapisan</th><th>Pilihan</th></tr></thead>
+          <tbody>
+            <tr><td>Simulasi</td><td>Python 3.11, NumPy, SciPy sparse, python-igraph, GeoPandas untuk batas wilayah</td></tr>
+            <tr><td>LLM</td><td>SDK openai (base_url DeepSeek) + asyncio + tenacity, Pydantic untuk validasi JSON</td></tr>
+            <tr><td>Penyimpanan</td><td>SQLite (cache), Parquet + DuckDB (log & analisis)</td></tr>
+            <tr><td>Backend</td><td>FastAPI + WebSocket untuk mengalirkan langkah simulasi</td></tr>
+            <tr><td>Frontend</td><td>React + Vite, Sigma.js + Graphology (graf WebGL), deck.gl + MapLibre (peta Papua), Apache ECharts (kurva)</td></tr>
+            <tr><td>Analisis</td><td>Jupyter, statsmodels, SALib (analisis sensitivitas)</td></tr>
+          </tbody>
+        </table></div>
+      </section>
+
+      <section id="nonfungsional">
+        <h2><span class="no">12</span>Kebutuhan non-fungsional</h2>
+        <ul class="clean">
+          <li><b>Perangkat:</b> laptop RAM 16 GB tanpa GPU untuk skala penuh (±1 juta agen). Prototipe cukup 8 GB.</li>
+          <li><b>Replikasi:</b> setiap putaran mencatat seed, versi kode, versi model LLM, dan hash prompt.</li>
+          <li><b>Biaya:</b> LLM dipanggil hanya saat agen kunci menerima informasi baru, dan keputusan dibekukan sebelum Monte Carlo.</li>
+          <li><b>Privasi & kedaulatan data:</b> hanya persona fiktif dan teks hoaks yang sudah publik yang dikirim ke API eksternal. Data hasil FGD dan wawancara tidak pernah dikirim ke LLM.</li>
+          <li><b>Keluaran agregat:</b> hasil hanya disajikan per kampung, distrik, atau kabupaten, tidak pernah per individu atau kelompok etnis.</li>
+        </ul>
+      </section>
+
+      <section id="roadmap">
+        <h2><span class="no">13</span>Roadmap</h2>
+        <div class="phases">
+          <div class="phase"><div class="w">Minggu 1–4</div><h3>Fondasi Papua</h3><p>Olah data BPS dan Podes untuk 9 kabupaten/kota, bangun populasi 10 ribu agen, jaringan empat kanal, dan visual peta dasar.</p></div>
+          <div class="phase"><div class="w">Minggu 5–8</div><h3>Kalibrasi & validasi lapangan</h3><p>Susun linimasa kasus Wamena 2023, lalu adakan FGD di Jayapura bersama tokoh gereja, adat, dan jurnalis untuk menetapkan bobot kepercayaan.</p></div>
+          <div class="phase"><div class="w">Minggu 9–12</div><h3>Agen kunci DeepSeek</h3><p>Persona Melayu Papua yang ditinjau penutur asli, cache, pelacak biaya, dan panel agen.</p></div>
+          <div class="phase"><div class="w">Minggu 13–16</div><h3>Skala penuh & eksperimen</h3><p>Naik ke ±1 juta agen (mendekati 1:1), jalankan Monte Carlo enam skenario, dan analisis per tipe wilayah.</p></div>
+          <div class="phase"><div class="w">Minggu 17–20</div><h3>Analisis & lokakarya hasil</h3><p>Analisis sensitivitas, pembanding model lokal, lokakarya hasil bersama mitra di Jayapura, dan penulisan laporan.</p></div>
+        </div>
+      </section>
+
+      <section id="risiko">
+        <h2><span class="no">14</span>Risiko, mitigasi & etika</h2>
+        <p>Papua adalah wilayah dengan sejarah konflik dan isu hak asasi manusia yang sensitif. Penelitian ini harus dirancang agar melindungi warga, bukan menambah risiko bagi mereka.</p>
+        <div class="tbl"><table>
+          <thead><tr><th>Risiko</th><th>Mitigasi</th></tr></thead>
+          <tbody>
+            <tr><td>Hasil disalahgunakan untuk pengawasan atau menekan ekspresi politik</td><td>Ruang lingkup dibatasi pada hoaks pemicu kekerasan terhadap warga sipil. Ekspresi politik di luar cakupan. Keluaran hanya agregat. Kode dan model dibagikan terbatas.</td></tr>
+            <tr><td>Stereotip terhadap Orang Asli Papua atau pendatang</td><td>Asal etnis tidak dipakai sebagai faktor kecurigaan. Persona dan parameter ditinjau peneliti Papua.</td></tr>
+            <tr><td>LLM tidak memahami bahasa dan budaya Papua</td><td>Glosarium, tinjauan penutur asli, pembanding beberapa model, dan pelaporan keterbatasan secara terbuka.</td></tr>
+            <tr><td>Data kalibrasi terbatas dan kasus rujukan berada di provinsi lain</td><td>Kalibrasi pola, bukan angka absolut. Tambahkan validasi kualitatif lewat FGD dan analisis sensitivitas.</td></tr>
+            <tr><td>Data sinyal tidak mutakhir</td><td>Gunakan Podes terbaru, silangkan dengan data BTS, dan uji sensitivitas terhadap parameter sinyal.</td></tr>
+            <tr><td>Kedaulatan data (server DeepSeek di luar negeri)</td><td>Hanya data sintetis yang dikirim. Sediakan mode model lokal.</td></tr>
+          </tbody>
+        </table></div>
+        <h3>Prinsip etika</h3>
+        <ul class="clean">
+          <li>Libatkan peneliti dan tokoh Papua sejak desain, bukan hanya saat pengambilan data.</li>
+          <li>Ajukan kaji etik dan izin penelitian sesuai ketentuan yang berlaku sebelum kerja lapangan.</li>
+          <li>Kembalikan hasil kepada komunitas dalam bentuk yang bisa mereka pakai, misalnya panduan meluruskan hoaks untuk gereja dan kampung.</li>
+        </ul>
+      </section>
+
+      <section id="terima">
+        <h2><span class="no">15</span>Kriteria penerimaan MVP</h2>
+        <ul class="check">
+          <li>Simulasi 100 ribu agen di 9 kabupaten/kota selama 48 jam selesai di laptop dengan hasil identik untuk seed yang sama.</li>
+          <li>Kanal tatap muka dan radio berjalan tanpa bergantung sinyal, sedangkan kanal daring mengikuti peta sinyal.</li>
+          <li>Keenam skenario dapat dibandingkan per tipe wilayah beserta interval kepercayaannya.</li>
+          <li>Minimal 50 agen kunci berbahasa Melayu Papua berjalan dengan DeepSeek, lolos validasi JSON, dan ditinjau penutur asli.</li>
+          <li>Peta, graf beranimasi, dan kurva tersinkron, bisa di-replay, dan bisa diekspor menjadi video.</li>
+        </ul>
+      </section>
+
+      <section id="terbuka">
+        <h2><span class="no">16</span>Pertanyaan terbuka</h2>
+        <ul class="clean">
+          <li>Apakah cakupan perlu diperluas ke Papua Pegunungan, tempat kasus rujukan Wamena 2023 terjadi, atau bahkan ke seluruh Tanah Papua?</li>
+          <li>Siapa mitra akademik dan penutur asli yang bisa memvalidasi persona dan bahasa?</li>
+          <li>Izin penelitian dan kaji etik apa saja yang diperlukan untuk FGD di Jayapura?</li>
+          <li>Apakah data Podes terbaru tersedia hingga tingkat kampung untuk seluruh 9 kabupaten/kota?</li>
+          <li>Berapa anggaran API dan waktu penelitian yang tersedia?</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+const REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+// Kabupaten/kota Provinsi Papua. Koordinat perkiraan, ukuran klaster & sinyal perkiraan kasar untuk demo.
+const KAB=[
+ {n:'Kota Jayapura',lon:140.70,lat:-2.55,size:100,sig:1.0, lead:['Ondoafi Yan','Tokoh adat'], pdt:'Pdt. Yohanis', lab:[140.70,-2.02,'center']},
+ {n:'Kab. Jayapura',lon:139.95,lat:-2.95,size:62,sig:.9, lead:['Ondoafi Ramses','Tokoh adat'], pdt:'Pdt. Lukas', lab:[139.95,-3.42,'center']},
+ {n:'Keerom',lon:140.85,lat:-3.40,size:34,sig:.6, lead:['Bapak Yulius','Kepala suku'], pdt:'Pdt. Elia', lab:[140.85,-3.78,'center']},
+ {n:'Sarmi',lon:138.75,lat:-2.15,size:28,sig:.5, lead:['Bapak Frans','Kepala kampung'], lab:[138.75,-1.78,'center']},
+ {n:'Mamberamo Raya',lon:137.95,lat:-2.80,size:22,sig:.3, lead:['Bapak Nikolas','Kepala suku'], lab:[137.95,-3.15,'center']},
+ {n:'Waropen',lon:136.75,lat:-2.90,size:24,sig:.45, lead:['Bapak Agus','Kepala kampung'], lab:[136.75,-3.27,'center']},
+ {n:'Kep. Yapen',lon:136.30,lat:-1.85,size:48,sig:.65, lead:['Bapak Daud','Kepala suku'], pdt:'Pdt. Markus', lab:[136.30,-2.28,'center']},
+ {n:'Biak Numfor',lon:136.05,lat:-1.10,size:60,sig:.85, lead:['Mananwir Korinus','Tokoh adat'], pdt:'Pdt. Sefnat', lab:[136.62,-1.10,'left']},
+ {n:'Supiori',lon:135.55,lat:-0.68,size:22,sig:.55, lead:['Mananwir Petrus','Tokoh adat'], lab:[135.86,-0.62,'left']}
+];
+const LON0=135.15,LON1=141.25,LAT0=-0.22,LAT1=-3.95;
+const SOC={lon:139.2,lat:-1.0};
+const TICKS=96, TT_START=20, SEED=11;
+const SC={
+  A:{label:'Tanpa intervensi'},
+  B:{label:'Klarifikasi resmi di medsos, T+24 jam', official:48},
+  C:{label:'Klarifikasi resmi di medsos, T+6 jam', official:12},
+  D:{label:'Lewat gereja & tokoh adat, T+12 jam', local:24},
+  F:{label:'Siaran radio RRI & komunitas, T+12 jam', radio:24},
+  E:{label:'Prebunking lewat gereja & sekolah', prebunk:true}
+};
+const SL={S:'Rentan',E:'Terpapar',I:'Penyebar',Z:'Skeptis',A:'Siaga aktif'};
+const BETA={wa:.3,fb:.13,tt:.07,tm:.13}, GZ={wa:.22,fb:.08,tm:.18};
+const sigTxt=v=>v>=.8?'kuat':v>=.6?'sedang':'lemah';
+
+function rngf(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+
+function buildWorld(seed){
+  const r=rngf(seed),nodes=[],edges=[],seen=new Set(),byC=[];
+  const g=()=>{let u=0;while(!u)u=r();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*r())};
+  KAB.forEach((k,ki)=>{byC.push([]);const sd=.07+Math.sqrt(k.size)*.012;
+    for(let i=0;i<k.size;i++){const id=nodes.length;
+      nodes.push({id,c:ki,lon:k.lon+g()*sd*1.15,lat:k.lat+g()*sd*.8,parent:r()<.45,lit:Math.min(1,Math.max(0,.36+(k.sig-.6)*.25+g()*.2)),key:null,adj:[]});byC[ki].push(id)}
+    const L=nodes[byC[ki][0]];L.key={role:k.lead[1],name:k.lead[0]};L.lon=k.lon;L.lat=k.lat;
+    if(k.pdt){const P=nodes[byC[ki][1]];P.key={role:'Pendeta',name:k.pdt};P.lon=k.lon+.09;P.lat=k.lat-.06}
+  });
+  const M=nodes[byC[0][2]];M.key={role:'Mama pasar',name:'Mama Ance'};M.lon=KAB[0].lon-.1;M.lat=KAB[0].lat+.07;
+  const soc=['Akun FB lokal viral','Akun TikTok lokal'].map((nm,i)=>{const id=nodes.length;nodes.push({id,c:-1,lon:SOC.lon+i*.22,lat:SOC.lat,parent:false,lit:.5,key:{role:'Media sosial',name:nm},adj:[]});return id});
+  function add(a,b,type,trust){if(a===b)return;const k=a<b?a+'-'+b:b+'-'+a;if(seen.has(k))return;seen.add(k);const e={a,b,type,trust};edges.push(e);nodes[a].adj.push(e);nodes[b].adj.push(e)}
+  const pick=arr=>arr[Math.floor(r()*arr.length)];
+  const isl=[6,7,8];
+  KAB.forEach((k,ki)=>{for(const id of byC[ki]){
+    for(let j=0;j<3;j++)add(id,pick(byC[ki]),'wa',.9);
+    for(let j=0;j<2;j++)add(id,pick(byC[ki]),'tm',.85);
+    const u=r();
+    if(ki!==0&&u<.28)add(id,pick(byC[0]),'fb',.55);
+    else if(isl.includes(ki)&&u<.42)add(id,pick(byC[isl[(isl.indexOf(ki)+1+Math.floor(r()*2))%3]]),'fb',.55);
+    else if(ki===0&&u<.12)add(id,pick(byC[1+Math.floor(r()*8)]),'fb',.55);
+    else add(id,pick(byC[ki]),'fb',.5);
+  }
+    const L=byC[ki][0];for(let j=0;j<10;j++)add(L,pick(byC[ki]),'tm',.95);for(let j=0;j<8;j++)add(L,pick(byC[ki]),'wa',.95);
+    if(k.pdt){const P=byC[ki][1];for(let j=0;j<14;j++)add(P,pick(byC[ki]),'tm',.95);for(let j=0;j<6;j++)add(P,pick(byC[ki]),'wa',.95)}
+  });
+  for(let j=0;j<16;j++)add(M.id,pick(byC[0]),'tm',.8);
+  for(let j=0;j<6;j++)add(M.id,pick(byC[1]),'tm',.8);
+  for(const s of soc){let c=0,guard=0;while(c<45&&guard<5000){guard++;const n=nodes[Math.floor(r()*soc[0])];if(r()<KAB[n.c].sig*KAB[n.c].sig){add(s,n.id,'tt',.35);c++}}}
+  nodes.forEach(n=>n.deg=n.adj.length);
+  return {nodes,edges,byC,soc};
+}
+const sigOf=(W,i)=>{const n=W.nodes[i];return n.c<0?1:KAB[n.c].sig};
+
+function makeSim(W,key,seed){
+  const N=W.nodes.length,r=rngf(seed*31+7),sc=SC[key];
+  const s={t:0,key,sc,r,now:null,st:new Array(N).fill('S'),since:new Float32Array(N),decide:new Float32Array(N),pre:new Uint8Array(N),tau:new Float32Array(N).fill(8),str:new Float32Array(N).fill(1),bel:new Uint8Array(N),
+    hist:[],risk:new Array(KAB.length).fill(0),riskEver:new Array(KAB.length).fill(false),peakA:0,events:[],pulses:[],flashes:[],waves:[]};
+  if(sc.prebunk)W.nodes.forEach((n,i)=>{if((n.parent&&r()<.7)||r()<.2)s.pre[i]=1});
+  let c=0;for(const id of W.byC[1]){const n=W.nodes[id];if(!n.key&&n.parent&&c<6){s.st[id]='I';s.bel[id]=1;c++}}
+  s.events.push({t:0,kind:'h',text:'Pesan suara dan video lama mulai beredar di grup WA orang tua murid di Sentani: "Hati-hati e! Ada orang pake mobil putih culik anak sekolah. Su ada 3 anak hilang."'});
+  rec(s);return s;
+}
+function rec(s){const h={S:0,E:0,I:0,Z:0,A:0};for(const x of s.st)h[x]++;s.hist.push(h);if(h.A>s.peakA)s.peakA=h.A}
+function ev(s,kind,text){s.events.push({t:s.now??s.t,kind,text})}
+
+function step(W,s,live,now){
+  const t=s.t+1;s.now=t;const st=s.st,nx=st.slice(),r=s.r,sc=s.sc,nodes=W.nodes;
+  const set=(i,v,from,tau)=>{if(nx[i]!==st[i])return false;nx[i]=v;s.since[i]=t;if(tau!=null)s.tau[i]=tau;if(v==='I'||v==='A')s.bel[i]=1;
+    if(live){if(from!=null&&s.pulses.length<700)s.pulses.push({a:from,b:i,k:v==='Z'?'z':'h',born:now});s.flashes.push({i,born:now})}return true};
+  if(t===TT_START){for(const id of W.soc){nx[id]='I';s.since[id]=t;s.tau[id]=14;s.bel[id]=1}
+    ev(s,'h','Akun Facebook dan TikTok lokal mengunggah ulang video lama dengan keterangan "Sentani hari ini". Kabar meloncat ke Biak dan Serui, tetapi nyaris tidak sampai ke kampung tanpa sinyal.')}
+  for(let i=0;i<st.length;i++){
+    const v=st[i];
+    if(v==='I'||v==='A'){
+      const act=Math.exp(-(t-s.since[i])/s.tau[i]);if(act<.03)continue;
+      for(const e of nodes[i].adj){if(e.type==='tt'&&t<TT_START)continue;const j=e.a===i?e.b:e.a;if(st[j]!=='S')continue;const nj=nodes[j];
+        const sg=e.type==='tm'?1:Math.min(sigOf(W,i),sigOf(W,j));
+        const p=BETA[e.type]*act*e.trust*sg*(nj.parent?1.5:1)*(1-.45*nj.lit)*(s.pre[j]?.45:1);
+        if(r()<p&&set(j,'E',i))s.decide[j]=t+1+Math.floor(r()*3)}
+    }else if(v==='Z'){
+      const act=Math.exp(-(t-s.since[i])/s.tau[i])*s.str[i];if(act<.03)continue;
+      for(const e of nodes[i].adj){if(e.type==='tt')continue;const j=e.a===i?e.b:e.a;const sj=st[j];
+        let p=GZ[e.type]*act*e.trust*(e.type==='tm'?1:Math.min(sigOf(W,i),sigOf(W,j)));
+        if(sj==='E');else if(sj==='I')p*=.5;else if(sj==='A')p*=.3;else if(sj==='S')p*=.12;else continue;
+        if(r()<p)set(j,'Z',i,sj==='S'?1.5:3)}
+    }else if(v==='E'&&t>=s.decide[i]){
+      const n=nodes[i];
+      if(n.key)keyDecide(W,s,i,set);
+      else{const pB=.74*(1-.6*n.lit)*(n.parent?1.15:1)*(s.pre[i]?.4:1);if(r()<pB)set(i,(n.parent&&r()<.4)?'A':'I',null,8);else set(i,'Z',null,2)}
+    }
+    if(v==='I'&&!nodes[i].key&&t-s.since[i]>16&&r()<.012)set(i,'Z',null,2);
+  }
+  if(sc.official&&t>=sc.official){
+    if(t===sc.official)ev(s,'z','Polda Papua dan Diskominfo mengunggah klarifikasi di Instagram, Facebook, dan X: tidak ada laporan anak hilang. Kampung bersinyal lemah hampir tidak menerimanya.');
+    for(let i=0;i<st.length;i++){const v=st[i],n=nodes[i];if(n.c<0)continue;const sg=KAB[n.c].sig;
+      if(v==='E'||v==='I'||v==='A'){if(r()<.04*sg*(.3+.7*n.lit)*(v==='A'?.4:1))set(i,'Z',null,3)}else if(v==='S'&&r()<.02*sg)set(i,'Z',null,1)}
+  }
+  if(sc.radio&&t>=sc.radio){
+    if(t===sc.radio){ev(s,'z','RRI Jayapura, Biak, dan Serui serta radio komunitas menyiarkan klarifikasi dalam bahasa Melayu Papua, diulang setiap jam.');if(live)s.waves.push({born:now})}
+    else if(live&&(t-sc.radio)%2===0)s.waves.push({born:now});
+    for(let i=0;i<st.length;i++){const v=st[i],n=nodes[i];if(n.c<0)continue;
+      if(v==='E'||v==='I'||v==='A'){if(r()<.028*(v==='A'?.5:1))set(i,'Z',null,3)}else if(v==='S'&&r()<.012)set(i,'Z',null,1)}
+  }
+  if(sc.local&&t===sc.local){
+    let c=0;for(const n of nodes){if(n.key&&n.c>=0){nx[n.id]='Z';s.since[n.id]=t;s.tau[n.id]=30;s.str[n.id]=1.8;c++;if(live)s.flashes.push({i:n.id,born:now})}}
+    ev(s,'z',`Polda dan pemda menghubungi sinode gereja dan lembaga adat. ${c} pendeta, tokoh adat, dan kepala kampung meluruskan isu lewat grup jemaat, pengumuman ibadah, dan dari rumah ke rumah.`);
+  }
+  s.st=nx;s.t=t;s.now=null;rec(s);
+  KAB.forEach((k,ki)=>{let a=0;for(const id of W.byC[ki])if(nx[id]==='A')a++;s.risk[ki]=a/k.size;
+    if(s.risk[ki]>.06&&!s.riskEver[ki]){s.riskEver[ki]=true;ev(s,'w',`Indeks risiko ${k.n} melewati ambang. Orang tak dikenal atau sopir yang melintas berisiko dihadang warga.`)}});
+}
+function keyDecide(W,s,i,set){
+  const n=W.nodes[i],r=s.r,pre=s.sc.prebunk,kab=n.c>=0?KAB[n.c].n:'';
+  const role=n.key.role;
+  if(role==='Pendeta'){
+    if(r()<(pre?.2:.45)){set(i,'I',null,10);ev(s,'h',`${n.key.name} (${kab}) meneruskan kabar ke grup jemaat dengan ajakan berdoa untuk keselamatan anak-anak.`)}
+    else{set(i,'Z',null,20);s.str[i]=1.5;ev(s,'z',`${n.key.name} (${kab}) mengingatkan jemaat: "Kitorang cek dulu. Jang sampe orang tra bersalah jadi korban."`)}
+  }else if(role==='Mama pasar'){
+    if(r()<(pre?.3:.7)){set(i,'I',null,12);ev(s,'h','Mama Ance (pedagang pasar, Kota Jayapura) bercerita ke sesama mama-mama pasar. Kabar menyebar dari mulut ke mulut sampai ke Sentani.')}
+    else{set(i,'Z',null,15);s.str[i]=1.3;ev(s,'z','Mama Ance (pedagang pasar, Kota Jayapura) bilang ke pembeli: "Itu kabar tipu. Sa pu ponakan polisi su bilang tra ada."')}
+  }else{
+    if(r()<(pre?.3:.8)){set(i,'A',null,10);ev(s,'h',`${n.key.name} (${role}, ${kab}) meneruskan kabar: "Malam ini semua laki-laki jaga kampung. Kalau ada mobil atau orang tra dikenal, tahan dulu."`)}
+    else{set(i,'Z',null,20);s.str[i]=1.5;ev(s,'z',`${n.key.name} (${role}, ${kab}) menelepon kapolsek dulu, lalu meminta warga: "Jang sebar dulu, belum tentu benar."`)}
+  }
+}
+
+/* ---------- rendering ---------- */
+const W=buildWorld(SEED);
+let scen='A',sim=makeSim(W,scen,SEED),playing=!REDUCED,speed=1,acc=0,last=performance.now(),evShown=-1,hover=-1;
+const cv=document.getElementById('stage'),ctx=cv.getContext('2d'),box=document.getElementById('stageBox');
+const ch=document.getElementById('chart'),cctx=ch.getContext('2d');
+let C={},Wd=0,Ht=0,K=1,ox=0,oy=0;
+function colors(){const cs=getComputedStyle(document.documentElement);const g=n=>cs.getPropertyValue(n).trim();
+  C={stage:g('--stage'),ink:g('--stage-ink'),muted:g('--stage-muted'),line:g('--stage-line'),S:g('--s'),E:g('--e'),I:g('--i'),Z:g('--z'),A:g('--a')}}
+function size(){const dpr=Math.min(2,window.devicePixelRatio||1);const b=box.getBoundingClientRect();Wd=b.width;Ht=b.height;
+  cv.width=Math.round(Wd*dpr);cv.height=Math.round(Ht*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+  const pad=14;K=Math.min((Wd-2*pad)/(LON1-LON0),(Ht-2*pad)/(LAT0-LAT1));ox=(Wd-K*(LON1-LON0))/2;oy=(Ht-K*(LAT0-LAT1))/2;
+  const cb=ch.getBoundingClientRect();ch.width=Math.round(cb.width*dpr);ch.height=Math.round(cb.height*dpr);cctx.setTransform(dpr,0,0,dpr,0,0);drawChart()}
+const PX=lon=>ox+(lon-LON0)*K, PY=lat=>oy+(LAT0-lat)*K;
+const X=n=>PX(n.lon), Y=n=>PY(n.lat);
+const R=n=>n.key?(n.c<0?6:4.6):1.5+Math.sqrt(n.deg)*.42;
+function rgba(hex,a){hex=hex.replace('#','');if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');const v=parseInt(hex,16);return `rgba(${v>>16&255},${v>>8&255},${v&255},${a})`}
+function lines(type,style,dash){ctx.strokeStyle=style;ctx.setLineDash(dash||[]);ctx.beginPath();
+  for(const e of W.edges){if(e.type!==type)continue;const a=W.nodes[e.a],b=W.nodes[e.b];ctx.moveTo(X(a),Y(a));ctx.lineTo(X(b),Y(b))}ctx.stroke();ctx.setLineDash([])}
+
+function render(now){
+  ctx.fillStyle=C.stage;ctx.fillRect(0,0,Wd,Ht);
+  // graticule
+  ctx.strokeStyle=rgba(C.ink,.05);ctx.lineWidth=1;ctx.font='9.5px "IBM Plex Mono", monospace';ctx.fillStyle=rgba(C.ink,.28);
+  for(let lo=136;lo<=141;lo++){const x=PX(lo);ctx.beginPath();ctx.moveTo(x,PY(LAT0));ctx.lineTo(x,PY(LAT1));ctx.stroke();ctx.textAlign='center';ctx.fillText(lo+'°BT',x,PY(LAT0)+11)}
+  for(let la=-1;la>=-3;la--){const y=PY(la);ctx.beginPath();ctx.moveTo(PX(LON0),y);ctx.lineTo(PX(LON1),y);ctx.stroke();ctx.textAlign='left';ctx.fillText(-la+'°LS',PX(LON0)+3,y-3)}
+  // radio waves
+  const wd=2600;sim.waves=sim.waves.filter(w=>now-w.born<wd);
+  if(!REDUCED)for(const w of sim.waves){const q=(now-w.born)/wd;ctx.strokeStyle=rgba(C.Z,.35*(1-q));ctx.lineWidth=2;
+    for(const src of [0,7,6]){const k=KAB[src];ctx.beginPath();ctx.arc(PX(k.lon),PY(k.lat),q*K*2.4,0,Math.PI*2);ctx.stroke()}}
+  // halos + labels
+  KAB.forEach((k,ki)=>{const x=PX(k.lon),y=PY(k.lat),rad=K*(.16+Math.sqrt(k.size)*.025);const rk=Math.min(1,sim.risk[ki]/.12),hot=sim.riskEver[ki];
+    const grd=ctx.createRadialGradient(x,y,0,x,y,rad);grd.addColorStop(0,rgba(hot?C.I:C.line,hot?.2+.28*rk:.4));grd.addColorStop(1,rgba(C.stage,0));
+    ctx.fillStyle=grd;ctx.beginPath();ctx.arc(x,y,rad,0,Math.PI*2);ctx.fill();
+    const lx=PX(k.lab[0]),ly=PY(k.lab[1]);ctx.textAlign=k.lab[2];
+    ctx.font='500 11px "IBM Plex Mono", monospace';ctx.fillStyle=hot?C.I:C.ink;ctx.fillText(k.n+(hot?' · berisiko':''),lx,ly);
+    ctx.font='10px "IBM Plex Mono", monospace';ctx.fillStyle=C.muted;
+    const bars='▂▄▆█'.slice(0,Math.max(1,Math.round(k.sig*4)));ctx.fillText('sinyal '+sigTxt(k.sig)+' '+bars,lx,ly+12)});
+  // edges
+  ctx.lineWidth=.6;lines('wa',rgba(C.ink,.075));
+  ctx.lineWidth=.8;lines('tm',rgba(C.ink,.07),[1,3]);
+  ctx.lineWidth=.5;lines('fb',rgba(C.ink,.05));
+  if(sim.t>=TT_START){ctx.lineWidth=.6;lines('tt',rgba(C.I,.14),[3,4])}
+  // pulses
+  const dur=560;sim.pulses=sim.pulses.filter(p=>now-p.born<dur);
+  if(!REDUCED)for(const p of sim.pulses){const a=W.nodes[p.a],b=W.nodes[p.b];const q=(now-p.born)/dur,e=1-Math.pow(1-q,2);
+    const x1=X(a),y1=Y(a),x2=X(b),y2=Y(b),t0=Math.max(0,e-.35),col=p.k==='z'?C.Z:C.I;
+    ctx.strokeStyle=rgba(col,.85*(1-q*.5));ctx.lineWidth=1.4;ctx.beginPath();ctx.moveTo(x1+(x2-x1)*t0,y1+(y2-y1)*t0);ctx.lineTo(x1+(x2-x1)*e,y1+(y2-y1)*e);ctx.stroke();
+    ctx.fillStyle=col;ctx.beginPath();ctx.arc(x1+(x2-x1)*e,y1+(y2-y1)*e,1.8,0,Math.PI*2);ctx.fill()}
+  const fd=700;sim.flashes=sim.flashes.filter(f=>now-f.born<fd);
+  if(!REDUCED)for(const f of sim.flashes){const n=W.nodes[f.i],q=(now-f.born)/fd;ctx.fillStyle=rgba(C[sim.st[f.i]],.35*(1-q));ctx.beginPath();ctx.arc(X(n),Y(n),R(n)+2+8*q,0,Math.PI*2);ctx.fill()}
+  // nodes
+  for(const n of W.nodes){ctx.fillStyle=C[sim.st[n.id]];ctx.beginPath();ctx.arc(X(n),Y(n),R(n),0,Math.PI*2);ctx.fill();
+    if(n.key){ctx.strokeStyle=C.ink;ctx.lineWidth=1.3;ctx.beginPath();ctx.arc(X(n),Y(n),R(n)+2.5,0,Math.PI*2);ctx.stroke()}}
+  if(hover>=0){const n=W.nodes[hover];ctx.strokeStyle=C.ink;ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(X(n),Y(n),R(n)+5,0,Math.PI*2);ctx.stroke()}
+  ctx.fillStyle=C.muted;ctx.font='500 10px "IBM Plex Mono", monospace';ctx.textAlign='center';ctx.fillText('akun viral lokal',PX(SOC.lon+.11),PY(SOC.lat)+18);
+}
+
+function drawChart(){
+  const b=ch.getBoundingClientRect(),w=b.width,h=b.height;if(!w)return;cctx.clearRect(0,0,w,h);
+  const L=34,Rr=14,T=8,B=20,pw=w-L-Rr,ph=h-T-B;let mxv=0;for(const d of sim.hist)for(const k of ['E','I','Z','A'])mxv=Math.max(mxv,d[k]);
+  const sv=mxv>200?100:50,ymax=Math.max(100,Math.ceil(mxv/sv)*sv);
+  cctx.font='10px "IBM Plex Mono", monospace';cctx.fillStyle=C.muted;cctx.strokeStyle=rgba(C.ink,.08);cctx.lineWidth=1;
+  for(let v=0;v<=ymax;v+=sv){const y=T+ph-(v/ymax)*ph;cctx.beginPath();cctx.moveTo(L,y);cctx.lineTo(L+pw,y);cctx.stroke();cctx.textAlign='right';cctx.fillText(v,L-6,y+3)}
+  cctx.textAlign='center';for(let hr=0;hr<=48;hr+=12){const x=L+(hr*2/TICKS)*pw;cctx.fillText(hr+' j',x,h-5)}
+  for(const k of ['E','I','Z','A']){cctx.strokeStyle=C[k];cctx.lineWidth=k==='A'?2.2:1.6;cctx.beginPath();
+    sim.hist.forEach((d,i)=>{const x=L+(i/TICKS)*pw,y=T+ph-(d[k]/ymax)*ph;i?cctx.lineTo(x,y):cctx.moveTo(x,y)});cctx.stroke();
+    const d=sim.hist[sim.hist.length-1],i=sim.hist.length-1;cctx.fillStyle=C[k];cctx.beginPath();cctx.arc(L+(i/TICKS)*pw,T+ph-(d[k]/ymax)*ph,2.6,0,Math.PI*2);cctx.fill()}
+}
+
+const countsEl=document.getElementById('counts'),feedEl=document.getElementById('feed'),clockEl=document.getElementById('clock');
+function fmtT(t){return 'T+'+(t/2).toFixed(1).replace('.',',')+' jam'}
+function updateUI(){
+  const d=sim.hist[sim.hist.length-1];
+  countsEl.innerHTML=['S','E','I','Z','A'].map(k=>`<div class="cnt"><span class="v"><i class="dot" style="background:var(--${k.toLowerCase()})"></i>${d[k]}</span><span class="l">${SL[k]}</span></div>`).join('');
+  clockEl.textContent=fmtT(sim.t)+(sim.t>=TICKS?' · selesai':'');
+  if(sim.events.length!==evShown){evShown=sim.events.length;
+    feedEl.innerHTML=sim.events.slice(-8).reverse().map(e=>`<li class="${e.kind}"><time>${fmtT(e.t)}</time>${e.text}</li>`).join('')}
+  drawChart();
+}
+document.getElementById('legend').innerHTML=['E','I','Z','A'].map(k=>`<span><i class="dot" style="background:var(--${k.toLowerCase()})"></i>${SL[k]}</span>`).join('');
+document.getElementById('scopeGrid').innerHTML=KAB.map(k=>{const on=Math.max(1,Math.round(k.sig*4));
+  return `<div><b>${k.n}</b><span>sinyal ${sigTxt(k.sig)}<span class="sig" aria-hidden="true">${[1,2,3,4].map(i=>`<i class="${i<=on?'on':''}" style="height:${3+i*2}px"></i>`).join('')}</span></span></div>`}).join('');
+
+const scenEl=document.getElementById('scen');
+scenEl.innerHTML=Object.keys(SC).map(k=>`<button type="button" data-k="${k}" aria-pressed="${k===scen}"><span class="k">${k}</span>${SC[k].label}</button>`).join('');
+scenEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;scen=b.dataset.k;scenEl.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.k===scen));reset(true);markCmp()});
+const playBtn=document.getElementById('play');
+function setPlay(p){playing=p;playBtn.textContent=sim.t>=TICKS?'Putar ulang':(p?'Jeda':'Putar')}
+playBtn.addEventListener('click',()=>{if(sim.t>=TICKS){reset(true);return}setPlay(!playing)});
+function reset(play){sim=makeSim(W,scen,SEED);evShown=-1;acc=0;updateUI();setPlay(play)}
+document.getElementById('reset').addEventListener('click',()=>reset(true));
+[1,2,4].forEach(v=>document.getElementById('sp'+v).addEventListener('click',()=>{speed=v;[1,2,4].forEach(u=>document.getElementById('sp'+u).setAttribute('aria-pressed',u===v))}));
+
+const cmpOut=document.getElementById('cmpOut');let cmpRes=null;
+function markCmp(){if(!cmpRes)return;cmpOut.querySelectorAll('tr[data-k]').forEach(tr=>tr.classList.toggle('cur',tr.dataset.k===scen))}
+document.getElementById('cmpBtn').addEventListener('click',()=>{
+  const RUNS=40,weak=KAB.map((k,i)=>k.sig<.6?i:-1).filter(i=>i>=0);
+  let weakPop=0;for(const i of weak)weakPop+=KAB[i].size;
+  cmpRes=Object.keys(SC).map(k=>{let pa=0,bl=0,rk=0,wb=0;for(let sd=1;sd<=RUNS;sd++){const s=makeSim(W,k,sd);while(s.t<TICKS)step(W,s,false,0);
+    pa+=s.peakA;for(const b of s.bel)bl+=b;rk+=s.riskEver.filter(Boolean).length;for(const i of weak)for(const id of W.byC[i])wb+=s.bel[id]}
+    return {k,label:SC[k].label,peakA:pa/RUNS,bel:bl/RUNS,risk:rk/RUNS,weak:100*wb/RUNS/weakPop}});
+  const f1=v=>v.toFixed(1).replace('.',','),mx=Math.max(...cmpRes.map(r=>r.peakA),1);
+  cmpOut.innerHTML=`<table><thead><tr><th>Skenario</th><th class="n">Puncak siaga aktif</th><th class="n">Pernah percaya</th><th class="n">% percaya di wilayah sinyal lemah</th><th class="n">Wilayah berisiko</th></tr></thead><tbody>${
+    cmpRes.map(r=>`<tr data-k="${r.k}"><td><b>${r.k}</b> · ${r.label}<span class="bar" style="width:${Math.max(2,r.peakA/mx*100)}%"></span></td><td class="n">${f1(r.peakA)}</td><td class="n">${Math.round(r.bel)}</td><td class="n">${Math.round(r.weak)}%</td><td class="n">${f1(r.risk)} / 9</td></tr>`).join('')
+  }</tbody></table><p class="note-stage">Rata-rata 40 putaran Monte Carlo dari 400 agen demo. Wilayah sinyal lemah: ${weak.map(i=>KAB[i].n).join(', ')}.</p>`;markCmp()});
+
+function pick(ev){const b=cv.getBoundingClientRect(),mx=ev.clientX-b.left,my=ev.clientY-b.top;let best=-1,bd=12*12;
+  for(const n of W.nodes){const dx=X(n)-mx,dy=Y(n)-my,d=dx*dx+dy*dy;if(d<bd){bd=d;best=n.id}}return {best,mx,my}}
+const tip=document.getElementById('tip');
+cv.addEventListener('mousemove',ev=>{const {best,mx,my}=pick(ev);hover=best;if(best<0){tip.hidden=true;return}
+  const n=W.nodes[best],s=sim.st[best],kab=n.c>=0?KAB[n.c]:null;
+  tip.innerHTML=n.key?`<b>${n.key.name}</b><br>${n.key.role}${kab?' · '+kab.n:''}<br>Agen kunci (diperankan LLM)<br>Status: <b>${SL[s]}</b>`
+    :`<b>Warga #${n.id}</b> · ${kab.n}<br>Orang tua anak sekolah: ${n.parent?'ya':'tidak'}<br>Literasi digital: ${Math.round(n.lit*100)}%<br>Sinyal di wilayah: ${sigTxt(kab.sig)}<br>Relasi: ${n.deg}<br>Status: <b>${SL[s]}</b>`;
+  tip.hidden=false;const tw=tip.offsetWidth,th=tip.offsetHeight;tip.style.left=Math.min(Wd-tw-6,mx+14)+'px';tip.style.top=Math.max(6,Math.min(Ht-th-6,my+14))+'px'});
+cv.addEventListener('mouseleave',()=>{hover=-1;tip.hidden=true});
+
+function frame(now){const dt=Math.min(100,now-last);last=now;
+  if(playing&&sim.t<TICKS){acc+=dt*speed;const per=REDUCED?450:280;let stepped=false;while(acc>=per&&sim.t<TICKS){step(W,sim,true,now);acc-=per;stepped=true}
+    if(stepped){updateUI();if(sim.t>=TICKS)setPlay(false)}}
+  render(now);requestAnimationFrame(frame)}
+
+colors();size();updateUI();setPlay(playing);
+window.addEventListener('resize',size);
+if(window.ResizeObserver)new ResizeObserver(size).observe(box);
+const mq=matchMedia('(prefers-color-scheme: dark)');if(mq.addEventListener)mq.addEventListener('change',()=>{colors();drawChart()});
+new MutationObserver(()=>{colors();drawChart()}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+requestAnimationFrame(frame);
+})();
+</script>
+
+<!--claude-mermaid-runtime-begin:3477-->
+<style>.mermaid-diagram{margin-block:4px}.mermaid-diagram svg{display:block;margin:0 auto;max-width:100%;height:auto}</style>
+<script src="/_runtime/mermaid-11.16.1.min.js"></script>
+<script>(function(){
+var CFG={"palettes":{"light":{"surface":"#f4efe4","text":"#42392e","line":"#8a7f6d","border":"#7a6c52","bg":"#fffdf8"},"dark":{"surface":"#262b34","text":"#f2f3f5","line":"#a8adb8","border":"#9aa4b8","bg":"#1f232b"}}};
+if(typeof mermaid==='undefined')return;
+var pres=Array.prototype.slice.call(document.querySelectorAll('pre.mermaid')).filter(function(p){if(p.hasAttribute('data-claude-mermaid-claimed'))return false;p.setAttribute('data-claude-mermaid-claimed','1');return true;});
+if(!pres.length)return;
+var mq=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):null;
+var root=document.documentElement;
+var items=pres.map(function(pre){
+var mount=document.createElement('div');mount.className='mermaid-diagram';
+return {pre:pre,mount:mount,src:pre.textContent||''};
+});
+var seq=0;
+var renderGen=0;
+var lastKey='';
+function pageBg(fallback){
+var els=[document.body,document.documentElement];
+for(var i=0;i<els.length;i++){
+var c=els[i]&&getComputedStyle(els[i]).backgroundColor;
+if(c&&c!=='transparent'&&c!=='rgba(0, 0, 0, 0)')return c;
+}
+return fallback;
+}
+function render(){
+var theme=root.getAttribute('data-theme');
+var dark=theme==='dark'||(!!(mq&&mq.matches)&&theme!=='light');
+var pal=dark?CFG.palettes.dark:CFG.palettes.light;
+var bg=pageBg(pal.bg);
+var key=(dark?'d':'l')+'|'+bg;
+if(key===lastKey)return;
+lastKey=key;
+var gen=++renderGen;
+var font=getComputedStyle(document.body).fontFamily||'sans-serif';
+var nat={useMaxWidth:false};
+mermaid.initialize({
+startOnLoad:false,securityLevel:'strict',theme:'base',
+flowchart:nat,sequence:nat,er:nat,state:nat,class:nat,pie:nat,
+gantt:nat,journey:nat,timeline:nat,gitGraph:nat,mindmap:nat,xyChart:nat,
+quadrantChart:nat,sankey:nat,c4:nat,requirement:nat,block:nat,
+packet:nat,kanban:nat,architecture:nat,radar:nat,
+themeVariables:{background:bg,mainBkg:pal.surface,primaryColor:pal.surface,
+primaryTextColor:pal.text,lineColor:pal.line,primaryBorderColor:pal.border,
+nodeBorder:pal.border,clusterBorder:pal.border,edgeLabelBackground:bg,
+clusterBkg:'rgba(127,127,127,0.07)',titleColor:pal.text,
+darkMode:dark,rowOdd:bg,rowEven:'rgba(127,127,127,0.07)',
+attributeBackgroundColorOdd:bg,attributeBackgroundColorEven:'rgba(127,127,127,0.07)',
+fontSize:'16px',fontFamily:font},
+themeCSS:'.node rect, .node circle, .node polygon, .node path, .cluster rect { stroke-width: 2px; }'
+});
+items.forEach(function(it){
+var id='claude-mermaid-'+seq++;
+mermaid.render(id,it.src).then(function(r){
+if(gen!==renderGen)return;
+var prev=it.pre.previousElementSibling;
+if(prev&&prev.className==='mermaid-diagram'&&prev!==it.mount)return;
+it.mount.innerHTML=r.svg;
+if(!it.mount.parentNode)it.pre.parentNode.insertBefore(it.mount,it.pre);
+it.pre.style.display='none';
+},function(){
+var scratch=document.getElementById(id);
+if(scratch)scratch.parentNode.removeChild(scratch);
+scratch=document.getElementById('d'+id);
+if(scratch)scratch.parentNode.removeChild(scratch);
+if(gen!==renderGen)return;
+if(it.mount.parentNode)it.mount.parentNode.removeChild(it.mount);
+it.pre.style.display='';
+});
+});
+}
+render();
+if(mq&&mq.addEventListener)mq.addEventListener('change',render);
+if(typeof MutationObserver!=='undefined')new MutationObserver(render).observe(root,{attributes:true,attributeFilter:['data-theme']});
+})();</script>
+<!--claude-mermaid-runtime-end-->
+
+</body></html>

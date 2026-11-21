@@ -1,0 +1,13 @@
+# PERLU TINJAUAN PENELITI PAPUA sebelum dipakai di lapangan (R2b risiko). Model hanya memodelkan
+# KERENTANAN warga yang DISASAR isu (pengali faktor_identitas), BUKAN kecurigaan terhadap kelompok mana pun.
+# Teks sengaja tidak menyebut kelompok, suku, agama, atau asal.
+jenis: antarkelompok
+nama: Isu antarkelompok yang memicu balas dendam
+perlu_tinjauan: true
+isu:
+  teks: "Ada kabar orang dari kampung sebelah mau datang serang {lokasi} malam ini karena masalah kemarin. Siap-siap!"
+  emosi: marah
+  intensitas_emosi: 0.85
+  faktor_identitas: {pemuda: 1.6, laki_laki: 1.3}
+  alasan_percaya: karena takut kampung diserang
+ajakan_teks: " Semua laki-laki kumpul di balai kampung!"

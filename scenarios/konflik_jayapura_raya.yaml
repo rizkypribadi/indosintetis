@@ -1,0 +1,56 @@
+# Skenario isu HIPOTETIS berpotensi konflik tinggi, untuk uji efektivitas intervensi A-F.
+# Bukan kejadian nyata. Semua tokoh fiktif; pelaku tidak dikaitkan dengan suku, agama, atau daerah asal.
+nama: Isu pemuda kampung dibunuh orang tak dikenal di Jayapura Raya
+kode: konflik_jayapura_raya
+mulai: {hari: Sabtu, jam: 19}      # Sabtu malam: ibadah Minggu jatuh di T+13..T+16 jam, lalu pasar Senin
+langkah_menit: 30
+durasi_jam: 72
+
+isu:
+  teks: >-
+    Bapa mama kaka ade semua, dengar baik-baik! Tadi sore satu anak muda dari kampung
+    kitorang dikejar orang tak dikenal di jalan Sentani–Abepura, lalu ditemukan su meninggal
+    di pinggir kali. Badan penuh luka. Ada saksi yang lihat pelaku naik mobil, tapi
+    katanya pelaku su dilepas, tra ada yang tangkap. Dong bilang ini bukan yang pertama,
+    masih ada yang mau dong incar. Ini voice note dari keluarga korban. Kitorang tra bisa
+    diam saja! Besok sesudah ibadah semua kumpul di depan kantor distrik, pemuda jaga
+    jalan masuk kampung malam ini. Sebar ke semua keluarga deng marga, jang sampe ada
+    korban lagi!
+  emosi: marah dan duka
+  intensitas_emosi: 1.0
+  faktor_identitas:
+    pemuda: 3.0
+    laki_laki: 2.0
+    orang_tua_anak_sekolah: 1.5
+    pengguna_hp: 1.5
+  ajakan_tindakan: true
+  alasan_percaya: karena merasa keluarga sendiri dibunuh dan pelaku dibiarkan bebas
+
+tanam:
+  # Malam pertama: grup keluarga & marga di dua pusat kota, lalu grup info
+  - {t_jam: 0, kanal: wa, jenis_grup: marga, kabupaten: kab_jayapura, distrik: Sentani, jumlah_grup: 5}
+  - {t_jam: 0, kanal: wa, jenis_grup: keluarga, kabupaten: kota_jayapura, jumlah_grup: 5}
+  - {t_jam: 1, kanal: wa, jenis_grup: info, kabupaten: kota_jayapura, jumlah_grup: 3}
+  # Akun lokal mengunggah ulang foto/video lama dengan keterangan "korban tadi sore"
+  - {t_jam: 2, kanal: fb, akun_medsos: 4, kabupaten: kota_jayapura}
+  - {t_jam: 3, kanal: fb, akun_medsos: 2, kabupaten: kab_jayapura}
+  # Pemuda berkumpul di pangkalan ojek / kios malam itu
+  - {t_jam: 3, kanal: tatap_muka, kabupaten: kab_jayapura, jumlah: 30}
+  # Pagi hari kabar sampai ke Keerom lewat grup jemaat
+  - {t_jam: 11, kanal: wa, jenis_grup: jemaat, kabupaten: keerom, jumlah_grup: 3}
+  # Sesudah ibadah Minggu dibicarakan langsung
+  - {t_jam: 16, kanal: tatap_muka, kabupaten: kota_jayapura, jumlah: 30}
+
+komentar_contoh:
+  - "Astaga, sapa pu anak itu? Sa pu keluarga juga lewat jalan itu tiap hari."
+  - "Kalo pelaku su dilepas, kitorang harus turun sendiri!"
+  - "Pemuda su kumpul di pangkalan, malam ini jaga semua jalan masuk."
+  - "Betul ka? Sa belum lihat berita resmi. Sapa yang kirim voice note itu?"
+  - "Foto di FB itu sa pernah lihat tahun lalu, jang langsung percaya."
+
+catatan: >-
+  Skenario fiktif berpotensi konflik tinggi. Pemicu yang dipakai: korban jiwa, rasa
+  ketidakadilan (pelaku dilepas), ajakan berkumpul massal sesudah ibadah, dan ajakan jaga
+  kampung. Pelaku hanya disebut "orang tak dikenal". Isu ditanam serentak di banyak kanal
+  (WA marga/keluarga/info, FB, tatap muka) di Kota Jayapura dan Kab. Jayapura, lalu
+  merembet ke Keerom. Dimulai Sabtu malam agar ibadah Minggu dan pasar Senin ikut berperan.

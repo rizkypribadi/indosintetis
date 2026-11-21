@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Latihan Meja · Indonesia Sintetis</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='9' cy='10' r='5' fill='%23e5484d'/%3E%3Ccircle cx='23' cy='9' r='4' fill='%231fb5a0'/%3E%3Ccircle cx='16' cy='23' r='6' fill='%23a855f7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/lapangan.css?v=1">
+<script>try{var t=localStorage.getItem('tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="/static/vendor/echarts-5.5.1.min.js"></script>
+</head>
+<body>
+<header class="bar">
+  <a class="home" href="/lapangan#latihan">← Alat lapangan</a>
+  <h1 id="judul">Latihan meja</h1>
+  <span id="info" class="muted"></span>
+</header>
+<div class="tanda">SIMULASI — BUKAN PRAKIRAAN · skenario fiktif · <span id="versi"></span></div>
+<main>
+  <!-- buat sesi (fasilitator) -->
+  <form id="f-buat" class="kartu-form" hidden>
+    <h2>Siapkan sesi</h2>
+    <p class="muted">Nyatakan di awal sesi bahwa skenario fiktif. Hindari kejadian nyata yang masih sensitif bagi peserta.</p>
+    <div class="baris">
+      <label>Jenis isu <select id="b-jenis"></select></label>
+      <label>Kabupaten <select id="b-kab"></select></label>
+      <label>Kanal awal <select id="b-kanal"></select></label>
+      <label>Ajakan bertindak <select id="b-ajak"><option value="ajak">ada</option><option value="tanpa">tidak ada</option></select></label>
+    </div>
+    <div class="baris">
+      <label>Profil sumber daya tim <select name="profil" id="b-profil"></select></label>
+      <label>Skrip suntikan <select name="skrip" id="b-skrip"></select></label>
+      <label>Durasi simulasi (jam) <input type="number" name="durasi_jam" value="72" min="24" max="96"></label>
+      <label>Jumlah ronde <input type="number" name="ronde" value="6" min="2" max="12"></label>
+      <label>Jumlah agen <select name="agen"><option value="20000">20 ribu</option><option value="50000">50 ribu</option></select></label>
+    </div>
+    <button class="utama" type="submit">Mulai sesi</button> <span id="b-msg" class="muted"></span>
+  </form>
+
+  <div id="ruang" hidden>
+    <div class="dua">
+      <div>
+        <section class="kartu-form" id="fas" hidden>
+          <h2>Kendali fasilitator</h2>
+          <p>Tautan peserta: <code id="tautan"></code> <span class="muted">(buka di HP/tablet dalam Wi-Fi yang sama; server dijalankan dengan <code>--host 0.0.0.0</code>)</span></p>
+          <div class="aksi"><button class="utama" id="f-ronde">Ronde berikutnya</button><button id="f-debrief">Debrief</button>
+            <label class="cek"><input type="checkbox" id="f-setuju"> Peserta setuju penilaiannya dipakai sebagai data penelitian (tanpa nama)</label></div>
+          <h3>Suntikan</h3>
+          <div class="aksi" id="f-skrip"></div>
+          <div class="aksi"><input id="f-teks" placeholder="Suntikan bebas, mis. 'Kepala kampung X minta bantuan aparat'" style="flex:1"><button id="f-suntik">Suntik</button></div>
+          <h3>Keadaan sebenarnya <small>tersembunyi dari peserta</small></h3>
+          <div id="chart-f"></div>
+          <table class="tabel" id="f-distrik"></table>
+        </section>
+        <section class="kartu-form">
+          <h2>Kabar & laporan masuk</h2>
+          <div id="kabar"></div>
+          <ul class="laporan" id="laporan"></ul>
+        </section>
+      </div>
+      <div>
+        <section class="kartu-form">
+          <h2>Keputusan tim</h2>
+          <p id="sisa" class="muted"></p>
+          <form id="f-putus">
+            <label>Langkah <select id="p-pilihan"></select></label>
+            <div class="baris">
+              <label id="p-jml-wrap">Jumlah (tokoh/orang) <input type="number" id="p-jumlah" min="1"></label>
+              <label>Distrik sasaran (opsional) <select id="p-distrik" multiple size="4"></select></label>
+            </div>
+            <label>Catatan (tanpa nama/nomor) <input id="p-catatan"></label>
+            <button class="utama" type="submit">Kirim keputusan</button>
+          </form>
+          <table class="tabel" id="keputusan"></table>
+        </section>
+        <section class="kartu-form">
+          <h2>Penilaian ronde</h2>
+          <p>Apakah reaksi warga di ronde ini masuk akal?</p>
+          <form id="f-nilai">
+            <div class="pilih"><label><input type="radio" name="nilai" value="ya">Ya</label><label><input type="radio" name="nilai" value="sebagian">Sebagian</label><label><input type="radio" name="nilai" value="tidak">Tidak</label></div>
+            <label>Catatan, mis. "di kampung kami tidak begitu" <textarea name="catatan"></textarea></label>
+            <button type="submit">Kirim penilaian</button> <span id="n-msg" class="muted"></span>
+          </form>
+        </section>
+        <section class="kartu-form" id="debrief" hidden></section>
+      </div>
+    </div>
+  </div>
+  <p id="pesan" class="peringatan" hidden></p>
+</main>
+<script src="/static/latihan.js?v=1"></script>
+</body>
+</html>

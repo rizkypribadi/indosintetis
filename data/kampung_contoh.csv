@@ -1,0 +1,985 @@
+kabupaten_id,distrik,kampung,lon,lat,penduduk,sinyal,tipe,pusat_distrik
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-01,140.7,-2.56,34846,4g,kota,1
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-02,140.68695,-2.56485,15308,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-03,140.68209,-2.57767,9640,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-04,140.71941,-2.59406,6525,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-05,140.69027,-2.55203,3242,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-06,140.69201,-2.60199,3059,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-07,140.72236,-2.5844,14294,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-08,140.6928,-2.56009,7979,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-09,140.71641,-2.53853,8953,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-10,140.69894,-2.54669,3325,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-11,140.68018,-2.55491,7908,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-12,140.70116,-2.53335,9954,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-13,140.70372,-2.58584,5814,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-14,140.71785,-2.54737,8465,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-15,140.73665,-2.56463,21427,4g,kota,0
+kota_jayapura,Kota Jayapura 01,Kampung Kota Jayapura 01-16,140.71664,-2.52523,6145,4g,kota,0
+kota_jayapura,Kota Jayapura 02,Kampung Kota Jayapura 02-01,140.67385,-2.48677,20107,4g,kota,1
+kota_jayapura,Kota Jayapura 02,Kampung Kota Jayapura 02-02,140.68955,-2.48769,11502,4g,kota,0
+kota_jayapura,Kota Jayapura 02,Kampung Kota Jayapura 02-03,140.71011,-2.49446,2976,4g,kota,0
+kota_jayapura,Kota Jayapura 02,Kampung Kota Jayapura 02-04,140.66116,-2.47568,3585,4g,kota,0
+kota_jayapura,Kota Jayapura 02,Kampung Kota Jayapura 02-05,140.65144,-2.51517,15635,4g,kota,0
+kota_jayapura,Kota Jayapura 02,Kampung Kota Jayapura 02-06,140.6749,-2.51435,5377,4g,kota,0
+kota_jayapura,Kota Jayapura 03,Kampung Kota Jayapura 03-01,140.73191,-2.55144,6725,4g,kota,1
+kota_jayapura,Kota Jayapura 03,Kampung Kota Jayapura 03-02,140.74295,-2.57232,7044,4g,kota,0
+kota_jayapura,Kota Jayapura 03,Kampung Kota Jayapura 03-03,140.69325,-2.54649,7895,4g,kota,0
+kota_jayapura,Kota Jayapura 03,Kampung Kota Jayapura 03-04,140.71342,-2.55748,12683,4g,kota,0
+kota_jayapura,Kota Jayapura 03,Kampung Kota Jayapura 03-05,140.70113,-2.54555,8057,4g,kota,0
+kota_jayapura,Kota Jayapura 03,Kampung Kota Jayapura 03-06,140.73077,-2.52465,3233,4g,kota,0
+kota_jayapura,Kota Jayapura 03,Kampung Kota Jayapura 03-07,140.7502,-2.54896,6427,4g,kota,0
+kota_jayapura,Kota Jayapura 03,Kampung Kota Jayapura 03-08,140.73265,-2.56214,22623,4g,kota,0
+kota_jayapura,Kota Jayapura 03,Kampung Kota Jayapura 03-09,140.71151,-2.53169,19708,4g,kota,0
+kota_jayapura,Kota Jayapura 03,Kampung Kota Jayapura 03-10,140.75591,-2.58035,4607,4g,kota,0
+kota_jayapura,Kota Jayapura 04,Kampung Kota Jayapura 04-01,140.81669,-2.63168,25545,4g,kota,1
+kota_jayapura,Kota Jayapura 04,Kampung Kota Jayapura 04-02,140.85836,-2.66673,2428,4g,kota,0
+kota_jayapura,Kota Jayapura 04,Kampung Kota Jayapura 04-03,140.79711,-2.64111,5624,4g,kota,0
+kota_jayapura,Kota Jayapura 04,Kampung Kota Jayapura 04-04,140.82676,-2.63266,4955,lemah,kota,0
+kota_jayapura,Kota Jayapura 04,Kampung Kota Jayapura 04-05,140.85659,-2.60199,16076,tidak,kota,0
+kota_jayapura,Kota Jayapura 05,Kampung Kota Jayapura 05-01,140.68259,-2.61473,14171,4g,kota,1
+kota_jayapura,Kota Jayapura 05,Kampung Kota Jayapura 05-02,140.65743,-2.62519,4610,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-01,140.25,-2.7,1535,4g,kota,1
+kab_jayapura,Sentani,Kampung Sentani-02,140.2694,-2.61359,2533,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-03,140.34718,-2.6799,675,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-04,140.25551,-2.67049,318,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-05,140.11598,-2.81501,2113,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-06,140.19407,-2.58087,211,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-07,140.30412,-2.66238,1093,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-08,140.31667,-2.69675,564,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-09,140.32121,-2.681,3720,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-10,140.29495,-2.58028,279,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-11,140.24898,-2.65131,902,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-12,140.23229,-2.72603,1045,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-13,140.1089,-2.8269,795,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-14,140.38068,-2.68991,993,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-15,140.29849,-2.8097,1556,tidak,kota,0
+kab_jayapura,Sentani,Kampung Sentani-16,140.23808,-2.61234,811,4g,kota,0
+kab_jayapura,Sentani,Kampung Sentani-17,140.34348,-2.60113,484,4g,kota,0
+kab_jayapura,Kab. Jayapura 02,Kampung Kab. Jayapura 02-01,140.15159,-2.49243,1255,4g,kota,1
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-01,140.29256,-2.33979,3071,4g,kota,1
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-02,140.31878,-2.43669,987,lemah,kota,0
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-03,140.36669,-2.30937,332,4g,kota,0
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-04,140.18238,-2.36558,1697,4g,kota,0
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-05,140.20913,-2.40466,766,4g,kota,0
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-06,140.27727,-2.22798,1710,lemah,kota,0
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-07,140.28509,-2.45087,821,4g,kota,0
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-08,140.18867,-2.35824,2193,4g,kota,0
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-09,140.33857,-2.3051,297,4g,kota,0
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-10,140.26531,-2.18541,1149,tidak,kota,0
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-11,140.31846,-2.33646,401,4g,kota,0
+kab_jayapura,Kab. Jayapura 03,Kampung Kab. Jayapura 03-12,140.2891,-2.3626,677,tidak,kota,0
+kab_jayapura,Kab. Jayapura 04,Kampung Kab. Jayapura 04-01,140.34983,-2.82397,2592,4g,kota,1
+kab_jayapura,Kab. Jayapura 04,Kampung Kab. Jayapura 04-02,140.40931,-2.85016,553,4g,kota,0
+kab_jayapura,Kab. Jayapura 04,Kampung Kab. Jayapura 04-03,140.36651,-2.78148,1739,4g,kota,0
+kab_jayapura,Kab. Jayapura 04,Kampung Kab. Jayapura 04-04,140.27199,-2.85188,1156,4g,kota,0
+kab_jayapura,Kab. Jayapura 04,Kampung Kab. Jayapura 04-05,140.39343,-2.75733,1058,4g,kota,0
+kab_jayapura,Kab. Jayapura 04,Kampung Kab. Jayapura 04-06,140.32274,-2.84349,792,4g,kota,0
+kab_jayapura,Kab. Jayapura 04,Kampung Kab. Jayapura 04-07,140.40146,-2.79692,291,4g,kota,0
+kab_jayapura,Kab. Jayapura 04,Kampung Kab. Jayapura 04-08,140.19912,-2.84549,1111,4g,kota,0
+kab_jayapura,Kab. Jayapura 04,Kampung Kab. Jayapura 04-09,140.36017,-2.79751,580,4g,kota,0
+kab_jayapura,Kab. Jayapura 05,Kampung Kab. Jayapura 05-01,140.41031,-2.50069,1769,4g,kota,1
+kab_jayapura,Kab. Jayapura 05,Kampung Kab. Jayapura 05-02,140.65539,-2.5224,961,4g,kota,0
+kab_jayapura,Kab. Jayapura 05,Kampung Kab. Jayapura 05-03,140.41414,-2.49748,394,4g,kota,0
+kab_jayapura,Kab. Jayapura 05,Kampung Kab. Jayapura 05-04,140.4869,-2.38941,1391,4g,kota,0
+kab_jayapura,Kab. Jayapura 05,Kampung Kab. Jayapura 05-05,140.47714,-2.55947,538,tidak,kota,0
+kab_jayapura,Kab. Jayapura 05,Kampung Kab. Jayapura 05-06,140.45148,-2.47541,832,lemah,kota,0
+kab_jayapura,Kab. Jayapura 05,Kampung Kab. Jayapura 05-07,140.5069,-2.51831,2064,4g,kota,0
+kab_jayapura,Kab. Jayapura 06,Kampung Kab. Jayapura 06-01,140.28928,-2.45509,2488,4g,kota,1
+kab_jayapura,Kab. Jayapura 06,Kampung Kab. Jayapura 06-02,140.33637,-2.56644,227,4g,kota,0
+kab_jayapura,Kab. Jayapura 06,Kampung Kab. Jayapura 06-03,140.20969,-2.57419,970,4g,kota,0
+kab_jayapura,Kab. Jayapura 06,Kampung Kab. Jayapura 06-04,140.22255,-2.60481,1435,4g,kota,0
+kab_jayapura,Kab. Jayapura 07,Kampung Kab. Jayapura 07-01,139.50563,-2.46558,1700,4g,kota,1
+kab_jayapura,Kab. Jayapura 07,Kampung Kab. Jayapura 07-02,139.60431,-2.52035,186,tidak,kota,0
+kab_jayapura,Kab. Jayapura 07,Kampung Kab. Jayapura 07-03,139.51484,-2.36118,282,tidak,kota,0
+kab_jayapura,Kab. Jayapura 07,Kampung Kab. Jayapura 07-04,139.56429,-2.43484,3662,tidak,kota,0
+kab_jayapura,Kab. Jayapura 07,Kampung Kab. Jayapura 07-05,139.36972,-2.50468,298,tidak,kota,0
+kab_jayapura,Kab. Jayapura 08,Kampung Kab. Jayapura 08-01,140.2253,-2.44919,2249,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 08,Kampung Kab. Jayapura 08-02,140.2494,-2.45726,530,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 08,Kampung Kab. Jayapura 08-03,140.15406,-2.45001,1265,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 08,Kampung Kab. Jayapura 08-04,140.18529,-2.41632,309,lemah,pedalaman,0
+kab_jayapura,Kab. Jayapura 08,Kampung Kab. Jayapura 08-05,140.33936,-2.44434,1982,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 09,Kampung Kab. Jayapura 09-01,140.26845,-2.32499,2567,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 09,Kampung Kab. Jayapura 09-02,140.44354,-2.34648,661,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 09,Kampung Kab. Jayapura 09-03,140.16457,-2.28771,471,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 09,Kampung Kab. Jayapura 09-04,140.39697,-2.44874,614,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 10,Kampung Kab. Jayapura 10-01,140.37323,-2.4599,1990,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 10,Kampung Kab. Jayapura 10-02,140.27495,-2.43044,1734,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 10,Kampung Kab. Jayapura 10-03,140.29164,-2.52138,443,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 10,Kampung Kab. Jayapura 10-04,140.32913,-2.43465,950,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 10,Kampung Kab. Jayapura 10-05,140.41217,-2.49027,448,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 10,Kampung Kab. Jayapura 10-06,140.32601,-2.71105,943,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 10,Kampung Kab. Jayapura 10-07,140.22835,-2.4434,688,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 10,Kampung Kab. Jayapura 10-08,140.26057,-2.36298,1520,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 11,Kampung Kab. Jayapura 11-01,140.37737,-2.78067,938,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 11,Kampung Kab. Jayapura 11-02,140.4398,-2.74832,2650,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 11,Kampung Kab. Jayapura 11-03,140.22771,-2.82079,324,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 12,Kampung Kab. Jayapura 12-01,140.40482,-2.86105,3019,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 12,Kampung Kab. Jayapura 12-02,140.49069,-2.87233,586,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 12,Kampung Kab. Jayapura 12-03,140.3913,-2.84975,2599,lemah,pedalaman,0
+kab_jayapura,Kab. Jayapura 12,Kampung Kab. Jayapura 12-04,140.37764,-2.83944,455,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 12,Kampung Kab. Jayapura 12-05,140.21847,-2.75842,778,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 12,Kampung Kab. Jayapura 12-06,140.47819,-2.84087,215,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 12,Kampung Kab. Jayapura 12-07,140.41698,-2.99155,935,lemah,pedalaman,0
+kab_jayapura,Kab. Jayapura 13,Kampung Kab. Jayapura 13-01,139.88431,-2.67426,936,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 13,Kampung Kab. Jayapura 13-02,139.78705,-2.71575,513,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 13,Kampung Kab. Jayapura 13-03,139.77924,-2.80502,653,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 13,Kampung Kab. Jayapura 13-04,139.87392,-2.6823,2440,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 13,Kampung Kab. Jayapura 13-05,140.02276,-2.79366,1052,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 13,Kampung Kab. Jayapura 13-06,139.84362,-2.63188,1107,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 13,Kampung Kab. Jayapura 13-07,139.92371,-2.71934,1759,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 13,Kampung Kab. Jayapura 13-08,139.87598,-2.59667,557,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 14,Kampung Kab. Jayapura 14-01,140.19864,-2.70148,1501,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 14,Kampung Kab. Jayapura 14-02,140.18743,-2.76693,881,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 14,Kampung Kab. Jayapura 14-03,140.10877,-2.59087,1311,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 14,Kampung Kab. Jayapura 14-04,140.13252,-2.64125,1788,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 14,Kampung Kab. Jayapura 14-05,140.26954,-2.60807,678,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 14,Kampung Kab. Jayapura 14-06,140.17455,-2.7491,734,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 14,Kampung Kab. Jayapura 14-07,140.23789,-2.80238,1196,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 15,Kampung Kab. Jayapura 15-01,140.41953,-2.61943,1219,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 15,Kampung Kab. Jayapura 15-02,140.35748,-2.55969,968,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 15,Kampung Kab. Jayapura 15-03,140.4601,-2.50348,1243,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 15,Kampung Kab. Jayapura 15-04,140.27238,-2.68543,581,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 15,Kampung Kab. Jayapura 15-05,140.26277,-2.64002,1593,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 15,Kampung Kab. Jayapura 15-06,140.33881,-2.68133,1261,lemah,pedalaman,0
+kab_jayapura,Kab. Jayapura 15,Kampung Kab. Jayapura 15-07,140.37114,-2.59328,927,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 15,Kampung Kab. Jayapura 15-08,140.35922,-2.65251,1216,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 15,Kampung Kab. Jayapura 15-09,140.2741,-2.61893,324,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 15,Kampung Kab. Jayapura 15-10,140.47278,-2.50573,1915,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 16,Kampung Kab. Jayapura 16-01,140.41865,-2.85027,1717,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 16,Kampung Kab. Jayapura 16-02,140.42205,-2.72383,764,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 16,Kampung Kab. Jayapura 16-03,140.48626,-2.69157,1547,lemah,pedalaman,0
+kab_jayapura,Kab. Jayapura 16,Kampung Kab. Jayapura 16-04,140.38361,-2.73068,945,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-01,140.21219,-2.9098,2699,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-02,140.18081,-3.07374,375,lemah,pedalaman,0
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-03,140.25895,-2.92518,247,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-04,140.24108,-2.92205,468,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-05,140.20846,-2.94418,3575,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-06,140.25081,-3.0218,1020,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-07,140.16709,-2.83914,1188,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-08,140.23791,-2.91779,344,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-09,140.17911,-2.86371,809,lemah,pedalaman,0
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-10,140.13125,-2.95882,985,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 17,Kampung Kab. Jayapura 17-11,140.23195,-2.83314,662,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-01,140.34603,-3.07364,4325,4g,pedalaman,1
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-02,140.35115,-3.1084,891,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-03,140.39359,-3.06119,551,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-04,140.40294,-3.22291,1413,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-05,140.42211,-3.14412,939,lemah,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-06,140.29752,-3.10694,1196,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-07,140.32775,-3.09676,458,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-08,140.21318,-3.29156,504,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-09,140.46303,-2.94302,695,lemah,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-10,140.47116,-3.0467,1087,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-11,140.27291,-3.18567,2390,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-12,140.50068,-3.02452,376,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-13,140.37185,-3.1919,212,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-14,140.41922,-3.1453,1363,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 18,Kampung Kab. Jayapura 18-15,140.29394,-3.03082,495,tidak,pedalaman,0
+kab_jayapura,Kab. Jayapura 19,Kampung Kab. Jayapura 19-01,140.00523,-2.93152,5334,tidak,pedalaman,1
+kab_jayapura,Kab. Jayapura 19,Kampung Kab. Jayapura 19-02,139.98796,-2.71186,145,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 19,Kampung Kab. Jayapura 19-03,139.99531,-2.97045,233,lemah,pedalaman,0
+kab_jayapura,Kab. Jayapura 19,Kampung Kab. Jayapura 19-04,139.98344,-2.79274,254,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 19,Kampung Kab. Jayapura 19-05,139.94632,-2.82454,480,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 19,Kampung Kab. Jayapura 19-06,140.02466,-2.95687,1025,4g,pedalaman,0
+kab_jayapura,Kab. Jayapura 19,Kampung Kab. Jayapura 19-07,139.94403,-2.86292,195,lemah,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-01,140.75,-3.15,2540,4g,pedalaman,1
+keerom,Keerom 01,Kampung Keerom 01-02,140.80545,-3.08426,285,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-03,140.69561,-3.13397,249,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-04,140.83553,-3.22331,282,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-05,140.8367,-3.17072,916,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-06,140.68881,-3.10304,385,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-07,140.78584,-3.29535,394,lemah,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-08,140.79851,-3.13206,1283,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-09,140.65584,-3.14815,186,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-10,140.76053,-3.1572,393,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-11,140.77754,-3.26087,650,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-12,140.80562,-3.08924,112,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-13,140.79095,-3.14811,988,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-14,140.71835,-3.14111,368,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-15,140.76693,-3.20655,568,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-16,140.7397,-3.15517,285,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-17,140.79687,-3.17129,415,4g,pedalaman,0
+keerom,Keerom 01,Kampung Keerom 01-18,140.68583,-3.16858,1865,4g,pedalaman,0
+keerom,Keerom 02,Kampung Keerom 02-01,140.86236,-3.13765,1354,4g,pedalaman,1
+keerom,Keerom 02,Kampung Keerom 02-02,140.90236,-3.16722,1012,lemah,pedalaman,0
+keerom,Keerom 02,Kampung Keerom 02-03,140.87675,-3.18242,395,4g,pedalaman,0
+keerom,Keerom 02,Kampung Keerom 02-04,140.78786,-3.26053,958,tidak,pedalaman,0
+keerom,Keerom 02,Kampung Keerom 02-05,140.86729,-3.07854,364,tidak,pedalaman,0
+keerom,Keerom 02,Kampung Keerom 02-06,140.89182,-3.20602,385,4g,pedalaman,0
+keerom,Keerom 02,Kampung Keerom 02-07,140.81235,-3.13652,221,4g,pedalaman,0
+keerom,Keerom 02,Kampung Keerom 02-08,140.81507,-3.19606,1007,4g,pedalaman,0
+keerom,Keerom 02,Kampung Keerom 02-09,140.8419,-3.10006,373,4g,pedalaman,0
+keerom,Keerom 02,Kampung Keerom 02-10,140.93089,-3.21467,786,tidak,pedalaman,0
+keerom,Keerom 03,Kampung Keerom 03-01,140.50033,-3.16509,957,4g,pedalaman,1
+keerom,Keerom 03,Kampung Keerom 03-02,140.40829,-3.11928,573,lemah,pedalaman,0
+keerom,Keerom 03,Kampung Keerom 03-03,140.55262,-3.22394,873,lemah,pedalaman,0
+keerom,Keerom 03,Kampung Keerom 03-04,140.49866,-3.166,182,lemah,pedalaman,0
+keerom,Keerom 04,Kampung Keerom 04-01,140.66424,-3.06356,1197,4g,pedalaman,1
+keerom,Keerom 04,Kampung Keerom 04-02,140.63255,-3.12568,284,tidak,pedalaman,0
+keerom,Keerom 04,Kampung Keerom 04-03,140.66155,-3.12585,488,lemah,pedalaman,0
+keerom,Keerom 04,Kampung Keerom 04-04,140.73748,-3.04498,299,lemah,pedalaman,0
+keerom,Keerom 04,Kampung Keerom 04-05,140.60916,-3.06472,1783,tidak,pedalaman,0
+keerom,Keerom 04,Kampung Keerom 04-06,140.65927,-3.00671,730,tidak,pedalaman,0
+keerom,Keerom 04,Kampung Keerom 04-07,140.62467,-3.13285,456,lemah,pedalaman,0
+keerom,Keerom 04,Kampung Keerom 04-08,140.64755,-3.07007,805,4g,pedalaman,0
+keerom,Keerom 04,Kampung Keerom 04-09,140.52736,-3.0199,106,4g,pedalaman,0
+keerom,Keerom 04,Kampung Keerom 04-10,140.59916,-3.12959,494,lemah,pedalaman,0
+keerom,Keerom 05,Kampung Keerom 05-01,140.32722,-2.89752,2804,4g,pedalaman,1
+keerom,Keerom 05,Kampung Keerom 05-02,140.26581,-2.82817,557,tidak,pedalaman,0
+keerom,Keerom 05,Kampung Keerom 05-03,140.28503,-2.93208,375,tidak,pedalaman,0
+keerom,Keerom 05,Kampung Keerom 05-04,140.33743,-2.92814,204,tidak,pedalaman,0
+keerom,Keerom 05,Kampung Keerom 05-05,140.40779,-2.93772,518,lemah,pedalaman,0
+keerom,Keerom 05,Kampung Keerom 05-06,140.36705,-2.87737,220,tidak,pedalaman,0
+keerom,Keerom 05,Kampung Keerom 05-07,140.2169,-2.8179,206,tidak,pedalaman,0
+keerom,Keerom 05,Kampung Keerom 05-08,140.2365,-2.94625,572,tidak,pedalaman,0
+keerom,Keerom 05,Kampung Keerom 05-09,140.41159,-2.89409,1063,tidak,pedalaman,0
+keerom,Keerom 05,Kampung Keerom 05-10,140.38712,-2.81916,440,tidak,pedalaman,0
+keerom,Keerom 06,Kampung Keerom 06-01,140.78684,-2.79761,666,4g,pedalaman,1
+keerom,Keerom 06,Kampung Keerom 06-02,140.83931,-2.80176,276,4g,pedalaman,0
+keerom,Keerom 06,Kampung Keerom 06-03,140.79834,-2.78441,792,tidak,pedalaman,0
+keerom,Keerom 06,Kampung Keerom 06-04,140.7042,-2.72632,792,lemah,pedalaman,0
+keerom,Keerom 06,Kampung Keerom 06-05,140.7522,-2.85501,1070,4g,pedalaman,0
+keerom,Keerom 06,Kampung Keerom 06-06,140.82146,-2.86641,297,4g,pedalaman,0
+keerom,Keerom 07,Kampung Keerom 07-01,140.79277,-3.2717,608,4g,pedalaman,1
+keerom,Keerom 07,Kampung Keerom 07-02,140.77922,-3.22275,476,lemah,pedalaman,0
+keerom,Keerom 07,Kampung Keerom 07-03,140.82053,-3.29739,1019,lemah,pedalaman,0
+keerom,Keerom 08,Kampung Keerom 08-01,140.95691,-3.30132,1335,4g,pedalaman,1
+keerom,Keerom 08,Kampung Keerom 08-02,140.97391,-3.32939,937,lemah,pedalaman,0
+keerom,Keerom 08,Kampung Keerom 08-03,140.87796,-3.234,254,lemah,pedalaman,0
+keerom,Keerom 08,Kampung Keerom 08-04,140.94958,-3.28777,106,4g,pedalaman,0
+keerom,Keerom 09,Kampung Keerom 09-01,140.75107,-2.85426,1566,4g,pedalaman,1
+keerom,Keerom 09,Kampung Keerom 09-02,140.80164,-2.89643,122,tidak,pedalaman,0
+keerom,Keerom 09,Kampung Keerom 09-03,140.80566,-2.9919,355,4g,pedalaman,0
+keerom,Keerom 10,Kampung Keerom 10-01,140.94912,-3.62557,1701,4g,pedalaman,1
+keerom,Keerom 10,Kampung Keerom 10-02,140.96394,-3.67018,570,tidak,pedalaman,0
+keerom,Keerom 10,Kampung Keerom 10-03,141.10421,-3.52932,419,tidak,pedalaman,0
+keerom,Keerom 10,Kampung Keerom 10-04,140.97366,-3.71792,1092,tidak,pedalaman,0
+keerom,Keerom 10,Kampung Keerom 10-05,141.03055,-3.62829,309,tidak,pedalaman,0
+keerom,Keerom 10,Kampung Keerom 10-06,140.9186,-3.48736,358,tidak,pedalaman,0
+keerom,Keerom 10,Kampung Keerom 10-07,140.93722,-3.58124,239,tidak,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-01,140.90647,-2.96563,4401,4g,pedalaman,1
+keerom,Keerom 11,Kampung Keerom 11-02,140.93044,-2.96735,371,tidak,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-03,140.88485,-2.99851,458,4g,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-04,140.92036,-2.84471,735,4g,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-05,140.80794,-2.8952,229,4g,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-06,140.94129,-2.92883,149,tidak,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-07,140.86168,-2.88895,252,4g,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-08,140.93555,-3.03373,739,4g,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-09,140.87247,-2.92763,232,lemah,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-10,140.8634,-2.89374,367,tidak,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-11,140.93396,-2.87234,1114,lemah,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-12,140.95593,-2.99438,234,4g,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-13,140.83731,-3.00717,269,tidak,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-14,140.95363,-2.93959,1060,tidak,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-15,140.93422,-2.85608,198,lemah,pedalaman,0
+keerom,Keerom 11,Kampung Keerom 11-16,140.89168,-2.95189,249,4g,pedalaman,0
+sarmi,Sarmi 01,Kampung Sarmi 01-01,138.95,-2.25,1605,4g,pesisir,1
+sarmi,Sarmi 01,Kampung Sarmi 01-02,139.09329,-2.31502,176,lemah,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-03,139.1132,-2.37031,630,lemah,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-04,139.00716,-2.18608,305,lemah,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-05,139.09525,-2.13971,116,4g,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-06,139.19636,-2.11908,212,4g,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-07,138.91456,-2.24925,185,lemah,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-08,139.04613,-2.32063,339,tidak,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-09,139.06967,-2.31457,693,lemah,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-10,138.90708,-2.30096,308,4g,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-11,139.02369,-2.00222,131,4g,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-12,138.81376,-2.11506,823,4g,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-13,139.09142,-2.32528,175,4g,pesisir,0
+sarmi,Sarmi 01,Kampung Sarmi 01-14,138.92334,-2.12276,454,lemah,pesisir,0
+sarmi,Sarmi 02,Kampung Sarmi 02-01,138.56478,-1.99836,751,4g,pesisir,1
+sarmi,Sarmi 02,Kampung Sarmi 02-02,138.64412,-1.88856,468,4g,pesisir,0
+sarmi,Sarmi 02,Kampung Sarmi 02-03,138.52422,-2.08515,219,lemah,pesisir,0
+sarmi,Sarmi 02,Kampung Sarmi 02-04,138.46832,-2.06747,543,tidak,pesisir,0
+sarmi,Sarmi 03,Kampung Sarmi 03-01,139.06161,-1.8014,461,4g,pesisir,1
+sarmi,Sarmi 03,Kampung Sarmi 03-02,139.14539,-1.67289,528,tidak,pesisir,0
+sarmi,Sarmi 03,Kampung Sarmi 03-03,138.96003,-1.8807,360,4g,pesisir,0
+sarmi,Sarmi 03,Kampung Sarmi 03-04,139.10521,-1.56084,606,lemah,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-01,138.62782,-2.54278,1322,4g,pesisir,1
+sarmi,Sarmi 04,Kampung Sarmi 04-02,138.51704,-2.54627,264,tidak,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-03,138.75298,-2.56888,211,tidak,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-04,138.57634,-2.52522,290,lemah,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-05,138.78267,-2.44516,452,tidak,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-06,138.54633,-2.39256,228,tidak,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-07,138.7728,-2.64995,168,4g,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-08,138.46425,-2.54701,158,tidak,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-09,138.72106,-2.3542,1164,4g,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-10,138.77769,-2.62688,297,lemah,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-11,138.73574,-2.67805,146,tidak,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-12,138.5955,-2.63354,1028,4g,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-13,138.68895,-2.29157,319,lemah,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-14,138.83483,-2.40813,169,4g,pesisir,0
+sarmi,Sarmi 04,Kampung Sarmi 04-15,138.66328,-2.59633,560,lemah,pesisir,0
+sarmi,Sarmi 05,Kampung Sarmi 05-01,138.73964,-2.27653,478,4g,pesisir,1
+sarmi,Sarmi 05,Kampung Sarmi 05-02,138.81115,-2.09155,152,4g,pesisir,0
+sarmi,Sarmi 05,Kampung Sarmi 05-03,138.71747,-2.16191,423,lemah,pesisir,0
+sarmi,Sarmi 05,Kampung Sarmi 05-04,138.64341,-2.11198,380,lemah,pesisir,0
+sarmi,Sarmi 05,Kampung Sarmi 05-05,138.53625,-2.20295,1073,tidak,pesisir,0
+sarmi,Sarmi 05,Kampung Sarmi 05-06,138.74888,-2.34617,193,lemah,pesisir,0
+sarmi,Sarmi 05,Kampung Sarmi 05-07,138.62647,-2.1794,509,lemah,pesisir,0
+sarmi,Sarmi 06,Kampung Sarmi 06-01,138.73834,-2.00153,1615,4g,pesisir,1
+sarmi,Sarmi 06,Kampung Sarmi 06-02,138.65329,-1.97293,169,tidak,pesisir,0
+sarmi,Sarmi 06,Kampung Sarmi 06-03,138.73464,-2.04417,197,tidak,pesisir,0
+sarmi,Sarmi 06,Kampung Sarmi 06-04,138.80445,-2.07126,439,4g,pesisir,0
+sarmi,Sarmi 06,Kampung Sarmi 06-05,138.61198,-1.97088,223,tidak,pesisir,0
+sarmi,Sarmi 06,Kampung Sarmi 06-06,138.72677,-2.18588,211,lemah,pesisir,0
+sarmi,Sarmi 06,Kampung Sarmi 06-07,138.75456,-2.01562,237,tidak,pesisir,0
+sarmi,Sarmi 07,Kampung Sarmi 07-01,138.78425,-2.7814,989,4g,pesisir,1
+sarmi,Sarmi 07,Kampung Sarmi 07-02,138.70659,-2.87216,208,lemah,pesisir,0
+sarmi,Sarmi 07,Kampung Sarmi 07-03,138.64811,-2.71684,849,lemah,pesisir,0
+sarmi,Sarmi 07,Kampung Sarmi 07-04,138.87169,-2.70252,261,tidak,pesisir,0
+sarmi,Sarmi 07,Kampung Sarmi 07-05,138.83081,-2.76258,725,tidak,pesisir,0
+sarmi,Sarmi 07,Kampung Sarmi 07-06,138.57388,-2.86385,162,tidak,pesisir,0
+sarmi,Sarmi 07,Kampung Sarmi 07-07,138.74235,-2.68486,287,lemah,pesisir,0
+sarmi,Sarmi 07,Kampung Sarmi 07-08,138.78973,-2.92119,55,tidak,pesisir,0
+sarmi,Sarmi 07,Kampung Sarmi 07-09,138.85557,-2.70793,882,tidak,pesisir,0
+sarmi,Sarmi 07,Kampung Sarmi 07-10,138.53417,-2.87698,210,tidak,pesisir,0
+sarmi,Sarmi 08,Kampung Sarmi 08-01,139.43687,-2.33785,1319,4g,pesisir,1
+sarmi,Sarmi 08,Kampung Sarmi 08-02,139.59864,-2.2469,297,tidak,pesisir,0
+sarmi,Sarmi 08,Kampung Sarmi 08-03,139.46009,-2.38257,370,tidak,pesisir,0
+sarmi,Sarmi 08,Kampung Sarmi 08-04,139.6017,-2.31029,327,tidak,pesisir,0
+sarmi,Sarmi 08,Kampung Sarmi 08-05,139.46181,-2.31021,330,4g,pesisir,0
+sarmi,Sarmi 08,Kampung Sarmi 08-06,139.28878,-2.44364,135,tidak,pesisir,0
+sarmi,Sarmi 08,Kampung Sarmi 08-07,139.2635,-2.22373,435,tidak,pesisir,0
+sarmi,Sarmi 08,Kampung Sarmi 08-08,139.59838,-2.32741,342,tidak,pesisir,0
+sarmi,Sarmi 08,Kampung Sarmi 08-09,139.65312,-2.24887,218,tidak,pesisir,0
+sarmi,Sarmi 08,Kampung Sarmi 08-10,139.37419,-2.23796,677,lemah,pesisir,0
+sarmi,Sarmi 09,Kampung Sarmi 09-01,138.6991,-1.88724,595,4g,pesisir,1
+sarmi,Sarmi 09,Kampung Sarmi 09-02,138.58664,-1.87513,438,tidak,pesisir,0
+sarmi,Sarmi 09,Kampung Sarmi 09-03,138.70647,-1.78465,265,lemah,pesisir,0
+sarmi,Sarmi 09,Kampung Sarmi 09-04,138.60827,-2.0177,1397,tidak,pesisir,0
+sarmi,Sarmi 09,Kampung Sarmi 09-05,138.6636,-1.88011,344,tidak,pesisir,0
+sarmi,Sarmi 09,Kampung Sarmi 09-06,138.75853,-1.88834,149,tidak,pesisir,0
+sarmi,Sarmi 09,Kampung Sarmi 09-07,138.7195,-1.99446,122,4g,pesisir,0
+sarmi,Sarmi 09,Kampung Sarmi 09-08,138.70061,-1.79507,288,lemah,pesisir,0
+sarmi,Sarmi 09,Kampung Sarmi 09-09,138.5634,-1.93259,333,lemah,pesisir,0
+sarmi,Sarmi 09,Kampung Sarmi 09-10,138.65285,-1.81431,698,tidak,pesisir,0
+sarmi,Sarmi 09,Kampung Sarmi 09-11,138.65935,-1.8573,130,4g,pesisir,0
+sarmi,Sarmi 10,Kampung Sarmi 10-01,139.34885,-2.28591,1471,lemah,pesisir,1
+sarmi,Sarmi 10,Kampung Sarmi 10-02,139.30657,-2.25755,168,tidak,pesisir,0
+sarmi,Sarmi 10,Kampung Sarmi 10-03,139.27402,-2.44231,802,4g,pesisir,0
+sarmi,Sarmi 10,Kampung Sarmi 10-04,139.26899,-2.22194,310,tidak,pesisir,0
+sarmi,Sarmi 10,Kampung Sarmi 10-05,139.35961,-2.42443,296,tidak,pesisir,0
+sarmi,Sarmi 10,Kampung Sarmi 10-06,139.28925,-2.28618,47,tidak,pesisir,0
+sarmi,Sarmi 10,Kampung Sarmi 10-07,139.33838,-2.17276,414,tidak,pesisir,0
+sarmi,Sarmi 10,Kampung Sarmi 10-08,139.41942,-2.42975,365,lemah,pesisir,0
+sarmi,Sarmi 10,Kampung Sarmi 10-09,139.40748,-2.33086,437,tidak,pesisir,0
+sarmi,Sarmi 10,Kampung Sarmi 10-10,139.35175,-2.25094,205,4g,pesisir,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-01,137.95,-2.55,1088,4g,pedalaman,1
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-02,137.95883,-2.58326,355,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-03,138.05529,-2.38974,247,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-04,138.12413,-2.68985,618,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-05,137.94638,-2.42543,136,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-06,138.00269,-2.33883,511,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-07,137.78382,-2.67502,256,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-08,137.94306,-2.52706,1636,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-09,138.14027,-2.48873,224,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-10,137.79714,-2.37302,110,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-11,138.04184,-2.59195,1007,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-12,138.01134,-2.31022,1169,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-13,138.16223,-2.68422,385,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-14,138.10686,-2.5091,132,4g,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-15,137.94304,-2.65458,988,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-16,138.12296,-2.61082,1680,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-17,138.05571,-2.50709,505,4g,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-18,138.02447,-2.53516,647,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-19,138.03662,-2.50888,444,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 01,Kampung Mamberamo Raya 01-20,137.87381,-2.68953,216,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 02,Kampung Mamberamo Raya 02-01,137.19719,-2.3416,1696,4g,pedalaman,1
+mamberamo_raya,Mamberamo Raya 02,Kampung Mamberamo Raya 02-02,137.23608,-2.29346,687,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 02,Kampung Mamberamo Raya 02-03,137.23499,-2.3567,494,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 02,Kampung Mamberamo Raya 02-04,137.34136,-2.46485,255,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 02,Kampung Mamberamo Raya 02-05,137.16722,-2.54159,142,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 03,Kampung Mamberamo Raya 03-01,137.76156,-2.07204,930,lemah,pedalaman,1
+mamberamo_raya,Mamberamo Raya 03,Kampung Mamberamo Raya 03-02,137.65358,-1.9906,849,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 03,Kampung Mamberamo Raya 03-03,137.81021,-2.05653,352,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 03,Kampung Mamberamo Raya 03-04,137.85398,-2.01444,383,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 04,Kampung Mamberamo Raya 04-01,137.96095,-2.66564,2807,4g,pedalaman,1
+mamberamo_raya,Mamberamo Raya 04,Kampung Mamberamo Raya 04-02,138.09123,-2.43536,133,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 04,Kampung Mamberamo Raya 04-03,137.87352,-2.77945,119,4g,pedalaman,0
+mamberamo_raya,Mamberamo Raya 04,Kampung Mamberamo Raya 04-04,137.96507,-2.56765,279,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 04,Kampung Mamberamo Raya 04-05,138.02272,-2.67027,334,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 04,Kampung Mamberamo Raya 04-06,137.99969,-2.54464,651,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 04,Kampung Mamberamo Raya 04-07,137.90288,-2.64958,102,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 05,Kampung Mamberamo Raya 05-01,137.83742,-2.66721,960,4g,pedalaman,1
+mamberamo_raya,Mamberamo Raya 05,Kampung Mamberamo Raya 05-02,137.74838,-2.73624,375,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 05,Kampung Mamberamo Raya 05-03,138.00775,-2.74178,834,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 05,Kampung Mamberamo Raya 05-04,137.94801,-2.67619,287,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 06,Kampung Mamberamo Raya 06-01,138.27063,-2.75296,701,4g,pedalaman,1
+mamberamo_raya,Mamberamo Raya 06,Kampung Mamberamo Raya 06-02,138.05131,-2.75828,507,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 06,Kampung Mamberamo Raya 06-03,138.19209,-2.81541,753,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 06,Kampung Mamberamo Raya 06-04,138.30114,-2.83405,793,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 06,Kampung Mamberamo Raya 06-05,138.19381,-2.72284,316,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 06,Kampung Mamberamo Raya 06-06,138.31549,-2.70475,647,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 07,Kampung Mamberamo Raya 07-01,138.13782,-2.51012,839,4g,pedalaman,1
+mamberamo_raya,Mamberamo Raya 07,Kampung Mamberamo Raya 07-02,138.22397,-2.85811,1098,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 07,Kampung Mamberamo Raya 07-03,138.10438,-2.6787,418,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 07,Kampung Mamberamo Raya 07-04,138.136,-2.42015,598,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 07,Kampung Mamberamo Raya 07-05,138.17227,-2.36686,759,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 07,Kampung Mamberamo Raya 07-06,138.23536,-2.38794,226,lemah,pedalaman,0
+mamberamo_raya,Mamberamo Raya 07,Kampung Mamberamo Raya 07-07,138.1643,-2.45084,663,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 08,Kampung Mamberamo Raya 08-01,138.64762,-2.70825,1786,tidak,pedalaman,1
+mamberamo_raya,Mamberamo Raya 08,Kampung Mamberamo Raya 08-02,138.70371,-2.82827,72,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 08,Kampung Mamberamo Raya 08-03,138.70356,-2.77898,230,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 08,Kampung Mamberamo Raya 08-04,138.45365,-2.60812,525,tidak,pedalaman,0
+mamberamo_raya,Mamberamo Raya 08,Kampung Mamberamo Raya 08-05,138.64618,-2.57342,527,tidak,pedalaman,0
+waropen,Waropen 01,Kampung Waropen 01-01,136.65,-2.35,953,4g,pesisir,1
+waropen,Waropen 01,Kampung Waropen 01-02,136.49953,-2.2531,128,lemah,pesisir,0
+waropen,Waropen 01,Kampung Waropen 01-03,136.72899,-2.36931,196,lemah,pesisir,0
+waropen,Waropen 01,Kampung Waropen 01-04,136.65399,-2.24009,355,4g,pesisir,0
+waropen,Waropen 01,Kampung Waropen 01-05,136.61503,-2.37487,665,lemah,pesisir,0
+waropen,Waropen 01,Kampung Waropen 01-06,136.66572,-2.38325,74,4g,pesisir,0
+waropen,Waropen 01,Kampung Waropen 01-07,136.57721,-2.43492,415,4g,pesisir,0
+waropen,Waropen 01,Kampung Waropen 01-08,136.59429,-2.32825,288,lemah,pesisir,0
+waropen,Waropen 01,Kampung Waropen 01-09,136.50025,-2.27239,220,lemah,pesisir,0
+waropen,Waropen 01,Kampung Waropen 01-10,136.67534,-2.44476,142,4g,pesisir,0
+waropen,Waropen 02,Kampung Waropen 02-01,136.87101,-2.15213,1609,4g,pesisir,1
+waropen,Waropen 02,Kampung Waropen 02-02,136.79616,-2.12981,50,tidak,pesisir,0
+waropen,Waropen 02,Kampung Waropen 02-03,136.88244,-2.17381,39,tidak,pesisir,0
+waropen,Waropen 02,Kampung Waropen 02-04,136.91391,-2.21987,104,tidak,pesisir,0
+waropen,Waropen 02,Kampung Waropen 02-05,136.91206,-2.05694,85,tidak,pesisir,0
+waropen,Waropen 02,Kampung Waropen 02-06,136.87999,-2.2289,173,tidak,pesisir,0
+waropen,Waropen 02,Kampung Waropen 02-07,136.70416,-2.11921,178,lemah,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-01,136.74316,-2.53936,691,4g,pesisir,1
+waropen,Waropen 03,Kampung Waropen 03-02,136.7567,-2.5532,263,4g,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-03,136.81975,-2.53818,405,tidak,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-04,136.77902,-2.55558,282,lemah,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-05,136.66579,-2.55574,378,tidak,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-06,136.79941,-2.62162,409,tidak,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-07,136.76092,-2.5301,209,4g,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-08,136.68145,-2.68376,749,lemah,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-09,136.65508,-2.58208,110,lemah,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-10,136.74463,-2.55269,129,tidak,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-11,136.7658,-2.45805,202,lemah,pesisir,0
+waropen,Waropen 03,Kampung Waropen 03-12,136.74229,-2.53775,199,4g,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-01,136.49349,-2.47031,463,4g,pesisir,1
+waropen,Waropen 04,Kampung Waropen 04-02,136.48308,-2.55905,475,lemah,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-03,136.57334,-2.56567,331,tidak,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-04,136.56635,-2.3709,400,4g,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-05,136.4684,-2.41358,254,tidak,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-06,136.47807,-2.47915,250,lemah,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-07,136.64666,-2.48446,114,4g,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-08,136.32828,-2.48013,372,tidak,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-09,136.56218,-2.43947,271,lemah,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-10,136.43381,-2.47126,476,lemah,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-11,136.47209,-2.57145,254,lemah,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-12,136.4942,-2.58382,119,tidak,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-13,136.44846,-2.43413,139,4g,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-14,136.58326,-2.41426,450,4g,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-15,136.54839,-2.4292,995,tidak,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-16,136.45999,-2.3479,284,lemah,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-17,136.46372,-2.49946,555,lemah,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-18,136.60598,-2.50053,238,tidak,pesisir,0
+waropen,Waropen 04,Kampung Waropen 04-19,136.49266,-2.41226,162,4g,pesisir,0
+waropen,Waropen 05,Kampung Waropen 05-01,136.668,-2.52287,1578,4g,pesisir,1
+waropen,Waropen 05,Kampung Waropen 05-02,136.6675,-2.59595,112,tidak,pesisir,0
+waropen,Waropen 05,Kampung Waropen 05-03,136.70327,-2.60025,255,lemah,pesisir,0
+waropen,Waropen 05,Kampung Waropen 05-04,136.6261,-2.54533,344,lemah,pesisir,0
+waropen,Waropen 05,Kampung Waropen 05-05,136.7193,-2.54938,221,lemah,pesisir,0
+waropen,Waropen 05,Kampung Waropen 05-06,136.78191,-2.63886,133,lemah,pesisir,0
+waropen,Waropen 05,Kampung Waropen 05-07,136.72554,-2.51171,390,tidak,pesisir,0
+waropen,Waropen 05,Kampung Waropen 05-08,136.69652,-2.52488,221,tidak,pesisir,0
+waropen,Waropen 05,Kampung Waropen 05-09,136.66652,-2.67111,140,tidak,pesisir,0
+waropen,Waropen 05,Kampung Waropen 05-10,136.7251,-2.49798,71,lemah,pesisir,0
+waropen,Waropen 06,Kampung Waropen 06-01,136.27184,-2.16649,1695,4g,pesisir,1
+waropen,Waropen 06,Kampung Waropen 06-02,136.26414,-2.12222,241,tidak,pesisir,0
+waropen,Waropen 06,Kampung Waropen 06-03,136.22837,-2.13689,386,tidak,pesisir,0
+waropen,Waropen 06,Kampung Waropen 06-04,136.29899,-2.24416,175,tidak,pesisir,0
+waropen,Waropen 06,Kampung Waropen 06-05,136.20678,-2.10227,163,tidak,pesisir,0
+waropen,Waropen 06,Kampung Waropen 06-06,136.21201,-2.13977,184,tidak,pesisir,0
+waropen,Waropen 06,Kampung Waropen 06-07,136.36975,-2.12031,318,tidak,pesisir,0
+waropen,Waropen 06,Kampung Waropen 06-08,136.33121,-2.05862,142,tidak,pesisir,0
+waropen,Waropen 06,Kampung Waropen 06-09,136.1602,-2.21897,349,tidak,pesisir,0
+waropen,Waropen 06,Kampung Waropen 06-10,136.34663,-2.20526,122,tidak,pesisir,0
+waropen,Waropen 06,Kampung Waropen 06-11,136.16932,-2.13747,72,tidak,pesisir,0
+waropen,Waropen 07,Kampung Waropen 07-01,136.10758,-2.16432,1469,4g,pesisir,1
+waropen,Waropen 07,Kampung Waropen 07-02,136.20545,-2.17644,94,tidak,pesisir,0
+waropen,Waropen 07,Kampung Waropen 07-03,136.09753,-2.00585,227,tidak,pesisir,0
+waropen,Waropen 07,Kampung Waropen 07-04,136.03973,-2.33231,105,tidak,pesisir,0
+waropen,Waropen 07,Kampung Waropen 07-05,136.06451,-2.00329,45,tidak,pesisir,0
+waropen,Waropen 07,Kampung Waropen 07-06,136.09246,-2.14538,124,tidak,pesisir,0
+waropen,Waropen 08,Kampung Waropen 08-01,136.39581,-2.17445,324,4g,pesisir,1
+waropen,Waropen 08,Kampung Waropen 08-02,136.30045,-2.24864,157,tidak,pesisir,0
+waropen,Waropen 08,Kampung Waropen 08-03,136.50817,-2.09097,530,tidak,pesisir,0
+waropen,Waropen 08,Kampung Waropen 08-04,136.43027,-2.19398,371,lemah,pesisir,0
+waropen,Waropen 08,Kampung Waropen 08-05,136.39081,-2.10531,293,tidak,pesisir,0
+waropen,Waropen 08,Kampung Waropen 08-06,136.32631,-2.17886,223,tidak,pesisir,0
+waropen,Waropen 09,Kampung Waropen 09-01,136.50108,-2.69873,691,4g,pesisir,1
+waropen,Waropen 09,Kampung Waropen 09-02,136.44469,-2.58388,156,tidak,pesisir,0
+waropen,Waropen 09,Kampung Waropen 09-03,136.59651,-2.74083,138,tidak,pesisir,0
+waropen,Waropen 09,Kampung Waropen 09-04,136.46798,-2.709,399,tidak,pesisir,0
+waropen,Waropen 09,Kampung Waropen 09-05,136.41173,-2.74915,167,tidak,pesisir,0
+waropen,Waropen 09,Kampung Waropen 09-06,136.51056,-2.82046,208,lemah,pesisir,0
+waropen,Waropen 09,Kampung Waropen 09-07,136.47791,-2.69041,99,tidak,pesisir,0
+waropen,Waropen 09,Kampung Waropen 09-08,136.50108,-2.71556,353,tidak,pesisir,0
+waropen,Waropen 09,Kampung Waropen 09-09,136.52183,-2.79729,768,lemah,pesisir,0
+waropen,Waropen 10,Kampung Waropen 10-01,136.62606,-2.46735,1367,4g,pesisir,1
+waropen,Waropen 10,Kampung Waropen 10-02,136.66029,-2.44919,207,4g,pesisir,0
+waropen,Waropen 10,Kampung Waropen 10-03,136.733,-2.57061,53,lemah,pesisir,0
+waropen,Waropen 10,Kampung Waropen 10-04,136.57483,-2.44653,56,lemah,pesisir,0
+waropen,Waropen 10,Kampung Waropen 10-05,136.59858,-2.44918,88,4g,pesisir,0
+waropen,Waropen 11,Kampung Waropen 11-01,136.5978,-2.40321,239,4g,pesisir,1
+waropen,Waropen 11,Kampung Waropen 11-02,136.67756,-2.46879,514,lemah,pesisir,0
+waropen,Waropen 11,Kampung Waropen 11-03,136.72994,-2.47728,129,lemah,pesisir,0
+waropen,Waropen 11,Kampung Waropen 11-04,136.66764,-2.46446,323,lemah,pesisir,0
+waropen,Waropen 11,Kampung Waropen 11-05,136.60331,-2.29346,416,tidak,pesisir,0
+kep_yapen,Serui,Kampung Serui-01,136.2,-1.8,10390,4g,kepulauan,1
+kep_yapen,Serui,Kampung Serui-02,136.26119,-1.8283,180,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-03,136.21349,-1.81926,154,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-04,136.16255,-1.81263,195,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-05,136.19962,-1.76597,680,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-06,136.20394,-1.88169,254,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-07,136.24426,-1.85429,357,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-08,136.18617,-1.73852,350,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-09,136.14374,-1.85315,111,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-10,136.14222,-1.82081,753,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-11,136.27353,-1.79958,205,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-12,136.17684,-1.7672,377,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-13,136.23837,-1.83722,837,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-14,136.20921,-1.83969,254,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-15,136.22834,-1.77195,175,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-16,136.15526,-1.78354,583,tidak,kepulauan,0
+kep_yapen,Serui,Kampung Serui-17,136.11959,-1.8062,558,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-18,136.27275,-1.78635,825,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-19,136.21994,-1.74374,676,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-20,136.18653,-1.78672,250,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-21,136.1819,-1.86933,276,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-22,136.24318,-1.82144,188,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-23,136.24876,-1.81994,689,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-24,136.24881,-1.8046,271,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-25,136.19105,-1.8377,192,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-26,136.26705,-1.7316,221,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-27,136.22443,-1.81971,271,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-28,136.21409,-1.8176,533,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-29,136.20431,-1.86328,293,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-30,136.20606,-1.79203,773,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-31,136.20947,-1.8034,395,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-32,136.20048,-1.837,131,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-33,136.1578,-1.73708,130,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-34,136.17222,-1.83501,731,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-35,136.22323,-1.86238,175,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-36,136.19497,-1.77219,1119,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-37,136.2611,-1.82743,482,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-38,136.18917,-1.78429,653,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-39,136.17444,-1.83043,891,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-40,136.23645,-1.78932,549,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-41,136.20808,-1.84422,1578,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-42,136.19889,-1.83018,221,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-43,136.15174,-1.78531,452,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-44,136.21132,-1.85774,216,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-45,136.20685,-1.79251,245,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-46,136.21042,-1.68634,884,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-47,136.23192,-1.78541,840,4g,kepulauan,0
+kep_yapen,Serui,Kampung Serui-48,136.1583,-1.81148,228,lemah,kepulauan,0
+kep_yapen,Serui,Kampung Serui-49,136.24535,-1.77698,1648,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-01,136.30257,-1.88937,1006,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-02,136.23512,-1.92865,119,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-03,136.28048,-1.87088,309,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-04,136.24132,-1.87771,517,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-05,136.28947,-1.90101,434,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-06,136.30622,-1.87547,525,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-07,136.42301,-1.95344,1379,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-08,136.2552,-1.90837,834,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-09,136.2808,-1.85063,343,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-10,136.24252,-1.89295,1227,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 02,Kampung Kepulauan Yapen 02-11,136.33214,-1.91273,614,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 03,Kampung Kepulauan Yapen 03-01,136.07388,-1.79334,971,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 03,Kampung Kepulauan Yapen 03-02,136.04317,-1.79622,413,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 03,Kampung Kepulauan Yapen 03-03,136.0316,-1.67684,639,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 03,Kampung Kepulauan Yapen 03-04,136.11152,-1.77777,600,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 03,Kampung Kepulauan Yapen 03-05,136.12411,-1.7768,251,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 03,Kampung Kepulauan Yapen 03-06,136.11334,-1.81399,891,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 04,Kampung Kepulauan Yapen 04-01,136.42856,-1.83899,767,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 04,Kampung Kepulauan Yapen 04-02,136.43834,-1.87276,397,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 04,Kampung Kepulauan Yapen 04-03,136.43378,-1.78713,1023,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 05,Kampung Kepulauan Yapen 05-01,136.25645,-1.72112,769,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 05,Kampung Kepulauan Yapen 05-02,136.25996,-1.8495,251,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 05,Kampung Kepulauan Yapen 05-03,136.23642,-1.65096,990,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 05,Kampung Kepulauan Yapen 05-04,136.25412,-1.73603,1104,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 05,Kampung Kepulauan Yapen 05-05,136.22602,-1.76327,113,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 06,Kampung Kepulauan Yapen 06-01,136.23516,-1.75957,1425,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 06,Kampung Kepulauan Yapen 06-02,136.23811,-1.83075,524,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 06,Kampung Kepulauan Yapen 06-03,136.22982,-1.69024,167,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 06,Kampung Kepulauan Yapen 06-04,136.15941,-1.77764,825,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 06,Kampung Kepulauan Yapen 06-05,136.26395,-1.77397,71,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 06,Kampung Kepulauan Yapen 06-06,136.17835,-1.75942,875,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 07,Kampung Kepulauan Yapen 07-01,136.3106,-1.66682,1041,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 07,Kampung Kepulauan Yapen 07-02,136.31745,-1.6156,545,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 07,Kampung Kepulauan Yapen 07-03,136.29536,-1.6367,171,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-01,136.07817,-1.88027,3626,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-02,136.08214,-1.89085,355,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-03,136.10982,-1.86917,495,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-04,136.07724,-1.93555,139,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-05,136.06532,-1.8504,580,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-06,136.14175,-1.85903,1104,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-07,136.14219,-1.90105,721,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-08,136.14518,-1.88082,1481,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-09,136.14951,-1.89612,225,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-10,136.04571,-1.88588,758,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-11,136.09121,-1.94442,250,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-12,136.07169,-1.86457,510,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-13,136.0901,-1.96195,338,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-14,136.07271,-1.86415,242,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-15,136.06708,-1.94042,187,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-16,136.10576,-1.86747,470,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-17,136.01613,-1.85499,855,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-18,136.12979,-1.89779,168,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-19,136.11572,-1.82824,1053,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 08,Kampung Kepulauan Yapen 08-20,136.10981,-1.90313,379,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 09,Kampung Kepulauan Yapen 09-01,136.15577,-1.47675,2737,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 09,Kampung Kepulauan Yapen 09-02,136.16022,-1.47454,623,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 09,Kampung Kepulauan Yapen 09-03,136.13246,-1.50981,292,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 09,Kampung Kepulauan Yapen 09-04,136.2321,-1.42205,344,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 09,Kampung Kepulauan Yapen 09-05,136.14038,-1.51415,268,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 09,Kampung Kepulauan Yapen 09-06,136.11705,-1.48124,304,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 09,Kampung Kepulauan Yapen 09-07,136.10623,-1.44782,450,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 09,Kampung Kepulauan Yapen 09-08,136.10422,-1.41598,572,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 09,Kampung Kepulauan Yapen 09-09,136.19893,-1.4268,1186,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 09,Kampung Kepulauan Yapen 09-10,136.16809,-1.52538,166,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 10,Kampung Kepulauan Yapen 10-01,136.36412,-1.7891,1326,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 10,Kampung Kepulauan Yapen 10-02,136.38135,-1.72661,353,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 10,Kampung Kepulauan Yapen 10-03,136.31609,-1.74721,582,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 10,Kampung Kepulauan Yapen 10-04,136.41726,-1.77676,741,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 10,Kampung Kepulauan Yapen 10-05,136.35039,-1.76249,806,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 10,Kampung Kepulauan Yapen 10-06,136.37393,-1.76937,297,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 10,Kampung Kepulauan Yapen 10-07,136.36183,-1.79289,349,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 10,Kampung Kepulauan Yapen 10-08,136.41901,-1.7985,691,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 10,Kampung Kepulauan Yapen 10-09,136.40781,-1.73063,969,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 10,Kampung Kepulauan Yapen 10-10,136.36085,-1.71444,417,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 11,Kampung Kepulauan Yapen 11-01,136.14356,-1.8413,1293,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 11,Kampung Kepulauan Yapen 11-02,136.11629,-1.84206,860,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 11,Kampung Kepulauan Yapen 11-03,136.10884,-1.8661,271,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 11,Kampung Kepulauan Yapen 11-04,136.14477,-1.84873,354,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 11,Kampung Kepulauan Yapen 11-05,136.14131,-1.89662,908,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 11,Kampung Kepulauan Yapen 11-06,136.15378,-1.83002,310,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 11,Kampung Kepulauan Yapen 11-07,136.14671,-1.89343,532,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 12,Kampung Kepulauan Yapen 12-01,136.12451,-1.73051,656,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 12,Kampung Kepulauan Yapen 12-02,136.12367,-1.79316,369,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 12,Kampung Kepulauan Yapen 12-03,136.08844,-1.75775,313,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 12,Kampung Kepulauan Yapen 12-04,136.2096,-1.69654,671,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 12,Kampung Kepulauan Yapen 12-05,136.13584,-1.62652,414,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 12,Kampung Kepulauan Yapen 12-06,136.11767,-1.71419,277,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 12,Kampung Kepulauan Yapen 12-07,136.16911,-1.75974,1381,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 12,Kampung Kepulauan Yapen 12-08,136.10208,-1.73615,1451,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 12,Kampung Kepulauan Yapen 12-09,136.1429,-1.66269,400,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 13,Kampung Kepulauan Yapen 13-01,136.07957,-1.99693,1987,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 13,Kampung Kepulauan Yapen 13-02,136.04445,-1.93967,647,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 13,Kampung Kepulauan Yapen 13-03,136.08832,-1.92562,127,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 13,Kampung Kepulauan Yapen 13-04,136.139,-2.01307,312,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 13,Kampung Kepulauan Yapen 13-05,136.07187,-2.03689,296,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 13,Kampung Kepulauan Yapen 13-06,136.04424,-1.98415,392,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 14,Kampung Kepulauan Yapen 14-01,136.40242,-1.88678,1990,tidak,kepulauan,1
+kep_yapen,Kepulauan Yapen 14,Kampung Kepulauan Yapen 14-02,136.42021,-1.91386,179,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 14,Kampung Kepulauan Yapen 14-03,136.38076,-1.86072,373,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 14,Kampung Kepulauan Yapen 14-04,136.4454,-1.88811,744,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 14,Kampung Kepulauan Yapen 14-05,136.3315,-1.90399,301,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 14,Kampung Kepulauan Yapen 14-06,136.43961,-1.85396,782,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 14,Kampung Kepulauan Yapen 14-07,136.30799,-1.84994,244,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 14,Kampung Kepulauan Yapen 14-08,136.38147,-1.95629,526,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 15,Kampung Kepulauan Yapen 15-01,136.14148,-2.13278,1519,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 15,Kampung Kepulauan Yapen 15-02,136.18434,-2.1355,836,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 15,Kampung Kepulauan Yapen 15-03,136.26269,-2.1681,632,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 15,Kampung Kepulauan Yapen 15-04,136.0516,-2.10252,453,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 15,Kampung Kepulauan Yapen 15-05,136.06752,-2.04628,325,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 15,Kampung Kepulauan Yapen 15-06,136.18561,-2.1503,572,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 15,Kampung Kepulauan Yapen 15-07,136.12667,-2.14272,991,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 15,Kampung Kepulauan Yapen 15-08,136.1162,-2.1359,204,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 16,Kampung Kepulauan Yapen 16-01,136.30709,-1.65231,1035,4g,kepulauan,1
+kep_yapen,Kepulauan Yapen 16,Kampung Kepulauan Yapen 16-02,136.25488,-1.64393,990,lemah,kepulauan,0
+kep_yapen,Kepulauan Yapen 16,Kampung Kepulauan Yapen 16-03,136.25874,-1.57825,813,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 16,Kampung Kepulauan Yapen 16-04,136.29776,-1.6462,866,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 16,Kampung Kepulauan Yapen 16-05,136.31112,-1.60597,381,tidak,kepulauan,0
+kep_yapen,Kepulauan Yapen 16,Kampung Kepulauan Yapen 16-06,136.32357,-1.67607,233,4g,kepulauan,0
+kep_yapen,Kepulauan Yapen 16,Kampung Kepulauan Yapen 16-07,136.31132,-1.60852,487,tidak,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-01,136.05,-1.05,1089,4g,kepulauan,1
+biak_numfor,Biak Kota,Kampung Biak Kota-02,136.02992,-1.04762,422,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-03,136.06998,-1.03394,183,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-04,136.01293,-1.00604,1344,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-05,136.066,-1.0299,196,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-06,136.03873,-1.03487,396,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-07,136.03857,-1.02629,223,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-08,136.08843,-1.03047,609,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-09,136.00653,-1.06178,513,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-10,136.07632,-1.0794,345,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-11,136.07296,-1.07137,375,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-12,136.01497,-1.03188,361,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-13,136.03981,-1.0241,361,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-14,135.9935,-1.08117,643,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-15,136.059,-1.06835,799,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-16,135.9869,-1.13741,177,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-17,136.02648,-1.06564,262,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-18,136.02939,-1.05594,528,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-19,136.01791,-1.04036,250,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-20,136.068,-1.01324,92,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-21,136.06688,-1.03048,364,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-22,136.01991,-1.05815,49,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-23,136.13455,-1.08393,231,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-24,136.01002,-1.10493,200,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-25,136.04873,-1.13721,760,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-26,136.06877,-1.01369,1194,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-27,136.04649,-1.05401,326,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-28,136.07241,-1.04345,1235,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-29,136.08569,-1.04839,258,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-30,136.00863,-1.02472,96,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-31,136.05791,-1.12368,167,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-32,136.03889,-1.04619,131,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-33,136.04244,-1.0245,1260,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-34,136.11617,-1.05263,1780,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-35,135.99757,-1.07056,660,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-36,135.99268,-1.07912,408,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-37,136.12416,-1.0456,203,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-38,135.9787,-1.01857,433,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-39,136.03773,-1.00907,725,lemah,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-40,136.13449,-1.07948,462,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-41,136.04401,-0.9796,626,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-42,136.05601,-1.04884,587,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-43,136.04957,-1.05682,101,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-44,136.0507,-1.08747,1408,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-45,136.03185,-1.07584,533,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-46,136.01561,-1.14911,630,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-47,136.05709,-1.11211,657,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-48,136.03119,-1.07433,777,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-49,136.07305,-1.08485,99,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-50,136.02857,-1.02812,285,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-51,136.02571,-1.04677,650,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-52,136.01583,-1.04413,502,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-53,136.04877,-1.03782,335,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-54,136.06464,-1.02497,518,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-55,136.00037,-1.01059,267,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-56,136.0917,-1.02977,382,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-57,136.07969,-1.0586,275,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-58,136.05727,-1.02734,516,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-59,136.04695,-1.03174,277,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-60,136.06891,-1.05033,306,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-61,136.05095,-1.04383,514,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-62,136.05533,-1.05984,2024,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-63,136.104,-1.06372,1210,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-64,136.07886,-1.02587,836,lemah,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-65,136.11112,-1.00563,188,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-66,136.06143,-1.07145,361,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-67,136.07546,-1.1214,685,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-68,136.04706,-1.03061,391,4g,kepulauan,0
+biak_numfor,Biak Kota,Kampung Biak Kota-69,136.08223,-1.04959,127,4g,kepulauan,0
+biak_numfor,Biak Numfor 02,Kampung Biak Numfor 02-01,136.11962,-0.89863,1773,4g,kepulauan,1
+biak_numfor,Biak Numfor 02,Kampung Biak Numfor 02-02,136.07438,-0.98521,691,4g,kepulauan,0
+biak_numfor,Biak Numfor 02,Kampung Biak Numfor 02-03,136.1192,-0.90652,348,4g,kepulauan,0
+biak_numfor,Biak Numfor 02,Kampung Biak Numfor 02-04,136.14839,-0.89383,272,4g,kepulauan,0
+biak_numfor,Biak Numfor 02,Kampung Biak Numfor 02-05,136.10934,-0.84878,281,tidak,kepulauan,0
+biak_numfor,Biak Numfor 02,Kampung Biak Numfor 02-06,136.13802,-0.8897,164,4g,kepulauan,0
+biak_numfor,Biak Numfor 02,Kampung Biak Numfor 02-07,136.11025,-0.93309,287,4g,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-01,135.86247,-1.1959,612,4g,kepulauan,1
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-02,135.77056,-1.26785,1071,tidak,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-03,135.8467,-1.22547,284,4g,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-04,135.8559,-1.09562,396,4g,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-05,135.86486,-1.18751,100,4g,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-06,135.84286,-1.1771,1015,tidak,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-07,135.85233,-1.16791,530,4g,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-08,135.88366,-1.17335,501,4g,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-09,135.84048,-1.19735,250,4g,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-10,135.87113,-1.20165,977,4g,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-11,135.85002,-1.2494,230,lemah,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-12,135.85767,-1.1956,403,lemah,kepulauan,0
+biak_numfor,Biak Numfor 03,Kampung Biak Numfor 03-13,135.81854,-1.21794,381,4g,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-01,136.60359,-1.28747,2136,4g,kepulauan,1
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-02,136.63248,-1.29462,761,tidak,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-03,136.6478,-1.31124,146,tidak,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-04,136.57647,-1.22036,207,tidak,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-05,136.58555,-1.27243,419,tidak,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-06,136.62816,-1.28982,446,tidak,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-07,136.62023,-1.24462,310,tidak,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-08,136.58582,-1.27582,390,tidak,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-09,136.64612,-1.33735,498,tidak,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-10,136.69926,-1.30884,98,tidak,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-11,136.65765,-1.34016,947,tidak,kepulauan,0
+biak_numfor,Biak Numfor 04,Kampung Biak Numfor 04-12,136.63905,-1.27391,192,tidak,kepulauan,0
+biak_numfor,Biak Numfor 05,Kampung Biak Numfor 05-01,136.0134,-0.95432,1315,4g,kepulauan,1
+biak_numfor,Biak Numfor 05,Kampung Biak Numfor 05-02,136.02505,-0.88967,617,lemah,kepulauan,0
+biak_numfor,Biak Numfor 05,Kampung Biak Numfor 05-03,136.00052,-1.01371,674,4g,kepulauan,0
+biak_numfor,Biak Numfor 05,Kampung Biak Numfor 05-04,135.96232,-0.98701,96,4g,kepulauan,0
+biak_numfor,Biak Numfor 05,Kampung Biak Numfor 05-05,136.01666,-0.96725,401,4g,kepulauan,0
+biak_numfor,Biak Numfor 05,Kampung Biak Numfor 05-06,135.9893,-0.95034,278,4g,kepulauan,0
+biak_numfor,Biak Numfor 05,Kampung Biak Numfor 05-07,135.98771,-0.97156,755,4g,kepulauan,0
+biak_numfor,Biak Numfor 05,Kampung Biak Numfor 05-08,136.02328,-0.97886,230,4g,kepulauan,0
+biak_numfor,Biak Numfor 06,Kampung Biak Numfor 06-01,136.13191,-1.23019,1914,4g,kepulauan,1
+biak_numfor,Biak Numfor 06,Kampung Biak Numfor 06-02,136.12158,-1.22387,219,4g,kepulauan,0
+biak_numfor,Biak Numfor 06,Kampung Biak Numfor 06-03,136.13138,-1.28345,95,4g,kepulauan,0
+biak_numfor,Biak Numfor 06,Kampung Biak Numfor 06-04,136.16455,-1.22524,162,4g,kepulauan,0
+biak_numfor,Biak Numfor 06,Kampung Biak Numfor 06-05,136.16874,-1.16624,1039,4g,kepulauan,0
+biak_numfor,Biak Numfor 06,Kampung Biak Numfor 06-06,136.12597,-1.3142,207,lemah,kepulauan,0
+biak_numfor,Biak Numfor 06,Kampung Biak Numfor 06-07,136.10322,-1.22043,111,4g,kepulauan,0
+biak_numfor,Biak Numfor 06,Kampung Biak Numfor 06-08,136.13042,-1.30181,429,tidak,kepulauan,0
+biak_numfor,Biak Numfor 07,Kampung Biak Numfor 07-01,136.16391,-1.12823,879,4g,kepulauan,1
+biak_numfor,Biak Numfor 07,Kampung Biak Numfor 07-02,136.15965,-1.14654,188,4g,kepulauan,0
+biak_numfor,Biak Numfor 07,Kampung Biak Numfor 07-03,136.17355,-1.1653,934,4g,kepulauan,0
+biak_numfor,Biak Numfor 07,Kampung Biak Numfor 07-04,136.18918,-1.14383,910,4g,kepulauan,0
+biak_numfor,Biak Numfor 07,Kampung Biak Numfor 07-05,136.13253,-1.13786,291,4g,kepulauan,0
+biak_numfor,Biak Numfor 07,Kampung Biak Numfor 07-06,136.18407,-1.10092,529,4g,kepulauan,0
+biak_numfor,Biak Numfor 07,Kampung Biak Numfor 07-07,136.16797,-1.10516,215,lemah,kepulauan,0
+biak_numfor,Biak Numfor 07,Kampung Biak Numfor 07-08,136.16904,-1.12159,631,lemah,kepulauan,0
+biak_numfor,Biak Numfor 07,Kampung Biak Numfor 07-09,136.14921,-1.18126,241,4g,kepulauan,0
+biak_numfor,Biak Numfor 08,Kampung Biak Numfor 08-01,135.96271,-0.99807,955,4g,kepulauan,1
+biak_numfor,Biak Numfor 08,Kampung Biak Numfor 08-02,136.0304,-1.03814,252,4g,kepulauan,0
+biak_numfor,Biak Numfor 08,Kampung Biak Numfor 08-03,135.92743,-0.94947,188,4g,kepulauan,0
+biak_numfor,Biak Numfor 08,Kampung Biak Numfor 08-04,135.94467,-0.97293,737,4g,kepulauan,0
+biak_numfor,Biak Numfor 08,Kampung Biak Numfor 08-05,135.93442,-0.95212,1018,4g,kepulauan,0
+biak_numfor,Biak Numfor 08,Kampung Biak Numfor 08-06,135.93869,-1.01401,200,lemah,kepulauan,0
+biak_numfor,Biak Numfor 08,Kampung Biak Numfor 08-07,135.92242,-1.04408,576,4g,kepulauan,0
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-01,135.90846,-1.13669,1296,4g,kepulauan,1
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-02,135.9021,-1.1422,347,lemah,kepulauan,0
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-03,135.90967,-1.06505,177,4g,kepulauan,0
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-04,135.92002,-1.12483,606,4g,kepulauan,0
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-05,135.91618,-1.12348,591,4g,kepulauan,0
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-06,135.88768,-1.06792,428,4g,kepulauan,0
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-07,135.97184,-1.1302,445,4g,kepulauan,0
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-08,135.83973,-1.09029,641,4g,kepulauan,0
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-09,135.89578,-1.1438,251,4g,kepulauan,0
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-10,135.88741,-1.15196,482,4g,kepulauan,0
+biak_numfor,Biak Numfor 09,Kampung Biak Numfor 09-11,135.9051,-1.12959,527,4g,kepulauan,0
+biak_numfor,Biak Numfor 10,Kampung Biak Numfor 10-01,135.76563,-1.18078,940,4g,kepulauan,1
+biak_numfor,Biak Numfor 10,Kampung Biak Numfor 10-02,135.79413,-1.17455,594,tidak,kepulauan,0
+biak_numfor,Biak Numfor 10,Kampung Biak Numfor 10-03,135.75654,-1.20751,452,tidak,kepulauan,0
+biak_numfor,Biak Numfor 10,Kampung Biak Numfor 10-04,135.81714,-1.18186,710,4g,kepulauan,0
+biak_numfor,Biak Numfor 10,Kampung Biak Numfor 10-05,135.76787,-1.14356,322,4g,kepulauan,0
+biak_numfor,Biak Numfor 10,Kampung Biak Numfor 10-06,135.72972,-1.11773,114,lemah,kepulauan,0
+biak_numfor,Biak Numfor 10,Kampung Biak Numfor 10-07,135.81271,-1.21551,229,lemah,kepulauan,0
+biak_numfor,Biak Numfor 10,Kampung Biak Numfor 10-08,135.72368,-1.13417,670,tidak,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-01,135.8671,-1.16673,664,4g,kepulauan,1
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-02,135.87417,-1.22945,1173,tidak,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-03,135.90928,-1.14146,350,4g,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-04,135.8367,-1.15696,217,4g,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-05,135.90995,-1.16439,496,4g,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-06,135.90571,-1.16884,161,4g,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-07,135.9222,-1.15164,1353,4g,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-08,135.87803,-1.19687,504,tidak,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-09,135.88387,-1.16348,451,4g,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-10,135.84666,-1.16059,170,lemah,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-11,135.85474,-1.17257,366,4g,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-12,135.81268,-1.12125,263,tidak,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-13,135.82088,-1.19276,468,4g,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-14,135.91847,-1.12822,231,4g,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-15,135.83579,-1.11234,1256,4g,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-16,135.87526,-1.1435,697,tidak,kepulauan,0
+biak_numfor,Biak Numfor 11,Kampung Biak Numfor 11-17,135.84406,-1.15419,248,4g,kepulauan,0
+biak_numfor,Biak Numfor 12,Kampung Biak Numfor 12-01,136.18811,-1.17432,1477,4g,kepulauan,1
+biak_numfor,Biak Numfor 12,Kampung Biak Numfor 12-02,136.19827,-1.14519,395,4g,kepulauan,0
+biak_numfor,Biak Numfor 12,Kampung Biak Numfor 12-03,136.17356,-1.18036,714,4g,kepulauan,0
+biak_numfor,Biak Numfor 12,Kampung Biak Numfor 12-04,136.17438,-1.12674,354,4g,kepulauan,0
+biak_numfor,Biak Numfor 12,Kampung Biak Numfor 12-05,136.15727,-1.22456,295,4g,kepulauan,0
+biak_numfor,Biak Numfor 12,Kampung Biak Numfor 12-06,136.20738,-1.16451,547,4g,kepulauan,0
+biak_numfor,Biak Numfor 12,Kampung Biak Numfor 12-07,136.20323,-1.14326,446,4g,kepulauan,0
+biak_numfor,Biak Numfor 12,Kampung Biak Numfor 12-08,136.20378,-1.229,263,4g,kepulauan,0
+biak_numfor,Biak Numfor 12,Kampung Biak Numfor 12-09,136.18601,-1.20121,450,4g,kepulauan,0
+biak_numfor,Biak Numfor 12,Kampung Biak Numfor 12-10,136.1958,-1.19771,259,4g,kepulauan,0
+biak_numfor,Biak Numfor 13,Kampung Biak Numfor 13-01,136.26745,-1.15395,1172,4g,kepulauan,1
+biak_numfor,Biak Numfor 13,Kampung Biak Numfor 13-02,136.26153,-1.19668,380,4g,kepulauan,0
+biak_numfor,Biak Numfor 13,Kampung Biak Numfor 13-03,136.24318,-1.12773,573,4g,kepulauan,0
+biak_numfor,Biak Numfor 13,Kampung Biak Numfor 13-04,136.38061,-1.12567,367,4g,kepulauan,0
+biak_numfor,Biak Numfor 13,Kampung Biak Numfor 13-05,136.21787,-1.15439,260,tidak,kepulauan,0
+biak_numfor,Biak Numfor 13,Kampung Biak Numfor 13-06,136.25872,-1.16516,523,lemah,kepulauan,0
+biak_numfor,Biak Numfor 13,Kampung Biak Numfor 13-07,136.30157,-1.12841,241,4g,kepulauan,0
+biak_numfor,Biak Numfor 13,Kampung Biak Numfor 13-08,136.26958,-1.1421,207,tidak,kepulauan,0
+biak_numfor,Biak Numfor 13,Kampung Biak Numfor 13-09,136.26894,-1.19643,1176,tidak,kepulauan,0
+biak_numfor,Biak Numfor 13,Kampung Biak Numfor 13-10,136.26182,-1.1839,426,4g,kepulauan,0
+biak_numfor,Biak Numfor 14,Kampung Biak Numfor 14-01,136.00526,-1.05076,912,4g,kepulauan,1
+biak_numfor,Biak Numfor 14,Kampung Biak Numfor 14-02,135.99084,-1.04425,632,4g,kepulauan,0
+biak_numfor,Biak Numfor 14,Kampung Biak Numfor 14-03,136.00795,-1.09112,674,4g,kepulauan,0
+biak_numfor,Biak Numfor 14,Kampung Biak Numfor 14-04,136.00118,-1.07778,302,4g,kepulauan,0
+biak_numfor,Biak Numfor 14,Kampung Biak Numfor 14-05,135.96162,-1.02665,385,4g,kepulauan,0
+biak_numfor,Biak Numfor 14,Kampung Biak Numfor 14-06,135.97504,-1.00388,579,4g,kepulauan,0
+biak_numfor,Biak Numfor 14,Kampung Biak Numfor 14-07,135.95844,-1.1005,575,4g,kepulauan,0
+biak_numfor,Biak Numfor 14,Kampung Biak Numfor 14-08,136.05894,-0.97205,61,lemah,kepulauan,0
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-01,136.21211,-1.11717,701,4g,kepulauan,1
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-02,136.24384,-1.12858,539,tidak,kepulauan,0
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-03,136.2607,-1.11137,80,4g,kepulauan,0
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-04,136.1897,-1.07676,435,4g,kepulauan,0
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-05,136.23062,-1.09384,1342,4g,kepulauan,0
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-06,136.26357,-1.0351,455,tidak,kepulauan,0
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-07,136.18699,-1.07857,817,lemah,kepulauan,0
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-08,136.17406,-1.12819,247,4g,kepulauan,0
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-09,136.20517,-1.11914,458,4g,kepulauan,0
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-10,136.20733,-1.1365,264,lemah,kepulauan,0
+biak_numfor,Biak Numfor 15,Kampung Biak Numfor 15-11,136.24484,-1.04506,560,4g,kepulauan,0
+biak_numfor,Biak Numfor 16,Kampung Biak Numfor 16-01,136.02636,-1.17886,1899,4g,kepulauan,1
+biak_numfor,Biak Numfor 16,Kampung Biak Numfor 16-02,136.05527,-1.1761,84,4g,kepulauan,0
+biak_numfor,Biak Numfor 16,Kampung Biak Numfor 16-03,136.06956,-1.16857,117,4g,kepulauan,0
+biak_numfor,Biak Numfor 16,Kampung Biak Numfor 16-04,135.99412,-1.16845,205,4g,kepulauan,0
+biak_numfor,Biak Numfor 16,Kampung Biak Numfor 16-05,136.00685,-1.20958,354,4g,kepulauan,0
+biak_numfor,Biak Numfor 16,Kampung Biak Numfor 16-06,136.07363,-1.12706,993,4g,kepulauan,0
+biak_numfor,Biak Numfor 16,Kampung Biak Numfor 16-07,136.07081,-1.18127,165,4g,kepulauan,0
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-01,135.89982,-1.22122,1697,4g,kepulauan,1
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-02,135.82358,-1.18926,328,4g,kepulauan,0
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-03,135.89534,-1.23767,218,tidak,kepulauan,0
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-04,135.88107,-1.20006,469,4g,kepulauan,0
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-05,135.9223,-1.30451,778,lemah,kepulauan,0
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-06,135.93767,-1.18329,624,4g,kepulauan,0
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-07,135.9573,-1.21169,172,4g,kepulauan,0
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-08,135.94668,-1.21873,180,4g,kepulauan,0
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-09,135.90119,-1.22228,377,lemah,kepulauan,0
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-10,135.89942,-1.23977,563,4g,kepulauan,0
+biak_numfor,Biak Numfor 17,Kampung Biak Numfor 17-11,135.88731,-1.21521,537,tidak,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-01,136.10093,-0.99519,1768,4g,kepulauan,1
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-02,136.17375,-1.0337,332,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-03,136.10907,-0.95596,122,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-04,136.14143,-0.97631,569,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-05,136.09644,-0.9715,607,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-06,136.07574,-1.02927,252,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-07,136.11348,-1.01998,271,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-08,136.15535,-1.03433,548,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-09,136.08845,-1.01595,759,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-10,136.19555,-1.00541,352,tidak,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-11,136.1473,-0.99714,254,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-12,136.09285,-0.94401,526,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-13,136.0784,-0.95229,457,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-14,136.11605,-0.93024,719,4g,kepulauan,0
+biak_numfor,Biak Numfor 18,Kampung Biak Numfor 18-15,136.10419,-0.99295,100,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-01,135.98695,-1.18217,1744,4g,kepulauan,1
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-02,135.94059,-1.10783,154,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-03,135.97246,-1.11557,107,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-04,135.97899,-1.22145,204,tidak,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-05,135.99058,-1.16809,232,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-06,136.00405,-1.2093,449,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-07,136.02349,-1.1789,333,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-08,135.97066,-1.2255,729,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-09,136.0464,-1.18273,573,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-10,136.06896,-1.14694,450,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-11,136.0309,-1.19971,1251,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-12,136.02843,-1.22794,420,lemah,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-13,136.02683,-1.19849,475,4g,kepulauan,0
+biak_numfor,Biak Numfor 19,Kampung Biak Numfor 19-14,136.01329,-1.1872,117,4g,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-01,135.65,-0.75,891,4g,kepulauan,1
+supiori,Supiori 01,Kampung Supiori 01-02,135.61756,-0.73674,257,lemah,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-03,135.62162,-0.72471,515,4g,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-04,135.66447,-0.72361,192,lemah,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-05,135.66817,-0.76437,692,tidak,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-06,135.69611,-0.73211,464,lemah,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-07,135.65853,-0.77262,1690,tidak,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-08,135.66247,-0.78639,166,tidak,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-09,135.63944,-0.78448,1392,tidak,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-10,135.6273,-0.77022,358,tidak,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-11,135.66877,-0.77054,684,lemah,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-12,135.61306,-0.68879,1309,lemah,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-13,135.64774,-0.75258,545,4g,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-14,135.64618,-0.77211,372,tidak,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-15,135.66757,-0.76114,285,lemah,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-16,135.65422,-0.77623,200,4g,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-17,135.65938,-0.79903,220,tidak,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-18,135.64988,-0.75059,325,lemah,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-19,135.65341,-0.79452,1038,lemah,kepulauan,0
+supiori,Supiori 01,Kampung Supiori 01-20,135.65919,-0.78229,442,4g,kepulauan,0
+supiori,Supiori 02,Kampung Supiori 02-01,135.61007,-0.71333,2609,4g,kepulauan,1
+supiori,Supiori 02,Kampung Supiori 02-02,135.61026,-0.73326,490,tidak,kepulauan,0
+supiori,Supiori 02,Kampung Supiori 02-03,135.60297,-0.74007,547,tidak,kepulauan,0
+supiori,Supiori 02,Kampung Supiori 02-04,135.59533,-0.78115,170,4g,kepulauan,0
+supiori,Supiori 02,Kampung Supiori 02-05,135.62687,-0.72811,124,lemah,kepulauan,0
+supiori,Supiori 02,Kampung Supiori 02-06,135.61536,-0.69816,225,tidak,kepulauan,0
+supiori,Supiori 02,Kampung Supiori 02-07,135.61064,-0.67412,91,lemah,kepulauan,0
+supiori,Supiori 03,Kampung Supiori 03-01,135.6471,-0.7697,1091,4g,kepulauan,1
+supiori,Supiori 03,Kampung Supiori 03-02,135.6524,-0.74123,361,lemah,kepulauan,0
+supiori,Supiori 04,Kampung Supiori 04-01,135.7543,-0.81753,796,4g,kepulauan,1
+supiori,Supiori 04,Kampung Supiori 04-02,135.77385,-0.83378,256,tidak,kepulauan,0
+supiori,Supiori 04,Kampung Supiori 04-03,135.79274,-0.8026,631,tidak,kepulauan,0
+supiori,Supiori 05,Kampung Supiori 05-01,135.65685,-0.85884,1508,tidak,kepulauan,1
+supiori,Supiori 05,Kampung Supiori 05-02,135.68533,-0.86925,234,tidak,kepulauan,0
+supiori,Supiori 05,Kampung Supiori 05-03,135.63551,-0.86826,347,tidak,kepulauan,0
+supiori,Supiori 05,Kampung Supiori 05-04,135.70113,-0.83961,446,tidak,kepulauan,0
+supiori,Supiori 05,Kampung Supiori 05-05,135.62984,-0.90269,584,tidak,kepulauan,0
